@@ -229,6 +229,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -282,7 +284,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>13</integer>
+									<integer>7</integer>
 									<integer>6</integer>
 									<integer>2</integer>
 									<integer>1</integer>
@@ -322,14 +324,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>ESAPICEncoder.h</string>
+								<string>base64.c</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -337,11 +337,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>ESAPICEncoder.h</string>
+										<string>base64.c</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>148C26D413632BD700EED5DA</string>
+										<string>148C26E813632F8B00EED5DA</string>
 										<key>history</key>
 										<array>
 											<string>1489B12A135AC468007460EE</string>
@@ -367,12 +367,13 @@
 											<string>146E008513618ADB00D4C142</string>
 											<string>14EBEB811362956D0099C6B4</string>
 											<string>148C260B1362E63200EED5DA</string>
-											<string>148C26BD13631D6100EED5DA</string>
 											<string>148C26C513632B0800EED5DA</string>
-											<string>148C26C713632B0800EED5DA</string>
-											<string>148C26D113632BD700EED5DA</string>
 											<string>148C26D213632BD700EED5DA</string>
-											<string>148C26D313632BD700EED5DA</string>
+											<string>148C26E313632F8B00EED5DA</string>
+											<string>148C26E413632F8B00EED5DA</string>
+											<string>148C26E513632F8B00EED5DA</string>
+											<string>148C26E613632F8B00EED5DA</string>
+											<string>148C26E713632F8B00EED5DA</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>

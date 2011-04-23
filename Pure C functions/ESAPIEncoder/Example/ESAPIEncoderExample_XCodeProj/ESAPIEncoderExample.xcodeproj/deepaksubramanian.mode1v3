@@ -273,7 +273,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>5</integer>
+									<integer>2</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -314,7 +314,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>base64.h</string>
+								<string>ESAPICAuxiliaryFunctions.c</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -322,20 +322,22 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>base64.h</string>
+										<string>ESAPICAuxiliaryFunctions.c</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>148C26D713632BD700EED5DA</string>
+										<string>148C27001363305400EED5DA</string>
 										<key>history</key>
 										<array>
 											<string>148C266313630E9D00EED5DA</string>
-											<string>148C266C13630F3400EED5DA</string>
-											<string>148C266D13630F3400EED5DA</string>
-											<string>148C266F13630F3400EED5DA</string>
 											<string>148C268E1363185000EED5DA</string>
 											<string>148C26A313631A6400EED5DA</string>
-											<string>148C26D513632BD700EED5DA</string>
+											<string>148C26E913632F8B00EED5DA</string>
+											<string>148C26EA13632F8B00EED5DA</string>
+											<string>148C26FC1363305400EED5DA</string>
+											<string>148C26FD1363305400EED5DA</string>
+											<string>148C26FE1363305400EED5DA</string>
+											<string>148C26FF1363305400EED5DA</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -533,12 +535,13 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>148C27011363305400EED5DA</string>
 		<string>148C25A51362A40E00EED5DA</string>
 		<string>148C25A61362A40E00EED5DA</string>
 		<string>1CD10A99069EF8BA00B06720</string>
-		<string>148C258A13629CD500EED5DA</string>
 		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/ESAPIEncoderExample.xcodeproj</string>
+		<string>148C258A13629CD500EED5DA</string>
 	</array>
 	<key>WindowString</key>
 	<string>246 148 994 591 0 0 1280 778 </string>
@@ -564,7 +567,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>ESAPICEncoder.c</string>
+								<string>ESAPICAuxiliaryFunctions.c</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -633,7 +636,7 @@
 			<key>WindowToolGUID</key>
 			<string>148C258A13629CD500EED5DA</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>

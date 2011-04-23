@@ -122,6 +122,12 @@
 			148C26D213632BD700EED5DA /* PBXTextBookmark */ = 148C26D213632BD700EED5DA /* PBXTextBookmark */;
 			148C26D313632BD700EED5DA /* PBXTextBookmark */ = 148C26D313632BD700EED5DA /* PBXTextBookmark */;
 			148C26D413632BD700EED5DA /* PBXTextBookmark */ = 148C26D413632BD700EED5DA /* PBXTextBookmark */;
+			148C26E313632F8B00EED5DA /* PBXTextBookmark */ = 148C26E313632F8B00EED5DA /* PBXTextBookmark */;
+			148C26E413632F8B00EED5DA /* PBXTextBookmark */ = 148C26E413632F8B00EED5DA /* PBXTextBookmark */;
+			148C26E513632F8B00EED5DA /* PBXTextBookmark */ = 148C26E513632F8B00EED5DA /* PBXTextBookmark */;
+			148C26E613632F8B00EED5DA /* PBXTextBookmark */ = 148C26E613632F8B00EED5DA /* PBXTextBookmark */;
+			148C26E713632F8B00EED5DA /* PBXBookmark */ = 148C26E713632F8B00EED5DA /* PBXBookmark */;
+			148C26E813632F8B00EED5DA /* PBXTextBookmark */ = 148C26E813632F8B00EED5DA /* PBXTextBookmark */;
 			14EB2721135C85EE00E3FD29 = 14EB2721135C85EE00E3FD29 /* PBXTextBookmark */;
 			14EB2723135C85EE00E3FD29 = 14EB2723135C85EE00E3FD29 /* PBXTextBookmark */;
 			14EB2725135C85EE00E3FD29 = 14EB2725135C85EE00E3FD29 /* PBXTextBookmark */;
@@ -511,7 +517,7 @@
 		fRef = 1489B108135978EF007460EE /* ESAPICEncoder.h */;
 		name = "ESAPICEncoder.h: 57";
 		rLen = 0;
-		rLoc = 1558;
+		rLoc = 1536;
 		rType = 0;
 		vrLen = 1015;
 		vrLoc = 1060;
@@ -615,7 +621,7 @@
 		fRef = 1489B108135978EF007460EE /* ESAPICEncoder.h */;
 		name = "ESAPICEncoder.h: 116";
 		rLen = 93;
-		rLoc = 3270;
+		rLoc = 3248;
 		rType = 0;
 		vrLen = 814;
 		vrLoc = 2868;
@@ -625,7 +631,7 @@
 		fRef = 1489B108135978EF007460EE /* ESAPICEncoder.h */;
 		name = "ESAPICEncoder.h: 82";
 		rLen = 0;
-		rLoc = 2275;
+		rLoc = 2253;
 		rType = 0;
 		vrLen = 903;
 		vrLoc = 2763;
@@ -665,7 +671,7 @@
 		fRef = 1489B108135978EF007460EE /* ESAPICEncoder.h */;
 		name = "ESAPICEncoder.h: 112";
 		rLen = 0;
-		rLoc = 3215;
+		rLoc = 3193;
 		rType = 0;
 		vrLen = 858;
 		vrLoc = 2861;
@@ -715,7 +721,7 @@
 		fRef = 1489B108135978EF007460EE /* ESAPICEncoder.h */;
 		name = "ESAPICEncoder.h: 70";
 		rLen = 0;
-		rLoc = 1852;
+		rLoc = 1830;
 		rType = 0;
 		vrLen = 856;
 		vrLoc = 2921;
@@ -725,7 +731,7 @@
 		fRef = 1489B108135978EF007460EE /* ESAPICEncoder.h */;
 		name = "ESAPICEncoder.h: 70";
 		rLen = 0;
-		rLoc = 1852;
+		rLoc = 1830;
 		rType = 0;
 		vrLen = 1067;
 		vrLoc = 1623;
@@ -765,7 +771,7 @@
 		fRef = 1489B108135978EF007460EE /* ESAPICEncoder.h */;
 		name = "ESAPICEncoder.h: 53";
 		rLen = 0;
-		rLoc = 1557;
+		rLoc = 1535;
 		rType = 0;
 		vrLen = 556;
 		vrLoc = 1414;
@@ -775,7 +781,7 @@
 		fRef = 1489B108135978EF007460EE /* ESAPICEncoder.h */;
 		name = "ESAPICEncoder.h: 31";
 		rLen = 0;
-		rLoc = 918;
+		rLoc = 896;
 		rType = 0;
 		vrLen = 444;
 		vrLoc = 615;
@@ -805,7 +811,7 @@
 		fRef = 1489B108135978EF007460EE /* ESAPICEncoder.h */;
 		name = "ESAPICEncoder.h: 72";
 		rLen = 0;
-		rLoc = 1852;
+		rLoc = 1830;
 		rType = 0;
 		vrLen = 872;
 		vrLoc = 1414;
@@ -815,7 +821,7 @@
 		fRef = 1489B108135978EF007460EE /* ESAPICEncoder.h */;
 		name = "ESAPICEncoder.h: 31";
 		rLen = 0;
-		rLoc = 918;
+		rLoc = 896;
 		rType = 0;
 		vrLen = 439;
 		vrLoc = 3348;
@@ -835,7 +841,7 @@
 		fRef = 1489B108135978EF007460EE /* ESAPICEncoder.h */;
 		name = "ESAPICEncoder.h: 96";
 		rLen = 0;
-		rLoc = 2507;
+		rLoc = 2485;
 		rType = 0;
 		vrLen = 861;
 		vrLoc = 2832;
@@ -875,7 +881,7 @@
 		fRef = 1489B108135978EF007460EE /* ESAPICEncoder.h */;
 		name = "ESAPICEncoder.h: 96";
 		rLen = 0;
-		rLoc = 2507;
+		rLoc = 2485;
 		rType = 0;
 		vrLen = 861;
 		vrLoc = 2832;
@@ -915,7 +921,7 @@
 		fRef = 1489B108135978EF007460EE /* ESAPICEncoder.h */;
 		name = "ESAPICEncoder.h: 19";
 		rLen = 0;
-		rLoc = 669;
+		rLoc = 647;
 		rType = 0;
 		vrLen = 804;
 		vrLoc = 78;
@@ -955,7 +961,7 @@
 		fRef = 1489B108135978EF007460EE /* ESAPICEncoder.h */;
 		name = "ESAPICEncoder.h: 54";
 		rLen = 0;
-		rLoc = 1558;
+		rLoc = 1536;
 		rType = 0;
 		vrLen = 1008;
 		vrLoc = 1497;
@@ -1055,10 +1061,17 @@
 		fRef = 1489B108135978EF007460EE /* ESAPICEncoder.h */;
 		name = "ESAPICEncoder.h: 31";
 		rLen = 0;
-		rLoc = 918;
+		rLoc = 896;
 		rType = 0;
 		vrLen = 439;
 		vrLoc = 3235;
+	};
+	148C26C113631DC900EED5DA /* base64.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {928, 8022}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{8748, 737}";
+		};
 	};
 	148C26C213631DC900EED5DA /* base64.h */ = {
 		uiCtxt = {
@@ -1082,7 +1095,7 @@
 		fRef = 1489B108135978EF007460EE /* ESAPICEncoder.h */;
 		name = "ESAPICEncoder.h: 105";
 		rLen = 0;
-		rLoc = 3064;
+		rLoc = 3042;
 		rType = 0;
 		vrLen = 445;
 		vrLoc = 631;
@@ -1159,7 +1172,7 @@
 		fRef = 148C26CE13632B5900EED5DA /* ESAPICAuxiliaryFunctions.h */;
 		name = "ESAPICAuxiliaryFunctions.h: 20";
 		rLen = 0;
-		rLoc = 508;
+		rLoc = 551;
 		rType = 0;
 		vrLen = 483;
 		vrLoc = 0;
@@ -1169,7 +1182,7 @@
 		fRef = 1489B108135978EF007460EE /* ESAPICEncoder.h */;
 		name = "ESAPICEncoder.h: 49";
 		rLen = 0;
-		rLoc = 1558;
+		rLoc = 1536;
 		rType = 0;
 		vrLen = 719;
 		vrLoc = 904;
@@ -1179,10 +1192,64 @@
 		fRef = 1489B108135978EF007460EE /* ESAPICEncoder.h */;
 		name = "ESAPICEncoder.h: 23";
 		rLen = 0;
-		rLoc = 822;
+		rLoc = 800;
 		rType = 0;
 		vrLen = 445;
 		vrLoc = 405;
+	};
+	148C26E313632F8B00EED5DA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1489B108135978EF007460EE /* ESAPICEncoder.h */;
+		name = "ESAPICEncoder.h: 21";
+		rLen = 0;
+		rLoc = 647;
+		rType = 0;
+		vrLen = 373;
+		vrLoc = 478;
+	};
+	148C26E413632F8B00EED5DA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1489B109135978EF007460EE /* ESAPICEncoder.c */;
+		name = "ESAPICEncoder.c: 13";
+		rLen = 0;
+		rLoc = 224;
+		rType = 0;
+		vrLen = 647;
+		vrLoc = 147;
+	};
+	148C26E513632F8B00EED5DA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 14EB273D135C874700E3FD29 /* ESAPICUrlEncoder.h */;
+		name = "ESAPICUrlEncoder.h: 11";
+		rLen = 0;
+		rLoc = 178;
+		rType = 0;
+		vrLen = 541;
+		vrLoc = 0;
+	};
+	148C26E613632F8B00EED5DA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 14EB273E135C874700E3FD29 /* ESAPICUrlEncoder.c */;
+		name = "ESAPICUrlEncoder.c: 15";
+		rLen = 0;
+		rLoc = 389;
+		rType = 0;
+		vrLen = 662;
+		vrLoc = 480;
+	};
+	148C26E713632F8B00EED5DA /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 148C26C113631DC900EED5DA /* base64.c */;
+	};
+	148C26E813632F8B00EED5DA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 148C26C113631DC900EED5DA /* base64.c */;
+		name = "base64.c: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 737;
+		vrLoc = 8748;
 	};
 	14EB2721135C85EE00E3FD29 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -1303,9 +1370,9 @@
 	};
 	14EB273E135C874700E3FD29 /* ESAPICUrlEncoder.c */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1063.18, 1554}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1063.18, 1764}}";
 			sepNavSelRange = "{389, 0}";
-			sepNavVisRange = "{241, 472}";
+			sepNavVisRange = "{480, 662}";
 			sepNavWindowFrame = "{{0, 66}, {1280, 709}}";
 		};
 	};
@@ -1411,7 +1478,7 @@
 		fRef = 1489B108135978EF007460EE /* ESAPICEncoder.h */;
 		name = "ESAPICEncoder.h: 53";
 		rLen = 0;
-		rLoc = 1557;
+		rLoc = 1535;
 		rType = 0;
 		vrLen = 556;
 		vrLoc = 1414;
@@ -1431,7 +1498,7 @@
 		fRef = 1489B108135978EF007460EE /* ESAPICEncoder.h */;
 		name = "ESAPICEncoder.h: 72";
 		rLen = 0;
-		rLoc = 2093;
+		rLoc = 2071;
 		rType = 0;
 		vrLen = 1087;
 		vrLoc = 1059;
@@ -1451,7 +1518,7 @@
 		fRef = 1489B108135978EF007460EE /* ESAPICEncoder.h */;
 		name = "ESAPICEncoder.h: 57";
 		rLen = 0;
-		rLoc = 1558;
+		rLoc = 1536;
 		rType = 0;
 		vrLen = 1016;
 		vrLoc = 1059;
@@ -1491,7 +1558,7 @@
 		fRef = 1489B108135978EF007460EE /* ESAPICEncoder.h */;
 		name = "ESAPICEncoder.h: 57";
 		rLen = 0;
-		rLoc = 1558;
+		rLoc = 1536;
 		rType = 0;
 		vrLen = 1015;
 		vrLoc = 1060;

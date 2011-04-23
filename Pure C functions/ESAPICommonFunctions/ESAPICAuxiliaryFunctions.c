@@ -8,6 +8,9 @@
  */
 
 #include "ESAPICAuxiliaryFunctions.h"
+#include <math.h>
+#include <string.h>
+#include <ctype.h>
 
 /**
  @brief Converts a hex character to its integer value 

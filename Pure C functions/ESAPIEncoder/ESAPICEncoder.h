@@ -16,9 +16,7 @@
  */
 
 #include <stdlib.h>
-#include <stdbool.h>
 #include "ESAPICAuxiliaryFunctions.h"
-
 /**
  @brief This is the header of the ESAPI C Encoder Functions. These function are designed to assist in encoding functionality in various scenarios.
  

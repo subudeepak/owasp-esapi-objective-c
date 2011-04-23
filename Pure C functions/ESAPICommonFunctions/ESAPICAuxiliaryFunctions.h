@@ -7,6 +7,8 @@
  *
  */
 
+#include <stdbool.h>
+
 /**
  @brief Sends the results and sets the required flags
  */
