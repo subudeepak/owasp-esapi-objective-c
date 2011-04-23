@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		146E009613618B0600D4C142 /* ESAPIEncoderExample.c in Sources */ = {isa = PBXBuildFile; fileRef = 146E009413618B0600D4C142 /* ESAPIEncoderExample.c */; };
+		146E009713618B0600D4C142 /* ESAPIEncoderExample.h in Headers */ = {isa = PBXBuildFile; fileRef = 146E009513618B0600D4C142 /* ESAPIEncoderExample.h */; };
 		1489B0D41358ABBF007460EE /* ESAPIValidations.h in Headers */ = {isa = PBXBuildFile; fileRef = 1489B0D21358ABBF007460EE /* ESAPIValidations.h */; };
 		1489B0D51358ABBF007460EE /* ESAPIValidations.c in Sources */ = {isa = PBXBuildFile; fileRef = 1489B0D31358ABBF007460EE /* ESAPIValidations.c */; };
 		1489B1071359786D007460EE /* urlEncoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 1489B1051359786D007460EE /* urlEncoder.c */; };
 		1489B10A135978EF007460EE /* ESAPICEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 1489B108135978EF007460EE /* ESAPICEncoder.h */; };
 		1489B10B135978EF007460EE /* ESAPICEncoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 1489B109135978EF007460EE /* ESAPICEncoder.c */; };
+		148C26C313631DC900EED5DA /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = 148C26C113631DC900EED5DA /* base64.c */; };
+		148C26C413631DC900EED5DA /* base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 148C26C213631DC900EED5DA /* base64.h */; };
+		148C26CF13632B5900EED5DA /* ESAPICAuxiliaryFunctions.c in Sources */ = {isa = PBXBuildFile; fileRef = 148C26CD13632B5900EED5DA /* ESAPICAuxiliaryFunctions.c */; };
+		148C26D013632B5900EED5DA /* ESAPICAuxiliaryFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 148C26CE13632B5900EED5DA /* ESAPICAuxiliaryFunctions.h */; };
 		14EB273F135C874700E3FD29 /* ESAPICUrlEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 14EB273D135C874700E3FD29 /* ESAPICUrlEncoder.h */; };
 		14EB2740135C874700E3FD29 /* ESAPICUrlEncoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 14EB273E135C874700E3FD29 /* ESAPICUrlEncoder.c */; };
-		14EB274C135C890100E3FD29 /* ESAPICAuxiliaryFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 14EB274A135C890100E3FD29 /* ESAPICAuxiliaryFunctions.h */; };
-		14EB274D135C890100E3FD29 /* ESAPICAuxiliaryFunctions.c in Sources */ = {isa = PBXBuildFile; fileRef = 14EB274B135C890100E3FD29 /* ESAPICAuxiliaryFunctions.c */; };
 		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
 		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
@@ -25,15 +29,19 @@
 		0867D6A5FE840307C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		089C1667FE841158C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		146E009413618B0600D4C142 /* ESAPIEncoderExample.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ESAPIEncoderExample.c; sourceTree = "<group>"; };
+		146E009513618B0600D4C142 /* ESAPIEncoderExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESAPIEncoderExample.h; sourceTree = "<group>"; };
 		1489B0D21358ABBF007460EE /* ESAPIValidations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESAPIValidations.h; sourceTree = "<group>"; };
 		1489B0D31358ABBF007460EE /* ESAPIValidations.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ESAPIValidations.c; sourceTree = "<group>"; };
 		1489B1051359786D007460EE /* urlEncoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = urlEncoder.c; sourceTree = "<group>"; };
 		1489B108135978EF007460EE /* ESAPICEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESAPICEncoder.h; sourceTree = "<group>"; };
 		1489B109135978EF007460EE /* ESAPICEncoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ESAPICEncoder.c; sourceTree = "<group>"; };
+		148C26C113631DC900EED5DA /* base64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = base64.c; sourceTree = "<group>"; };
+		148C26C213631DC900EED5DA /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = "<group>"; };
+		148C26CD13632B5900EED5DA /* ESAPICAuxiliaryFunctions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ESAPICAuxiliaryFunctions.c; sourceTree = "<group>"; };
+		148C26CE13632B5900EED5DA /* ESAPICAuxiliaryFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESAPICAuxiliaryFunctions.h; sourceTree = "<group>"; };
 		14EB273D135C874700E3FD29 /* ESAPICUrlEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESAPICUrlEncoder.h; sourceTree = "<group>"; };
 		14EB273E135C874700E3FD29 /* ESAPICUrlEncoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ESAPICUrlEncoder.c; sourceTree = "<group>"; };
-		14EB274A135C890100E3FD29 /* ESAPICAuxiliaryFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESAPICAuxiliaryFunctions.h; sourceTree = "<group>"; };
-		14EB274B135C890100E3FD29 /* ESAPICAuxiliaryFunctions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ESAPICAuxiliaryFunctions.c; sourceTree = "<group>"; };
 		32DBCF5E0370ADEE00C91783 /* ESAPI_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESAPI_Prefix.pch; sourceTree = "<group>"; };
 		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DC2EF5B0486A6940098B216 /* ESAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ESAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,9 +126,19 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
+		146E009313618B0600D4C142 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				146E009513618B0600D4C142 /* ESAPIEncoderExample.h */,
+				146E009413618B0600D4C142 /* ESAPIEncoderExample.c */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
 		1489B1031359786D007460EE /* Pure C functions */ = {
 			isa = PBXGroup;
 			children = (
+				148C26CC13632B5900EED5DA /* ESAPICommonFunctions */,
 				1489B1041359786D007460EE /* ESAPIEncoder */,
 				1489B1061359786D007460EE /* ESAPIValidator */,
 			);
@@ -130,13 +148,14 @@
 		1489B1041359786D007460EE /* ESAPIEncoder */ = {
 			isa = PBXGroup;
 			children = (
+				148C26C113631DC900EED5DA /* base64.c */,
+				148C26C213631DC900EED5DA /* base64.h */,
+				146E009313618B0600D4C142 /* Example */,
 				1489B1051359786D007460EE /* urlEncoder.c */,
 				1489B108135978EF007460EE /* ESAPICEncoder.h */,
 				1489B109135978EF007460EE /* ESAPICEncoder.c */,
 				14EB273D135C874700E3FD29 /* ESAPICUrlEncoder.h */,
 				14EB273E135C874700E3FD29 /* ESAPICUrlEncoder.c */,
-				14EB274A135C890100E3FD29 /* ESAPICAuxiliaryFunctions.h */,
-				14EB274B135C890100E3FD29 /* ESAPICAuxiliaryFunctions.c */,
 			);
 			path = ESAPIEncoder;
 			sourceTree = "<group>";
@@ -146,6 +165,15 @@
 			children = (
 			);
 			path = ESAPIValidator;
+			sourceTree = "<group>";
+		};
+		148C26CC13632B5900EED5DA /* ESAPICommonFunctions */ = {
+			isa = PBXGroup;
+			children = (
+				148C26CD13632B5900EED5DA /* ESAPICAuxiliaryFunctions.c */,
+				148C26CE13632B5900EED5DA /* ESAPICAuxiliaryFunctions.h */,
+			);
+			path = ESAPICommonFunctions;
 			sourceTree = "<group>";
 		};
 		32C88DFF0371C24200C91783 /* Other Sources */ = {
@@ -166,7 +194,9 @@
 				1489B0D41358ABBF007460EE /* ESAPIValidations.h in Headers */,
 				1489B10A135978EF007460EE /* ESAPICEncoder.h in Headers */,
 				14EB273F135C874700E3FD29 /* ESAPICUrlEncoder.h in Headers */,
-				14EB274C135C890100E3FD29 /* ESAPICAuxiliaryFunctions.h in Headers */,
+				146E009713618B0600D4C142 /* ESAPIEncoderExample.h in Headers */,
+				148C26C413631DC900EED5DA /* base64.h in Headers */,
+				148C26D013632B5900EED5DA /* ESAPICAuxiliaryFunctions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,7 +263,9 @@
 				1489B1071359786D007460EE /* urlEncoder.c in Sources */,
 				1489B10B135978EF007460EE /* ESAPICEncoder.c in Sources */,
 				14EB2740135C874700E3FD29 /* ESAPICUrlEncoder.c in Sources */,
-				14EB274D135C890100E3FD29 /* ESAPICAuxiliaryFunctions.c in Sources */,
+				146E009613618B0600D4C142 /* ESAPIEncoderExample.c in Sources */,
+				148C26C313631DC900EED5DA /* base64.c in Sources */,
+				148C26CF13632B5900EED5DA /* ESAPICAuxiliaryFunctions.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
