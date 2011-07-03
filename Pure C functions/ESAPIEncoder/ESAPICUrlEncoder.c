@@ -8,7 +8,6 @@
  */
 
 #include "ESAPICUrlEncoder.h"
-#include "ESAPICAuxiliaryFunctions.h"
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -25,24 +24,47 @@
  @return The decoded string IMPORTANT: be sure to free() the returned string after use 
 
  */
-char * ESAPICUrlEncoderEncode ( char *inputString ) 
+ESAPIStringOperation * ESAPICUrlEncoderEncode ( char *inputString ) 
 {
 	printf("\n Encoding initiated");
-	char *pstr = inputString , *buf = malloc( strlen( inputString ) * 3 + 1 ), *pbuf = buf;
-	while ( *pstr ) 
+	ESAPIStringOperation * urlEncodeOperation = ( ESAPIStringOperation * ) malloc( sizeof( ESAPIStringOperation ) );
+	if ( urlEncodeOperation != NULL ) 
 	{
-		if ( isalnum(*pstr) || *pstr == '-' || *pstr == '_' || *pstr == '.' || *pstr == '~' ) 
-			*pbuf++ = *pstr;
-		else if ( *pstr == ' ' ) 
-			*pbuf++ = '+';
-		else 
+		char *pstr = inputString , *buf = malloc( strlen( inputString ) * 3 + 1 ), *pbuf = buf;
+		while ( *pstr ) 
 		{
-			*pbuf++ = '%', *pbuf++ = to_hex( *pstr >> 4 ), *pbuf++ = to_hex( *pstr & 15);
+			if ( isalnum(*pstr) || *pstr == '-' || *pstr == '_' || *pstr == '.' || *pstr == '~' ) 
+				*pbuf++ = *pstr;
+			else if ( *pstr == ' ' ) 
+				*pbuf++ = '+';
+			else 
+			{
+				*pbuf++ = '%', *pbuf++ = to_hex( *pstr >> 4 ), *pbuf++ = to_hex( *pstr & 15);
+			}
+			pstr++;
 		}
-		pstr++;
+		*pbuf = '\0';	
+		if ( buf != NULL )
+		{
+			urlEncodeOperation->returnString = buf;
+			urlEncodeOperation->operationSuccessful = true;
+			urlEncodeOperation->errorDescription = NULL;
+		}
+		else
+		{
+			char messageString[] = "M_Fail";
+			urlEncodeOperation->errorDescription = ( char * ) malloc( sizeof( char ) * strlen( messageString ) );
+			urlEncodeOperation->operationSuccessful = false;
+			urlEncodeOperation->returnString = NULL;
+		}
+
+		return urlEncodeOperation;
 	}
-	*pbuf = '\0';
-	return buf;
+	else
+	{
+		printf("Memory Allocation Failed");
+		return NULL;
+	}
 }
 
 /**
@@ -53,31 +75,55 @@ char * ESAPICUrlEncoderEncode ( char *inputString )
  @param inputString - This is the input string which needs to be decoded
  @return The decoded string IMPORTANT: be sure to free() the returned string after use 
  */
-char * ESAPICUrlEncoderDecode ( char *inputString ) 
+ESAPIStringOperation * ESAPICUrlEncoderDecode ( char *inputString ) 
 {
 	printf( "The inputString is %s",inputString );
-	char *pstr = inputString, *buf = malloc( strlen( inputString ) + 1), *pbuf = buf;
-	while ( *pstr ) 
+	ESAPIStringOperation * urlDecodeOperation = ( ESAPIStringOperation * ) malloc( sizeof( ESAPIStringOperation ) );
+	if ( urlDecodeOperation != NULL )
 	{
-		if ( *pstr == '%' ) 
+		char *pstr = inputString, *buf = malloc( strlen( inputString ) + 1), *pbuf = buf;
+		while ( *pstr ) 
 		{
-			if ( pstr[1] && pstr[2] ) 
+			if ( *pstr == '%' ) 
 			{
-				*pbuf++ = from_hex( pstr[1] ) << 4 | from_hex( pstr[2] );
-				pstr += 2;
+				if ( pstr[1] && pstr[2] ) 
+				{
+					*pbuf++ = from_hex( pstr[1] ) << 4 | from_hex( pstr[2] );
+					pstr += 2;
+				}
+			} 
+			else if ( *pstr == '+' ) 
+			{ 
+				*pbuf++ = ' ';
+			}	
+			else 
+			{
+				*pbuf++ = *pstr;
 			}
-		} 
-		else if ( *pstr == '+' ) 
-		{ 
-			*pbuf++ = ' ';
-		}	
-		else 
-		{
-			*pbuf++ = *pstr;
+			pstr++;
 		}
-		pstr++;
+		*pbuf = '\0';
+		if ( buf != NULL )
+		{
+			urlDecodeOperation->returnString = buf;
+			urlDecodeOperation->operationSuccessful = true;
+			urlDecodeOperation->errorDescription = NULL;
+		}
+		else
+		{
+			char messageString[] = "M_Fail";
+			urlDecodeOperation->errorDescription = ( char * ) malloc( sizeof( char ) * strlen( messageString ) );
+			urlDecodeOperation->operationSuccessful = false;
+			urlDecodeOperation->returnString = NULL;
+		}
+		
+		return urlDecodeOperation;
 	}
-	*pbuf = '\0';
-	return buf;
+	else
+	{
+		printf("Memory Allocation Failed");
+		return NULL;
+	}
+	
 }
 

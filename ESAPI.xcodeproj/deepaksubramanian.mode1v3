@@ -197,7 +197,90 @@
 	<key>Notifications</key>
 	<array/>
 	<key>OpenEditors</key>
-	<array/>
+	<array>
+		<dict>
+			<key>Content</key>
+			<dict>
+				<key>PBXProjectModuleGUID</key>
+				<string>14E92BAB13727A4F00A6741A</string>
+				<key>PBXProjectModuleLabel</key>
+				<string>ESAPICUrlEncoder.h</string>
+				<key>PBXSplitModuleInNavigatorKey</key>
+				<dict>
+					<key>Split0</key>
+					<dict>
+						<key>PBXProjectModuleGUID</key>
+						<string>14E92BAC13727A4F00A6741A</string>
+						<key>PBXProjectModuleLabel</key>
+						<string>ESAPICUrlEncoder.h</string>
+						<key>_historyCapacity</key>
+						<integer>0</integer>
+						<key>bookmark</key>
+						<string>1403C1AB13C0B0D8009B9B37</string>
+						<key>history</key>
+						<array>
+							<string>14E92BAD13727A4F00A6741A</string>
+							<string>14EB50B413BF89F7007D20DC</string>
+						</array>
+					</dict>
+					<key>SplitCount</key>
+					<string>1</string>
+				</dict>
+				<key>StatusBarVisibility</key>
+				<true/>
+			</dict>
+			<key>Geometry</key>
+			<dict>
+				<key>Frame</key>
+				<string>{{0, 20}, {1280, 612}}</string>
+				<key>PBXModuleWindowStatusBarHidden2</key>
+				<false/>
+				<key>RubberWindowFrame</key>
+				<string>0 122 1280 653 0 0 1280 778 </string>
+			</dict>
+		</dict>
+		<dict>
+			<key>Content</key>
+			<dict>
+				<key>PBXProjectModuleGUID</key>
+				<string>14EB50AF13BF89F7007D20DC</string>
+				<key>PBXProjectModuleLabel</key>
+				<string>ESAPIEncoder.m</string>
+				<key>PBXSplitModuleInNavigatorKey</key>
+				<dict>
+					<key>Split0</key>
+					<dict>
+						<key>PBXProjectModuleGUID</key>
+						<string>14EB50B013BF89F7007D20DC</string>
+						<key>PBXProjectModuleLabel</key>
+						<string>ESAPIEncoder.m</string>
+						<key>_historyCapacity</key>
+						<integer>0</integer>
+						<key>bookmark</key>
+						<string>1403C1AC13C0B0D8009B9B37</string>
+						<key>history</key>
+						<array>
+							<string>1403C18F13C091E4009B9B37</string>
+							<string>1403C19013C091E4009B9B37</string>
+						</array>
+					</dict>
+					<key>SplitCount</key>
+					<string>1</string>
+				</dict>
+				<key>StatusBarVisibility</key>
+				<true/>
+			</dict>
+			<key>Geometry</key>
+			<dict>
+				<key>Frame</key>
+				<string>{{0, 20}, {634, 528}}</string>
+				<key>PBXModuleWindowStatusBarHidden2</key>
+				<false/>
+				<key>RubberWindowFrame</key>
+				<string>646 127 634 569 0 0 1280 778 </string>
+			</dict>
+		</dict>
+	</array>
 	<key>PerspectiveWidths</key>
 	<array>
 		<integer>-1</integer>
@@ -269,10 +352,9 @@
 							<array>
 								<string>0867D691FE84028FC02AAC07</string>
 								<string>08FB77AEFE84172EC02AAC07</string>
+								<string>144A03AA13A3AF2900735946</string>
 								<string>1489B1031359786D007460EE</string>
-								<string>148C26CC13632B5900EED5DA</string>
 								<string>1489B1041359786D007460EE</string>
-								<string>146E009313618B0600D4C142</string>
 								<string>32C88DFF0371C24200C91783</string>
 								<string>089C1665FE841158C02AAC07</string>
 								<string>089C1666FE841158C02AAC07</string>
@@ -284,15 +366,11 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>7</integer>
-									<integer>6</integer>
-									<integer>2</integer>
-									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 9}, {269, 598}}</string>
+							<string>{{0, 0}, {269, 598}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -329,7 +407,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>base64.c</string>
+								<string>ESAPIEncoder.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -337,11 +415,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>base64.c</string>
+										<string>ESAPIEncoder.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>148C26E813632F8B00EED5DA</string>
+										<string>1403C1AA13C0B0D8009B9B37</string>
 										<key>history</key>
 										<array>
 											<string>1489B12A135AC468007460EE</string>
@@ -351,7 +429,6 @@
 											<string>1489B12F135AC468007460EE</string>
 											<string>1489B131135AC468007460EE</string>
 											<string>1489B133135AC468007460EE</string>
-											<string>1489B135135AC468007460EE</string>
 											<string>1489B137135AC468007460EE</string>
 											<string>1489B139135AC468007460EE</string>
 											<string>1489B13B135AC468007460EE</string>
@@ -362,18 +439,23 @@
 											<string>14EB2729135C85EE00E3FD29</string>
 											<string>14EB272E135C85EE00E3FD29</string>
 											<string>14EB274F1360AF8000E3FD29</string>
-											<string>14EB27521360AF8000E3FD29</string>
 											<string>146E008313618ADB00D4C142</string>
 											<string>146E008513618ADB00D4C142</string>
-											<string>14EBEB811362956D0099C6B4</string>
-											<string>148C260B1362E63200EED5DA</string>
-											<string>148C26C513632B0800EED5DA</string>
-											<string>148C26D213632BD700EED5DA</string>
-											<string>148C26E313632F8B00EED5DA</string>
-											<string>148C26E413632F8B00EED5DA</string>
-											<string>148C26E513632F8B00EED5DA</string>
-											<string>148C26E613632F8B00EED5DA</string>
-											<string>148C26E713632F8B00EED5DA</string>
+											<string>14E92B8F13727A4F00A6741A</string>
+											<string>14E92B9313727A4F00A6741A</string>
+											<string>14E92B9413727A4F00A6741A</string>
+											<string>14E92B9513727A4F00A6741A</string>
+											<string>14E92B9613727A4F00A6741A</string>
+											<string>14E92B9713727A4F00A6741A</string>
+											<string>144A03AF13A3B9BB00735946</string>
+											<string>144A03B013A3B9BB00735946</string>
+											<string>14A17CF713A4A48F00B4DB4F</string>
+											<string>14A17CFF13A4ACF500B4DB4F</string>
+											<string>14A17D0013A4ACF500B4DB4F</string>
+											<string>14A17D0213A4ACF500B4DB4F</string>
+											<string>14A17D0313A4ACF500B4DB4F</string>
+											<string>14EB50AB13BF89F7007D20DC</string>
+											<string>14EB50AC13BF89F7007D20DC</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -385,14 +467,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {989, 375}}</string>
+								<string>{{0, 0}, {989, 245}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 121 1280 657 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>375pt</string>
+							<string>245pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -405,14 +487,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 380}, {989, 236}}</string>
+								<string>{{0, 250}, {989, 366}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 121 1280 657 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>236pt</string>
+							<string>366pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -431,9 +513,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>148C255C13629B0D00EED5DA</string>
+				<string>1403C18013C01FED009B9B37</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>148C255D13629B0D00EED5DA</string>
+				<string>1403C18113C01FED009B9B37</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -572,6 +654,8 @@
 	<key>WindowOrderList</key>
 	<array>
 		<string>143C4BA6123B21660061D80A</string>
+		<string>14EB50AF13BF89F7007D20DC</string>
+		<string>14E92BAB13727A4F00A6741A</string>
 		<string>/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/ESAPI.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -652,7 +736,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>143C4BA6123B21660061D80A</string>
-				<string>148C256213629B0D00EED5DA</string>
+				<string>1403C18413C01FED009B9B37</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>

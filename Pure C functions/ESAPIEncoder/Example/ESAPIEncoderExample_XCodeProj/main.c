@@ -18,15 +18,14 @@ int main( void )//int argc, char *argv[]
 	char *stringToDecode; //Will be given memory once the encoded string is obtained.
 	printf( "%s",givenString );
 	
-	
 	//Starting Encoding
 	printf( "\nStarting Encoding ............\n" );
-	ESAPIStringOperation * encodingOperation = ESAPIEncode( pointerToString, ESAPIEncodingTypeURLEncoding );
+	ESAPIStringOperation * encodingOperation = ESAPICEncode( pointerToString, ESAPIEncodingTypeBase64Encoding );
 	if ( encodingOperation->operationSuccessful ) //Operation was successful
 	{
 		printf( "\nOperation Successful" );
 		printf( "\nThe string obtained is %s",encodingOperation->returnString );
-		stringToDecode = ( char * ) malloc(sizeof( encodingOperation->returnString ) + 1);
+		stringToDecode = ( char * ) malloc(sizeof( char ) * strlen( encodingOperation->returnString ) + 1);
 		strcpy( stringToDecode, encodingOperation->returnString );
 		printf( "\nThe string to decode is %s",stringToDecode );
 		free( encodingOperation->returnString );
@@ -41,11 +40,15 @@ int main( void )//int argc, char *argv[]
 	
 	//Starting Decoding
 	printf( "\nStarting Decoding......... with stringToDecode as %s\n",stringToDecode );
-	ESAPIStringOperation * decodingOperation = ESAPIDecode( stringToDecode, ESAPIEncodingTypeURLEncoding );
+	//ESAPIStringOperation * decodingOperation = ESAPICDecode( stringToDecode, ESAPIEncodingTypeBase64Encoding );
+	char * anotherString = ( char * ) malloc( sizeof( char ) * strlen(stringToDecode) + 1 );
+	strcpy( anotherString, stringToDecode );
+	ESAPIStringOperation * decodingOperation = ESAPICCanonicalizationForSpecificEncodingType( anotherString, ESAPIEncodingTypeBase64Encoding, false );//ESAPICCanonicalizationAllAvailableEncodings( stringToDecode, false);//
 	if ( decodingOperation->operationSuccessful ) //Operation was successful
 	{
 		printf( "\nOperation Successful" );
-		printf( "\nThe string obtained is %s",decodingOperation->returnString );		
+		printf( "\nThe string obtained is %s",decodingOperation->returnString );
+		printf( "\nThe given @ MAIN input string is %s",stringToDecode );
 	}
 	else //Operation Failed
 	{

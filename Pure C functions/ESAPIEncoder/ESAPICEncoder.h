@@ -15,11 +15,16 @@
  *
  */
 
+
 #include <stdlib.h>
 #include "ESAPICAuxiliaryFunctions.h"
+
+#ifndef ESAPICEncoder_H
+#define ESAPICEncoder_H
+
 /**
  @brief This is the header of the ESAPI C Encoder Functions. These function are designed to assist in encoding functionality in various scenarios.
- 
+ `
  <br>
  Encoding:
  
@@ -41,9 +46,9 @@
  */
 typedef enum
 {
-	ESAPIEncodingTypePercentEncoding = 1,///< Percentage encoding is generally used in the get and post requests to cate for multiple parameters.
-	ESAPIEncodingTypeURLEncoding = 1, ///< Same as percent encoding. Catering for redundancy of names.
-	ESAPIEncodingTypeBase64Encoding = 2 ///< The base64 encoding.
+	ESAPIEncodingTypePercentEncoding = 0,///< Percentage encoding is generally used in the get and post requests to cate for multiple parameters.
+	ESAPIEncodingTypeURLEncoding = 0, ///< Same as percent encoding. Catering for redundancy of names.
+	ESAPIEncodingTypeBase64Encoding = 1 ///< The base64 encoding.
 } ESAPIEncodingType;
 
 /**
@@ -73,7 +78,7 @@ typedef enum
 	@endcode
  }
  */
-ESAPIStringOperation * ESAPIEncode ( char * inputString, ESAPIEncodingType typeOfEncoding );
+extern ESAPIStringOperation * ESAPICEncode ( char * inputString, ESAPIEncodingType typeOfEncoding );
 
 
 /**
@@ -86,7 +91,7 @@ ESAPIStringOperation * ESAPIEncode ( char * inputString, ESAPIEncodingType typeO
 	@code
 	char inputString[] = "sometext";
 	ESAPIStringOperation * decodedStringOperation = ESAPIDecode ( inputString, ESAPIEncodingTypePercentEncoding );
-	if ( *decodedStringOperation->operationSuccessful )
+	if ( decodedStringOperation->operationSuccessful )
 	{
 		char * decodedString = decodedStringOperation->returnString;
 		//Use the decodedString for operations.
@@ -102,5 +107,66 @@ ESAPIStringOperation * ESAPIEncode ( char * inputString, ESAPIEncodingType typeO
 	@endcode
  }
  */
-ESAPIStringOperation * ESAPIDecode ( char * inputString, ESAPIEncodingType typeOfEncoding );
+extern ESAPIStringOperation * ESAPICDecode ( char * inputString, ESAPIEncodingType typeOfEncoding );
 
+/**
+ @brief This function is used to decode the given string to canonical form and return the resultant decoded string. 
+ NOTE: This function canonicalizes for only one given encoding type.
+ 
+ @param inputString - The string to be encoded.
+ @param typeOfEncoding - The type of encoding required
+ @param strict - If the strict flag is set, the decoding will fail in case of Multiple encoding/Mixed encoding etc.,
+ 
+ {
+ @code
+ char inputString[] = "sometext";
+ ESAPIStringOperation * decodedStringOperation = ESAPICanonicalizationForSpecificEncodingType ( inputString, ESAPIEncodingTypePercentEncoding, false );
+ if ( decodedStringOperation->operationSuccessful )
+ {
+	char * decodedString = decodedStringOperation->returnString;
+	//Use the decodedString for operations.
+	free ( decodedString );
+ }
+ else
+ {
+	char * errorDescription = encodedStringOperation->errorDescription;
+	//The decoding has failed. Manage accordingly.
+	free ( errorDescription );
+ }
+ free ( decodedStringOperation );
+ @endcode
+ }
+ */
+extern ESAPIStringOperation * ESAPICCanonicalizationForSpecificEncodingType ( char * inputString , ESAPIEncodingType typeOfEncoding, bool strict );
+
+/**
+ @brief This function is used to decode the given string to canonical form and return the resultant decoded string. 
+ NOTE: This function canonicalizes for all available encodings.
+ 
+ @param inputString - The string to be encoded.
+ @param typeOfEncoding - The type of encoding required
+ @param strict - If the strict flag is set, the decoding will fail in case of Multiple encoding/Mixed encoding etc.,
+ 
+ {
+	@code
+	char inputString[] = "sometext";
+	ESAPIStringOperation * decodedStringOperation = ESAPICCanonicalizationAllAvailableEncodings ( inputString, false );
+	if ( decodedStringOperation->operationSuccessful )
+	{
+		char * decodedString = decodedStringOperation->returnString;
+		//Use the decodedString for operations.
+		free ( decodedString );
+	}
+	else
+	{
+		char * errorDescription = encodedStringOperation->errorDescription;
+		//The decoding has failed. Manage accordingly.
+		free ( errorDescription );
+	}
+	free ( decodedStringOperation );
+	@endcode
+ }
+ */
+extern ESAPIStringOperation * ESAPICCanonicalizationAllAvailableEncodings ( char * inputString, bool strict );
+
+#endif

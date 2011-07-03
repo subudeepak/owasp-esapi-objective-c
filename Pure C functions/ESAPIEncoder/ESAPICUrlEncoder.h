@@ -6,7 +6,10 @@
  *  Copyright 2011 OWASP Foundation. All rights reserved.
  *
  */
+#include "ESAPICAuxiliaryFunctions.h"
 
+#ifndef ESAPICUrlEncoder_H
+#define ESAPICUrlEncoder_H
 /** 
  @brief Returns a url-encoded version of the given input string
  
@@ -17,7 +20,7 @@
  @return The decoded string IMPORTANT: be sure to free() the returned string after use 
  
  */
-char * ESAPICUrlEncoderEncode ( char *inputString );
+ESAPIStringOperation * ESAPICUrlEncoderEncode ( char * inputString );
 
 /**
  @brief Returns a url-decoded version of the given string
@@ -27,4 +30,5 @@ char * ESAPICUrlEncoderEncode ( char *inputString );
  @param inputString - This is the input string which needs to be decoded
  @return The decoded string IMPORTANT: be sure to free() the returned string after use 
  */
-char * ESAPICUrlEncoderDecode ( char *inputString );
+ESAPIStringOperation * ESAPICUrlEncoderDecode ( char * inputString );
+#endif

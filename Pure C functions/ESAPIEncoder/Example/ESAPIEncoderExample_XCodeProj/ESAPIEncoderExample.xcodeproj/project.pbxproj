@@ -10,6 +10,7 @@
 		148C256F13629B5900EED5DA /* ESAPICEncoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 148C256913629B5900EED5DA /* ESAPICEncoder.c */; };
 		148C258E13629CE700EED5DA /* ESAPICUrlEncoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 148C258C13629CE700EED5DA /* ESAPICUrlEncoder.c */; };
 		148C26DC13632E7F00EED5DA /* ESAPICAuxiliaryFunctions.c in Sources */ = {isa = PBXBuildFile; fileRef = 148C26DA13632E7F00EED5DA /* ESAPICAuxiliaryFunctions.c */; };
+		14DA8031136426AA0052C0FB /* ESAPICBase64Encoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 14DA802F136426AA0052C0FB /* ESAPICBase64Encoder.c */; };
 		8DD76FAC0486AB0100D96B5E /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* main.c */; settings = {ATTRIBUTES = (); }; };
 		8DD76FB00486AB0100D96B5E /* ESAPIEncoderExample.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6A0FF2C0290799A04C91782 /* ESAPIEncoderExample.1 */; };
 /* End PBXBuildFile section */
@@ -35,6 +36,8 @@
 		148C258D13629CE700EED5DA /* ESAPICUrlEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ESAPICUrlEncoder.h; path = ../../ESAPICUrlEncoder.h; sourceTree = SOURCE_ROOT; };
 		148C26DA13632E7F00EED5DA /* ESAPICAuxiliaryFunctions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ESAPICAuxiliaryFunctions.c; path = ../../../ESAPICommonFunctions/ESAPICAuxiliaryFunctions.c; sourceTree = SOURCE_ROOT; };
 		148C26DB13632E7F00EED5DA /* ESAPICAuxiliaryFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ESAPICAuxiliaryFunctions.h; path = ../../../ESAPICommonFunctions/ESAPICAuxiliaryFunctions.h; sourceTree = SOURCE_ROOT; };
+		14DA802F136426AA0052C0FB /* ESAPICBase64Encoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ESAPICBase64Encoder.c; path = ../../ESAPICBase64Encoder.c; sourceTree = SOURCE_ROOT; };
+		14DA8030136426AA0052C0FB /* ESAPICBase64Encoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ESAPICBase64Encoder.h; path = ../../ESAPICBase64Encoder.h; sourceTree = SOURCE_ROOT; };
 		8DD76FB20486AB0100D96B5E /* ESAPIEncoderExample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ESAPIEncoderExample; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6A0FF2C0290799A04C91782 /* ESAPIEncoderExample.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = ESAPIEncoderExample.1; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +75,8 @@
 		148C256613629B3500EED5DA /* ESAPILibrary */ = {
 			isa = PBXGroup;
 			children = (
+				14DA802F136426AA0052C0FB /* ESAPICBase64Encoder.c */,
+				14DA8030136426AA0052C0FB /* ESAPICBase64Encoder.h */,
 				148C26DA13632E7F00EED5DA /* ESAPICAuxiliaryFunctions.c */,
 				148C26DB13632E7F00EED5DA /* ESAPICAuxiliaryFunctions.h */,
 				148C258C13629CE700EED5DA /* ESAPICUrlEncoder.c */,
@@ -145,6 +150,7 @@
 				148C256F13629B5900EED5DA /* ESAPICEncoder.c in Sources */,
 				148C258E13629CE700EED5DA /* ESAPICUrlEncoder.c in Sources */,
 				148C26DC13632E7F00EED5DA /* ESAPICAuxiliaryFunctions.c in Sources */,
+				14DA8031136426AA0052C0FB /* ESAPICBase64Encoder.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

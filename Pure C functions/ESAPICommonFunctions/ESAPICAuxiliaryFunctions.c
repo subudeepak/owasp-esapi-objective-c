@@ -9,7 +9,6 @@
 
 #include "ESAPICAuxiliaryFunctions.h"
 #include <math.h>
-#include <string.h>
 #include <ctype.h>
 
 /**

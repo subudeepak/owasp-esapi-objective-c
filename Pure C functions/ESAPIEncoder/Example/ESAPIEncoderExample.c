@@ -15,7 +15,7 @@ int main( void )
 	char givenString[] = "https://www.owasp.org/index.php/Category:OWASP_Enterprise_Security_API#tab=Objective_C";
 	char *pointerToString = givenString;
 	printf( "%s",givenString );
-	ESAPIStringOperation * encodingOperation = ESAPIEncode( pointerToString, ESAPIEncodingTypeURLEncoding );
+	ESAPIStringOperation * encodingOperation = ESAPICEncode( pointerToString, ESAPIEncodingTypeURLEncoding );
 	if ( encodingOperation->operationSuccessful ) 
 	{
 		printf("Operation Successful");

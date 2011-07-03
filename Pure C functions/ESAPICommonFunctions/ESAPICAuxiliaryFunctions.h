@@ -8,6 +8,10 @@
  */
 
 #include <stdbool.h>
+#include <string.h>
+
+#ifndef ESAPICAuxiliaryFunctions_H
+#define ESAPICAuxiliaryFunctions_H
 
 /**
  @brief Sends the results and sets the required flags
@@ -54,3 +58,5 @@ char from_hex ( char hexadecimalChar );
  }
  */
 char to_hex ( char decimalChar );
+
+#endif

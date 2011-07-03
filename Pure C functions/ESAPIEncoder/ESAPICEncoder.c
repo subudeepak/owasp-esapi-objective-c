@@ -7,111 +7,178 @@
  *
  */
 
-
 #include "ESAPICEncoder.h"
 #include "ESAPICUrlEncoder.h"
 #include <stdio.h>
+#include "ESAPICBase64Encoder.h"
 #include <string.h>
 
 //#include "urlEncoder.c"	
+const int numberOfAvailableCodecs = 2;
+ESAPIStringOperation * (* encodingFunctionsArray[2] )( char * ) = { ESAPICUrlEncoderEncode , ESAPICBase64EncoderEncode };
+ESAPIStringOperation * (* decodingFunctionsArray[2] )( char * ) = { ESAPICUrlEncoderDecode , ESAPICBase64EncoderDecode };
 
-ESAPIStringOperation * ESAPIEncode ( char * inputString, ESAPIEncodingType typeOfEncoding )
+ESAPIStringOperation * ESAPICEncode ( char * inputString, ESAPIEncodingType typeOfEncoding )
 {
 	printf( "\nESAPICEncoder => ESAPI Encoder Encode with inputString as %s",inputString );
-	//Initiate a encodedStringOperation (Allocate memory)
-	//ESAPIStringOperation temp;
-	ESAPIStringOperation * encodedStringOperation = ( ESAPIStringOperation * ) malloc( sizeof(ESAPIStringOperation) + 1 );
-	//The operation to be performed is still not complete - Mark as unsuccessful
-	encodedStringOperation->operationSuccessful = false;
-	//Check which encoding to perform
-	switch ( typeOfEncoding )
+	ESAPIStringOperation * encodedStringOperation; 	
+	if ( typeOfEncoding < numberOfAvailableCodecs )
 	{
-		case ESAPIEncodingTypeURLEncoding: //ESAPIEncodingTypePercentEncoding
-		{
-			//Perform encoding
-			encodedStringOperation->returnString = ESAPICUrlEncoderEncode( inputString ); //Perform Url Encoding
-			//Set operation as successful
-			encodedStringOperation->operationSuccessful = true;
-		}
-			break;
-			
-		case ESAPIEncodingTypeBase64Encoding:
-		{
-			//INCOMPLETE
-			//Set operation successful as false
-			encodedStringOperation->operationSuccessful = false;
-			//Set an error description message
-			encodedStringOperation->errorDescription = "This Encoding is not yet implemented";
-		}
-			break;
-
-		default:
-		{
-			//Invalid encoding
-			//Set operation as failed
-			encodedStringOperation->operationSuccessful = false;
-			//Set an error message
-			(encodedStringOperation->errorDescription) = "Invalid encoding error - This encoding is currently not supported";
-		}
-			break;
+		encodedStringOperation = encodingFunctionsArray[typeOfEncoding]( inputString );
+	}
+	else
+	{
+		encodedStringOperation = ( ESAPIStringOperation * ) malloc( sizeof( ESAPIStringOperation ) + 1 );
+		encodedStringOperation->operationSuccessful = false;
+		char messageString[] = "This codec is not yet supported by the implementation";
+		encodedStringOperation->errorDescription = ( char * ) malloc( sizeof( char ) * strlen( messageString ) );
+		strcpy( encodedStringOperation->errorDescription, messageString );
 	}
 	return encodedStringOperation;
 }
 
-
-ESAPIStringOperation * ESAPIDecode ( char * inputString, ESAPIEncodingType typeOfEncoding )
+ESAPIStringOperation * ESAPICDecode ( char * inputString, ESAPIEncodingType typeOfEncoding )
 {
-	printf( "\nESAPICEncoder => ESAPI Encoder Decode with inputString as %s",inputString );
-	//Initiate a decodedStringOperation (Allocate memory)
-	//ESAPIStringOperation temp;
-	ESAPIStringOperation * decodedStringOperation = ( ESAPIStringOperation * ) malloc( sizeof(ESAPIStringOperation) + 1 );
-	//The operation to be performed is still not complete - Mark as unsuccessful
-	decodedStringOperation->operationSuccessful = false;
-	//Check which encoding whose decoding to perform
-	switch ( typeOfEncoding )
+	printf( "\nESAPICDecoder => ESAPI Encoder Decode with inputString as %s",inputString );
+	ESAPIStringOperation * decodedStringOperation; 
+	if ( typeOfEncoding < numberOfAvailableCodecs )
 	{
-		case ESAPIEncodingTypeURLEncoding: //ESAPIEncodingTypePercentEncoding
-		{
-			//Perform decoding
-			decodedStringOperation->returnString = ESAPICUrlEncoderDecode( inputString ); //Perform Url Decoding
-			//Set operation as successful
-			decodedStringOperation->operationSuccessful = true;
-		}
-			break;
-			
-		case ESAPIEncodingTypeBase64Encoding:
-		{
-			//INCOMPLETE
-			//Set operation successful as false
-			decodedStringOperation->operationSuccessful = false;
-			//Set an error description message
-			char message[] = "This Encoding is not yet implemented";
-			decodedStringOperation->errorDescription = malloc( sizeof( message ) );
-			strcpy( decodedStringOperation->errorDescription, message );
-		}
-			break;
-			
-		default:
-		{
-			//Invalid encoding
-			//Set operation as failed
-			decodedStringOperation->operationSuccessful = false;
-			//Set an error message
-			char message[] = "Invalid encoding error - This encoding is currently not supported";
-			decodedStringOperation->errorDescription = malloc( sizeof( message ) );
-			strcpy( decodedStringOperation->errorDescription, message );
-		}
-			break;
+		decodedStringOperation = decodingFunctionsArray[typeOfEncoding]( inputString );
+	}
+	else
+	{
+		decodedStringOperation = ( ESAPIStringOperation * ) malloc( sizeof( ESAPIStringOperation ) + 1 );
+		decodedStringOperation->operationSuccessful = false;
+		char messageString[] = "This codec is not yet supported by the implementation";
+		decodedStringOperation->errorDescription = ( char * ) malloc( sizeof( char ) * strlen( messageString ) );
+		strcpy( decodedStringOperation->errorDescription, messageString );
 	}
 	return decodedStringOperation;
 }
 
-ESAPIStringOperation * ESAPICanonicalizationForSpecificEncodingType ( ESAPIEncodingType typeOfEncoding, bool strict )
+ESAPIStringOperation * ESAPICCanonicalizationForSpecificEncodingType ( char * inputString , ESAPIEncodingType typeOfEncoding, bool strict )
 {
-	return NULL;
+	printf( "\nESAPICCanonicalize the given string %s -- %d",inputString, typeOfEncoding );
+	int iteration = 0;
+	//inputString = realloc(inputString, sizeof(inputString)+1);
+	//char * inputStringBuf = inputString + sizeof(inputString) - 1;
+	//inputStringBuf = '\0';
+	
+	char * stringBeforeDecoding = ( char * ) malloc( sizeof ( char ) * 1 );
+	*stringBeforeDecoding = '\0';
+	char * stringAfterDecoding = ( char * ) malloc( ( sizeof ( char ) ) * strlen( inputString ) + 1 );//inputString;
+	strcpy( stringAfterDecoding, inputString );
+	ESAPIStringOperation * decodingStringOperation = ( ESAPIStringOperation * ) malloc( sizeof( ESAPIStringOperation ) + 1 );
+	decodingStringOperation->operationSuccessful = true;
+	decodingStringOperation->returnString = stringAfterDecoding;
+	decodingStringOperation->errorDescription = NULL;
+	
+	printf( "The string comparison value = %d", strcmp( stringAfterDecoding, stringBeforeDecoding ) );
+	while ( strcmp( stringAfterDecoding, stringBeforeDecoding ) != 0 )
+	{
+		free( stringBeforeDecoding );
+		free( decodingStringOperation );
+		
+		printf( "\n\n--------\n\nThe string is %s and inputString is %s",stringAfterDecoding, inputString );
+		stringBeforeDecoding = stringAfterDecoding;
+		if ( strict )
+		{
+			iteration++;
+			if ( iteration > 1 )
+			{
+				decodingStringOperation = ( ESAPIStringOperation * ) malloc( sizeof( ESAPIStringOperation ) );
+				decodingStringOperation->operationSuccessful = false;
+				char messageString[] = "Multiple Encoding Error";
+				decodingStringOperation->errorDescription = ( char * ) malloc( sizeof( char ) * strlen( messageString ));
+				strcpy( decodingStringOperation->errorDescription, messageString );
+				decodingStringOperation->returnString = NULL;
+				//break;
+			}
+			else
+			{
+				//Do nothing - Just continue
+			}
+			
+		}
+		
+		decodingStringOperation = ESAPICDecode( stringBeforeDecoding, typeOfEncoding );
+		if ( decodingStringOperation->operationSuccessful )
+		{
+			stringAfterDecoding = decodingStringOperation->returnString;
+			printf("\n\n-*-*-*-*\nThe Input String after decoding is %s", inputString);
+			printf("\nThe pointer to inputString is %p and pointer to stringAfterDecoding is %p \n the pointer to struct operation is %p",inputString,stringAfterDecoding,decodingStringOperation);
+		}
+		else
+		{
+			//break;
+		}
+		printf( "\nString before decoding -- %s \nString after decoding -- %s", stringBeforeDecoding, stringAfterDecoding );
+	}
+	return decodingStringOperation;
+	//return NULL;
 }
 
-ESAPIStringOperation * ESAPICanonicalizationAllAvailableEncodings ( bool strict )
+ESAPIStringOperation * ESAPICCanonicalizationAllAvailableEncodings ( char * inputString, bool strict )
 {
-	return NULL;
+		printf("\n\nThe given string was %s", inputString);
+	int iteration = 0, encoding = 0;
+	char * stringBeforeDecoding = ( char * ) malloc( sizeof( char ) * 1 );
+	*stringBeforeDecoding = '\0';
+	char * stringAfterDecoding = ( char * ) malloc( sizeof( char ) * strlen( inputString ));//inputString;
+	strcpy( stringAfterDecoding, inputString );
+	ESAPIStringOperation * decodingStringOperation = ( ESAPIStringOperation * ) malloc( sizeof(ESAPIStringOperation) );
+	decodingStringOperation->operationSuccessful = true;
+	decodingStringOperation->returnString = stringAfterDecoding;
+		printf("\n\nThe given string was %s", inputString);
+	for ( iteration = 0, encoding = 0 ; encoding < numberOfAvailableCodecs ; encoding++ ) 
+	{
+		printf("\n\n\n==========================\n\n");
+		printf( "\n\n\nCodec - %d\n\n", encoding );
+		//free( stringBeforeDecoding );
+		//free( decodingStringOperation );
+		stringBeforeDecoding = stringAfterDecoding;
+		
+		decodingStringOperation = ESAPICCanonicalizationForSpecificEncodingType( stringBeforeDecoding, encoding, strict );
+		if ( decodingStringOperation->operationSuccessful )
+		{
+			stringAfterDecoding = decodingStringOperation->returnString;
+			printf("String after decoding is %s", stringAfterDecoding);
+		}
+		else
+		{
+			break;
+		}
+			printf("\n\nThe given string was %s", inputString);
+		if ( strcmp( stringAfterDecoding, stringBeforeDecoding ) != 0 ) 
+		{
+			if ( strict )
+			{
+				iteration++;
+				if ( iteration > 1 )
+				{
+					free( decodingStringOperation );
+					free( stringAfterDecoding );
+					free( stringBeforeDecoding );
+					
+					decodingStringOperation = ( ESAPIStringOperation * ) malloc( sizeof( ESAPIStringOperation ) );
+					decodingStringOperation->operationSuccessful = false;
+					char messageString[] = "Multiple Encoding Error";
+					decodingStringOperation->errorDescription = ( char * ) malloc( sizeof(char) * strlen( messageString ));
+					strcpy( decodingStringOperation->errorDescription, messageString );
+					break;
+				}
+				else
+				{
+					//Do nothing - Just continue
+				}
+				
+			}
+			
+		}
+		
+		printf( "\nString before decoding -- %s \nString after decoding -- %s", stringBeforeDecoding, stringAfterDecoding );
+	}
+	printf("\n\nThe given string was %s", inputString);
+	return decodingStringOperation;
+
 }
