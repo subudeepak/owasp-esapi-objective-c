@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="dir_f00491ec73a3b2dc326b28fd4ea1889b" kind="dir">
+    <compoundname>/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPICommonFunctions/</compoundname>
+    <innerfile refid="db/db2/a00020">ESAPICAuxiliaryFunctions.c</innerfile>
+    <innerfile refid="dd/dad/a00005">ESAPICAuxiliaryFunctions.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPICommonFunctions/"/>
+  </compounddef>
+</doxygen>

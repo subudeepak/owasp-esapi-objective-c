@@ -1,0 +1,98 @@
+\hypertarget{_e_s_a_p_i_c_url_encoder_8c}{
+\section{/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI\_\-COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICUrlEncoder.c File Reference}
+\label{_e_s_a_p_i_c_url_encoder_8c}\index{/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI\_\-COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICUrlEncoder.c@{/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI\_\-COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICUrlEncoder.c}}
+}
+{\ttfamily \#include \char`\"{}ESAPICUrlEncoder.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}ESAPICAuxiliaryFunctions.h\char`\"{}}\par
+{\ttfamily \#include $<$math.h$>$}\par
+{\ttfamily \#include $<$stdio.h$>$}\par
+{\ttfamily \#include $<$stdlib.h$>$}\par
+{\ttfamily \#include $<$ctype.h$>$}\par
+{\ttfamily \#include $<$string.h$>$}\par
+Include dependency graph for ESAPICUrlEncoder.c:
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \hyperlink{_e_s_a_p_i_c_url_encoder_8c_ad730b879e9ba0a6bbc8c632731bfdd82}{ESAPICUrlEncoderEncode} (char $\ast$inputString)
+\begin{DoxyCompactList}\small\item\em Returns a url-\/encoded version of the given input string. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{_e_s_a_p_i_c_url_encoder_8c_ae873a9107bec72e66b546950c5e83e38}{ESAPICUrlEncoderDecode} (char $\ast$inputString)
+\begin{DoxyCompactList}\small\item\em Returns a url-\/decoded version of the given string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{_e_s_a_p_i_c_url_encoder_8c_ae873a9107bec72e66b546950c5e83e38}{
+\index{ESAPICUrlEncoder.c@{ESAPICUrlEncoder.c}!ESAPICUrlEncoderDecode@{ESAPICUrlEncoderDecode}}
+\index{ESAPICUrlEncoderDecode@{ESAPICUrlEncoderDecode}!ESAPICUrlEncoder.c@{ESAPICUrlEncoder.c}}
+\subsubsection[{ESAPICUrlEncoderDecode}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ ESAPICUrlEncoderDecode (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{inputString}
+\end{DoxyParamCaption}
+)}}
+\label{_e_s_a_p_i_c_url_encoder_8c_ae873a9107bec72e66b546950c5e83e38}
+
+
+Returns a url-\/decoded version of the given string. 
+
+This code has been downloaded from \href{http://www.geekhideout.com/urlcode.shtml}{\tt http://www.geekhideout.com/urlcode.shtml} on April 16, 2011
+
+
+\begin{DoxyParams}{Parameters}
+{\em inputString} & -\/ This is the input string which needs to be decoded \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The decoded string IMPORTANT: be sure to free() the returned string after use 
+\end{DoxyReturn}
+
+
+Definition at line 56 of file ESAPICUrlEncoder.c.
+
+
+
+Here is the call graph for this function:
+
+
+
+
+Here is the caller graph for this function:
+
+
+\hypertarget{_e_s_a_p_i_c_url_encoder_8c_ad730b879e9ba0a6bbc8c632731bfdd82}{
+\index{ESAPICUrlEncoder.c@{ESAPICUrlEncoder.c}!ESAPICUrlEncoderEncode@{ESAPICUrlEncoderEncode}}
+\index{ESAPICUrlEncoderEncode@{ESAPICUrlEncoderEncode}!ESAPICUrlEncoder.c@{ESAPICUrlEncoder.c}}
+\subsubsection[{ESAPICUrlEncoderEncode}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ ESAPICUrlEncoderEncode (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{inputString}
+\end{DoxyParamCaption}
+)}}
+\label{_e_s_a_p_i_c_url_encoder_8c_ad730b879e9ba0a6bbc8c632731bfdd82}
+
+
+Returns a url-\/encoded version of the given input string. 
+
+\hyperlink{_e_s_a_p_i_c_url_encoder_8c}{ESAPICUrlEncoder.c} ESAPI
+
+Created by DEEPAK SUBRAMANIAN on 4/18/11. Copyright 2011 OWASP Foundation. All rights reserved. This code has been downloaded from \href{http://www.geekhideout.com/urlcode.shtml}{\tt http://www.geekhideout.com/urlcode.shtml} on April 16, 2011 IMPORTANT: be sure to free() the returned string after use This code has been downloaded from \href{http://www.geekhideout.com/urlcode.shtml}{\tt http://www.geekhideout.com/urlcode.shtml} on April 16, 2011
+
+
+\begin{DoxyParams}{Parameters}
+{\em inputString} & -\/ This is the input string which needs to be decoded \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The decoded string IMPORTANT: be sure to free() the returned string after use 
+\end{DoxyReturn}
+
+
+Definition at line 28 of file ESAPICUrlEncoder.c.
+
+
+
+Here is the call graph for this function:
+
+
+
+
+Here is the caller graph for this function:
+
+

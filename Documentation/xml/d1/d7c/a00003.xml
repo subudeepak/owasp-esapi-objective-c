@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="d1/d7c/a00003" kind="class" prot="public">
+    <compoundname>NSString</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/ESAPIEncoder/ESAPIEncoder.m" line="111" bodyfile="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/ESAPIEncoder/ESAPIEncoder.m" bodystart="111" bodyend="-1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,86 @@
+.TH "/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPICommonFunctions/ESAPICAuxiliaryFunctions.h" 3 "Sat Jul 9 2011" "Version v0.0.1 (Alpha)" "ESAPI" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPICommonFunctions/ESAPICAuxiliaryFunctions.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdbool.h>\fP
+.br
+\fC#include <string.h>\fP
+.br
+
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "struct \fBESAPIStringOperation\fP"
+.br
+.RI "\fISends the results and sets the required flags. \fP"
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "char \fBfrom_hex\fP (char hexadecimalChar)"
+.br
+.RI "\fIReturns the decimal value for a given hexadecimal character. \fP"
+.ti -1c
+.RI "char \fBto_hex\fP (char decimalChar)"
+.br
+.RI "\fIReturns the hexadecimal value for a given decimal character. \fP"
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "char from_hex (charch)"
+.PP
+Returns the decimal value for a given hexadecimal character. This code has been downloaded from http://www.geekhideout.com/urlcode.shtml on April 16, 2011
+.PP
+\fBParameters:\fP
+.RS 4
+\fIhexadecimalChar\fP - The given hexadecimal character
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+- The equivalent decimal value
+.RE
+.PP
+{ 
+.PP
+.nf
+    char int = from_hex('a');
+
+.fi
+.PP
+ } 
+.PP
+Definition at line 17 of file ESAPICAuxiliaryFunctions.c.
+.SS "char to_hex (charcode)"
+.PP
+Returns the hexadecimal value for a given decimal character. This code has been downloaded from http://www.geekhideout.com/urlcode.shtml on April 16, 2011
+.PP
+\fBParameters:\fP
+.RS 4
+\fIdecimalChar\fP - The given decimal character
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+- The hexadecimal equivalent value
+.RE
+.PP
+{ 
+.PP
+.nf
+      char int = to_hex('9');
+
+.fi
+.PP
+ } 
+.PP
+Definition at line 25 of file ESAPICAuxiliaryFunctions.c.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for ESAPI from the source code.

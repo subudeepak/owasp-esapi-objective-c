@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		144A03AD13A3AF4900735946 /* ESAPIEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 144A03AB13A3AF4900735946 /* ESAPIEncoder.h */; };
+		144A03AD13A3AF4900735946 /* ESAPIEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 144A03AB13A3AF4900735946 /* ESAPIEncoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		144A03AE13A3AF4900735946 /* ESAPIEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 144A03AC13A3AF4900735946 /* ESAPIEncoder.m */; };
 		146E009613618B0600D4C142 /* ESAPIEncoderExample.c in Sources */ = {isa = PBXBuildFile; fileRef = 146E009413618B0600D4C142 /* ESAPIEncoderExample.c */; };
-		146E009713618B0600D4C142 /* ESAPIEncoderExample.h in Headers */ = {isa = PBXBuildFile; fileRef = 146E009513618B0600D4C142 /* ESAPIEncoderExample.h */; };
-		1489B0D41358ABBF007460EE /* ESAPIValidations.h in Headers */ = {isa = PBXBuildFile; fileRef = 1489B0D21358ABBF007460EE /* ESAPIValidations.h */; };
+		146E009713618B0600D4C142 /* ESAPIEncoderExample.h in Headers */ = {isa = PBXBuildFile; fileRef = 146E009513618B0600D4C142 /* ESAPIEncoderExample.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1489B0D41358ABBF007460EE /* ESAPIValidations.h in Headers */ = {isa = PBXBuildFile; fileRef = 1489B0D21358ABBF007460EE /* ESAPIValidations.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1489B0D51358ABBF007460EE /* ESAPIValidations.c in Sources */ = {isa = PBXBuildFile; fileRef = 1489B0D31358ABBF007460EE /* ESAPIValidations.c */; };
-		1489B10A135978EF007460EE /* ESAPICEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 1489B108135978EF007460EE /* ESAPICEncoder.h */; };
+		1489B10A135978EF007460EE /* ESAPICEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 1489B108135978EF007460EE /* ESAPICEncoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1489B10B135978EF007460EE /* ESAPICEncoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 1489B109135978EF007460EE /* ESAPICEncoder.c */; };
 		148C26CF13632B5900EED5DA /* ESAPICAuxiliaryFunctions.c in Sources */ = {isa = PBXBuildFile; fileRef = 148C26CD13632B5900EED5DA /* ESAPICAuxiliaryFunctions.c */; };
-		148C26D013632B5900EED5DA /* ESAPICAuxiliaryFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 148C26CE13632B5900EED5DA /* ESAPICAuxiliaryFunctions.h */; };
-		148C27041363AA4300EED5DA /* ESAPICBase64Encoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 148C27021363AA4300EED5DA /* ESAPICBase64Encoder.h */; };
+		148C26D013632B5900EED5DA /* ESAPICAuxiliaryFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 148C26CE13632B5900EED5DA /* ESAPICAuxiliaryFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		148C27041363AA4300EED5DA /* ESAPICBase64Encoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 148C27021363AA4300EED5DA /* ESAPICBase64Encoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		148C27051363AA4300EED5DA /* ESAPICBase64Encoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 148C27031363AA4300EED5DA /* ESAPICBase64Encoder.c */; };
-		14EB273F135C874700E3FD29 /* ESAPICUrlEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 14EB273D135C874700E3FD29 /* ESAPICUrlEncoder.h */; };
+		14EB273F135C874700E3FD29 /* ESAPICUrlEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 14EB273D135C874700E3FD29 /* ESAPICUrlEncoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		14EB2740135C874700E3FD29 /* ESAPICUrlEncoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 14EB273E135C874700E3FD29 /* ESAPICUrlEncoder.c */; };
 		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
 		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
@@ -27,9 +27,9 @@
 
 /* Begin PBXFileReference section */
 		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		0867D6A5FE840307C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		089C1667FE841158C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		1403320013C8057900CDA82B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		144A03AB13A3AF4900735946 /* ESAPIEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESAPIEncoder.h; sourceTree = "<group>"; };
 		144A03AC13A3AF4900735946 /* ESAPIEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESAPIEncoder.m; sourceTree = "<group>"; };
 		146E009413618B0600D4C142 /* ESAPIEncoderExample.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ESAPIEncoderExample.c; sourceTree = "<group>"; };
@@ -78,6 +78,7 @@
 				089C1665FE841158C02AAC07 /* Resources */,
 				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
 				034768DFFF38A50411DB9C8B /* Products */,
+				1403320013C8057900CDA82B /* AppKit.framework */,
 			);
 			name = ESAPI;
 			sourceTree = "<group>";
@@ -122,7 +123,6 @@
 		1058C7B2FEA5585E11CA2CBB /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0867D6A5FE840307C02AAC07 /* AppKit.framework */,
 				D2F7E79907B2D74100F64583 /* CoreData.framework */,
 				0867D69BFE84028FC02AAC07 /* Foundation.framework */,
 			);

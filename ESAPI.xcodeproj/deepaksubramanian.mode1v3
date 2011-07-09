@@ -202,47 +202,6 @@
 			<key>Content</key>
 			<dict>
 				<key>PBXProjectModuleGUID</key>
-				<string>14E92BAB13727A4F00A6741A</string>
-				<key>PBXProjectModuleLabel</key>
-				<string>ESAPICUrlEncoder.h</string>
-				<key>PBXSplitModuleInNavigatorKey</key>
-				<dict>
-					<key>Split0</key>
-					<dict>
-						<key>PBXProjectModuleGUID</key>
-						<string>14E92BAC13727A4F00A6741A</string>
-						<key>PBXProjectModuleLabel</key>
-						<string>ESAPICUrlEncoder.h</string>
-						<key>_historyCapacity</key>
-						<integer>0</integer>
-						<key>bookmark</key>
-						<string>1403C1AB13C0B0D8009B9B37</string>
-						<key>history</key>
-						<array>
-							<string>14E92BAD13727A4F00A6741A</string>
-							<string>14EB50B413BF89F7007D20DC</string>
-						</array>
-					</dict>
-					<key>SplitCount</key>
-					<string>1</string>
-				</dict>
-				<key>StatusBarVisibility</key>
-				<true/>
-			</dict>
-			<key>Geometry</key>
-			<dict>
-				<key>Frame</key>
-				<string>{{0, 20}, {1280, 612}}</string>
-				<key>PBXModuleWindowStatusBarHidden2</key>
-				<false/>
-				<key>RubberWindowFrame</key>
-				<string>0 122 1280 653 0 0 1280 778 </string>
-			</dict>
-		</dict>
-		<dict>
-			<key>Content</key>
-			<dict>
-				<key>PBXProjectModuleGUID</key>
 				<string>14EB50AF13BF89F7007D20DC</string>
 				<key>PBXProjectModuleLabel</key>
 				<string>ESAPIEncoder.m</string>
@@ -257,11 +216,11 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>1403C1AC13C0B0D8009B9B37</string>
+						<string>140331F313C8052900CDA82B</string>
 						<key>history</key>
 						<array>
 							<string>1403C18F13C091E4009B9B37</string>
-							<string>1403C19013C091E4009B9B37</string>
+							<string>146CEA5313C7FFAC00D73FFD</string>
 						</array>
 					</dict>
 					<key>SplitCount</key>
@@ -278,6 +237,47 @@
 				<false/>
 				<key>RubberWindowFrame</key>
 				<string>646 127 634 569 0 0 1280 778 </string>
+			</dict>
+		</dict>
+		<dict>
+			<key>Content</key>
+			<dict>
+				<key>PBXProjectModuleGUID</key>
+				<string>14E92BAB13727A4F00A6741A</string>
+				<key>PBXProjectModuleLabel</key>
+				<string>ESAPICUrlEncoder.h</string>
+				<key>PBXSplitModuleInNavigatorKey</key>
+				<dict>
+					<key>Split0</key>
+					<dict>
+						<key>PBXProjectModuleGUID</key>
+						<string>14E92BAC13727A4F00A6741A</string>
+						<key>PBXProjectModuleLabel</key>
+						<string>ESAPICUrlEncoder.h</string>
+						<key>_historyCapacity</key>
+						<integer>0</integer>
+						<key>bookmark</key>
+						<string>140331F413C8052900CDA82B</string>
+						<key>history</key>
+						<array>
+							<string>14E92BAD13727A4F00A6741A</string>
+							<string>146CEA5413C7FFAC00D73FFD</string>
+						</array>
+					</dict>
+					<key>SplitCount</key>
+					<string>1</string>
+				</dict>
+				<key>StatusBarVisibility</key>
+				<true/>
+			</dict>
+			<key>Geometry</key>
+			<dict>
+				<key>Frame</key>
+				<string>{{0, 20}, {1280, 612}}</string>
+				<key>PBXModuleWindowStatusBarHidden2</key>
+				<false/>
+				<key>RubberWindowFrame</key>
+				<string>0 122 1280 653 0 0 1280 778 </string>
 			</dict>
 		</dict>
 	</array>
@@ -312,8 +312,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -361,6 +359,8 @@
 								<string>0867D69AFE84028FC02AAC07</string>
 								<string>1058C7B0FEA5585E11CA2CBB</string>
 								<string>1058C7B2FEA5585E11CA2CBB</string>
+								<string>1C37FBAC04509CD000000102</string>
+								<string>1C37FAAC04509CD000000102</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
@@ -407,7 +407,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>ESAPIEncoder.m</string>
+								<string>Info.plist</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -415,18 +415,17 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>ESAPIEncoder.m</string>
+										<string>Info.plist</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>1403C1AA13C0B0D8009B9B37</string>
+										<string>140331F013C8052900CDA82B</string>
 										<key>history</key>
 										<array>
 											<string>1489B12A135AC468007460EE</string>
 											<string>1489B12B135AC468007460EE</string>
 											<string>1489B12C135AC468007460EE</string>
 											<string>1489B12E135AC468007460EE</string>
-											<string>1489B12F135AC468007460EE</string>
 											<string>1489B131135AC468007460EE</string>
 											<string>1489B133135AC468007460EE</string>
 											<string>1489B137135AC468007460EE</string>
@@ -452,10 +451,10 @@
 											<string>14A17CF713A4A48F00B4DB4F</string>
 											<string>14A17CFF13A4ACF500B4DB4F</string>
 											<string>14A17D0013A4ACF500B4DB4F</string>
-											<string>14A17D0213A4ACF500B4DB4F</string>
 											<string>14A17D0313A4ACF500B4DB4F</string>
 											<string>14EB50AB13BF89F7007D20DC</string>
-											<string>14EB50AC13BF89F7007D20DC</string>
+											<string>1435E6B813C0BC86002520EA</string>
+											<string>146CEA5213C7FFAC00D73FFD</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -467,16 +466,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {989, 245}}</string>
+								<string>{{0, 0}, {989, 178}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 121 1280 657 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>245pt</string>
+							<string>178pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -487,14 +488,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 250}, {989, 366}}</string>
+								<string>{{0, 183}, {989, 433}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 121 1280 657 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>366pt</string>
+							<string>433pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -513,9 +514,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>1403C18013C01FED009B9B37</string>
+				<string>140331F113C8052900CDA82B</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>1403C18113C01FED009B9B37</string>
+				<string>140331F213C8052900CDA82B</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -654,8 +655,8 @@
 	<key>WindowOrderList</key>
 	<array>
 		<string>143C4BA6123B21660061D80A</string>
-		<string>14EB50AF13BF89F7007D20DC</string>
 		<string>14E92BAB13727A4F00A6741A</string>
+		<string>14EB50AF13BF89F7007D20DC</string>
 		<string>/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/ESAPI.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -736,7 +737,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>143C4BA6123B21660061D80A</string>
-				<string>1403C18413C01FED009B9B37</string>
+				<string>140331F513C8052900CDA82B</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>

@@ -1,0 +1,135 @@
+.TH "/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICBase64Encoder.c" 3 "Sat Jul 9 2011" "Version v0.0.1 (Alpha)" "ESAPI" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICBase64Encoder.c \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'ESAPICBase64Encoder.h'\fP
+.br
+\fC#include <ctype.h>\fP
+.br
+\fC#include <string.h>\fP
+.br
+\fC#include <stdio.h>\fP
+.br
+\fC#include <limits.h>\fP
+.br
+
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fBBASE64_ENCODE_LENGTH\fP(inlen)   ((((inlen) + 2) / 3) * 4)"
+.br
+.ti -1c
+.RI "#define \fBBASE64_DECODE_LENGTH\fP(inlen)   (3 * (inlen / 4) + 2)"
+.br
+.ti -1c
+.RI "#define \fBB64\fP(_)"
+.br
+.ti -1c
+.RI "#define \fBuchar_in_range\fP(c)   ((c) <= 255)"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "bool \fBisbase64\fP (char ch)"
+.br
+.RI "\fIChecks if the gven character is a base64 character. \fP"
+.ti -1c
+.RI "\fBESAPIStringOperation\fP * \fBESAPICBase64EncoderEncode\fP (char *inputString)"
+.br
+.RI "\fIESAPICBase64EncoderEncode - This function is used to encode a given inputString and return the string operation. \fP"
+.ti -1c
+.RI "\fBESAPIStringOperation\fP * \fBESAPICBase64EncoderDecode\fP (char *inputString)"
+.br
+.RI "\fIESAPICBase64EncoderDecode - This function is used to decode a given inputString and return the string operation. \fP"
+.in -1c
+.SH "Define Documentation"
+.PP 
+.SS "#define B64(_)"
+.PP
+Definition at line 33 of file ESAPICBase64Encoder.c.
+.SS "#define BASE64_DECODE_LENGTH(inlen)   (3 * (inlen / 4) + 2)"
+.PP
+Definition at line 19 of file ESAPICBase64Encoder.c.
+.PP
+Referenced by ESAPICBase64EncoderDecode().
+.SS "#define BASE64_ENCODE_LENGTH(inlen)   ((((inlen) + 2) / 3) * 4)"
+.PP
+Definition at line 18 of file ESAPICBase64Encoder.c.
+.PP
+Referenced by ESAPICBase64EncoderEncode().
+.SS "#define uchar_in_range(c)   ((c) <= 255)"
+.PP
+Definition at line 151 of file ESAPICBase64Encoder.c.
+.PP
+Referenced by isbase64().
+.SH "Function Documentation"
+.PP 
+.SS "\fBESAPIStringOperation\fP* ESAPICBase64EncoderDecode (char *inputString)"
+.PP
+ESAPICBase64EncoderDecode - This function is used to decode a given inputString and return the string operation. \fBParameters:\fP
+.RS 4
+\fIinputString\fP - The given string to be decoded 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+The output of the string operation.-> The decoded string. 
+.RE
+.PP
+
+.PP
+< Could be low on memory so a very short desc is used 
+.PP
+Definition at line 256 of file ESAPICBase64Encoder.c.
+.PP
+References BASE64_DECODE_LENGTH, ESAPIStringOperation::errorDescription, isbase64(), ESAPIStringOperation::operationSuccessful, and ESAPIStringOperation::returnString.
+.SS "\fBESAPIStringOperation\fP* ESAPICBase64EncoderEncode (char *inputString)"
+.PP
+ESAPICBase64EncoderEncode - This function is used to encode a given inputString and return the string operation. \fBParameters:\fP
+.RS 4
+\fIinputString\fP - The given string to be encoded 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+The output of the string operation.-> The encoded string. 
+.RE
+.PP
+
+.PP
+< Could be low on memory so a very short desc is used 
+.PP
+Definition at line 181 of file ESAPICBase64Encoder.c.
+.PP
+References BASE64_ENCODE_LENGTH, ESAPIStringOperation::errorDescription, ESAPIStringOperation::operationSuccessful, and ESAPIStringOperation::returnString.
+.SS "bool isbase64 (charch)"
+.PP
+Checks if the gven character is a base64 character. Return true if CH is a character from the Base64 alphabet, and false otherwise. Note that '=' is padding and not considered to be part of the alphabet.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIgivenCharacter\fP - The character to verify as base64
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+true - if the given character passes the test for base64. false if the test fails 
+.RE
+.PP
+
+.PP
+Definition at line 171 of file ESAPICBase64Encoder.c.
+.PP
+References uchar_in_range.
+.PP
+Referenced by ESAPICBase64EncoderDecode().
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for ESAPI from the source code.

@@ -1,0 +1,91 @@
+\hypertarget{a00011}{
+\section{/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI\_\-COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICUrlEncoder.h File Reference}
+\label{da/d45/a00011}\index{/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI\_\-COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICUrlEncoder.h@{/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI\_\-COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICUrlEncoder.h}}
+}
+{\ttfamily \#include \char`\"{}ESAPICAuxiliaryFunctions.h\char`\"{}}\par
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00002}{ESAPIStringOperation} $\ast$ \hyperlink{a00011_a70680314259b6234f6ec145fe7e14d05}{ESAPICUrlEncoderEncode} (char $\ast$inputString)
+\begin{DoxyCompactList}\small\item\em Returns a url-\/encoded version of the given input string. \end{DoxyCompactList}\item 
+\hyperlink{a00002}{ESAPIStringOperation} $\ast$ \hyperlink{a00011_a77844763f8628b07716dcbb830aba544}{ESAPICUrlEncoderDecode} (char $\ast$inputString)
+\begin{DoxyCompactList}\small\item\em Returns a url-\/decoded version of the given string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{a00011_a77844763f8628b07716dcbb830aba544}{
+\index{Pure C functions/ESAPIEncoder/ESAPICUrlEncoder.h@{Pure C functions/ESAPIEncoder/ESAPICUrlEncoder.h}!ESAPICUrlEncoderDecode@{ESAPICUrlEncoderDecode}}
+\index{ESAPICUrlEncoderDecode@{ESAPICUrlEncoderDecode}!Pure C functions/ESAPIEncoder/ESAPICUrlEncoder.h@{Pure C functions/ESAPIEncoder/ESAPICUrlEncoder.h}}
+\subsubsection[{ESAPICUrlEncoderDecode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ESAPIStringOperation}$\ast$ ESAPICUrlEncoderDecode (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{inputString}
+\end{DoxyParamCaption}
+)}}
+\label{da/d45/a00011_a77844763f8628b07716dcbb830aba544}
+
+
+Returns a url-\/decoded version of the given string. 
+
+This code has been downloaded from \href{http://www.geekhideout.com/urlcode.shtml}{\tt http://www.geekhideout.com/urlcode.shtml} on April 16, 2011
+
+
+\begin{DoxyParams}{Parameters}
+{\em inputString} & -\/ This is the input string which needs to be decoded \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The decoded string IMPORTANT: be sure to free() the returned string after use 
+\end{DoxyReturn}
+
+
+Definition at line 78 of file ESAPICUrlEncoder.c.
+
+
+
+References ESAPIStringOperation::errorDescription, from\_\-hex(), ESAPIStringOperation::operationSuccessful, and ESAPIStringOperation::returnString.
+
+\hypertarget{a00011_a70680314259b6234f6ec145fe7e14d05}{
+\index{Pure C functions/ESAPIEncoder/ESAPICUrlEncoder.h@{Pure C functions/ESAPIEncoder/ESAPICUrlEncoder.h}!ESAPICUrlEncoderEncode@{ESAPICUrlEncoderEncode}}
+\index{ESAPICUrlEncoderEncode@{ESAPICUrlEncoderEncode}!Pure C functions/ESAPIEncoder/ESAPICUrlEncoder.h@{Pure C functions/ESAPIEncoder/ESAPICUrlEncoder.h}}
+\subsubsection[{ESAPICUrlEncoderEncode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ESAPIStringOperation}$\ast$ ESAPICUrlEncoderEncode (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{inputString}
+\end{DoxyParamCaption}
+)}}
+\label{da/d45/a00011_a70680314259b6234f6ec145fe7e14d05}
+
+
+Returns a url-\/encoded version of the given input string. 
+
+IMPORTANT: be sure to free() the returned string after use This code has been downloaded from \href{http://www.geekhideout.com/urlcode.shtml}{\tt http://www.geekhideout.com/urlcode.shtml} on April 16, 2011
+
+
+\begin{DoxyParams}{Parameters}
+{\em inputString} & -\/ This is the input string which needs to be decoded \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The decoded string IMPORTANT: be sure to free() the returned string after use
+\end{DoxyReturn}
+Returns a url-\/encoded version of the given input string.
+
+Created by DEEPAK SUBRAMANIAN on 4/18/11. Copyright 2011 OWASP Foundation. All rights reserved. This code has been downloaded from \href{http://www.geekhideout.com/urlcode.shtml}{\tt http://www.geekhideout.com/urlcode.shtml} on April 16, 2011 Returns a url-\/encoded version of the given input string
+
+IMPORTANT: be sure to free() the returned string after use This code has been downloaded from \href{http://www.geekhideout.com/urlcode.shtml}{\tt http://www.geekhideout.com/urlcode.shtml} on April 16, 2011
+
+
+\begin{DoxyParams}{Parameters}
+{\em inputString} & -\/ This is the input string which needs to be decoded \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The decoded string IMPORTANT: be sure to free() the returned string after use 
+\end{DoxyReturn}
+
+
+Definition at line 27 of file ESAPICUrlEncoder.c.
+
+
+
+References ESAPIStringOperation::errorDescription, ESAPIStringOperation::operationSuccessful, ESAPIStringOperation::returnString, and to\_\-hex().
+

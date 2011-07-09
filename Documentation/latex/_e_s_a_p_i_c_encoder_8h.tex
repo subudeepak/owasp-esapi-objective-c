@@ -1,0 +1,211 @@
+\hypertarget{_e_s_a_p_i_c_encoder_8h}{
+\section{/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI\_\-COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICEncoder.h File Reference}
+\label{_e_s_a_p_i_c_encoder_8h}\index{/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI\_\-COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICEncoder.h@{/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI\_\-COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICEncoder.h}}
+}
+{\ttfamily \#include $<$stdlib.h$>$}\par
+Include dependency graph for ESAPICEncoder.h:
+This graph shows which files directly or indirectly include this file:
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_e_s_a_p_i_string_operation}{ESAPIStringOperation}
+\begin{DoxyCompactList}\small\item\em Sends the results and sets the required flags. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{_e_s_a_p_i_c_encoder_8h_af4b9f1c8f83fc1f697a6c6fb2ba5749c}{ESAPIEncodingType} \{ \hyperlink{_e_s_a_p_i_c_encoder_8h_af4b9f1c8f83fc1f697a6c6fb2ba5749ca6b143b8248f2d6b9dc93b178c5a2df66}{ESAPIEncodingTypePercentEncoding} =  1, 
+\hyperlink{_e_s_a_p_i_c_encoder_8h_af4b9f1c8f83fc1f697a6c6fb2ba5749ca061d2b58fed020025c2b059ed1d90759}{ESAPIEncodingTypeURLEncoding} =  1, 
+\hyperlink{_e_s_a_p_i_c_encoder_8h_af4b9f1c8f83fc1f697a6c6fb2ba5749cab30d4a386be2c9db1ac213bca008c547}{ESAPIEncodingTypeBase64Encoding} =  2
+ \}
+\begin{DoxyCompactList}\small\item\em This is the header of the ESAPI C Encoder Functions. These function are designed to assist in encoding functionality in various scenarios. \end{DoxyCompactList}\item 
+enum \hyperlink{_e_s_a_p_i_c_encoder_8h_aec7e62084419d7857ae740a4c68241cf}{BOOLEAN} \{ \hyperlink{_e_s_a_p_i_c_encoder_8h_aec7e62084419d7857ae740a4c68241cfaa1e095cc966dbecf6a0d8aad75348d1a}{FALSE} =  0, 
+\hyperlink{_e_s_a_p_i_c_encoder_8h_aec7e62084419d7857ae740a4c68241cfaa82764c3079aea4e60c80e45befbb839}{TRUE} =  1
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_e_s_a_p_i_string_operation}{ESAPIStringOperation} $\ast$ \hyperlink{_e_s_a_p_i_c_encoder_8h_a452d1773180a64b14c95a47686847737}{ESAPIEncode} (char $\ast$inputString, \hyperlink{_e_s_a_p_i_c_encoder_8h_af4b9f1c8f83fc1f697a6c6fb2ba5749c}{ESAPIEncodingType} typeOfEncoding)
+\begin{DoxyCompactList}\small\item\em This function is used to encode the given string and return the resultant encoded string. \end{DoxyCompactList}\item 
+\hyperlink{struct_e_s_a_p_i_string_operation}{ESAPIStringOperation} $\ast$ \hyperlink{_e_s_a_p_i_c_encoder_8h_a6c2931ce40e18b2a2244c441bc9bbd9b}{ESAPIDecode} (char $\ast$inputString, \hyperlink{_e_s_a_p_i_c_encoder_8h_af4b9f1c8f83fc1f697a6c6fb2ba5749c}{ESAPIEncodingType} typeOfEncoding)
+\begin{DoxyCompactList}\small\item\em This function is used to decode the given string and return the resultant decoded string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{_e_s_a_p_i_c_encoder_8h_aec7e62084419d7857ae740a4c68241cf}{
+\index{ESAPICEncoder.h@{ESAPICEncoder.h}!BOOLEAN@{BOOLEAN}}
+\index{BOOLEAN@{BOOLEAN}!ESAPICEncoder.h@{ESAPICEncoder.h}}
+\subsubsection[{BOOLEAN}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf BOOLEAN}}}
+\label{_e_s_a_p_i_c_encoder_8h_aec7e62084419d7857ae740a4c68241cf}
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{FALSE@{FALSE}!ESAPICEncoder.h@{ESAPICEncoder.h}}\index{ESAPICEncoder.h@{ESAPICEncoder.h}!FALSE@{FALSE}}\item[{\em 
+\hypertarget{_e_s_a_p_i_c_encoder_8h_aec7e62084419d7857ae740a4c68241cfaa1e095cc966dbecf6a0d8aad75348d1a}{
+FALSE}
+\label{_e_s_a_p_i_c_encoder_8h_aec7e62084419d7857ae740a4c68241cfaa1e095cc966dbecf6a0d8aad75348d1a}
+}]\index{TRUE@{TRUE}!ESAPICEncoder.h@{ESAPICEncoder.h}}\index{ESAPICEncoder.h@{ESAPICEncoder.h}!TRUE@{TRUE}}\item[{\em 
+\hypertarget{_e_s_a_p_i_c_encoder_8h_aec7e62084419d7857ae740a4c68241cfaa82764c3079aea4e60c80e45befbb839}{
+TRUE}
+\label{_e_s_a_p_i_c_encoder_8h_aec7e62084419d7857ae740a4c68241cfaa82764c3079aea4e60c80e45befbb839}
+}]\end{description}
+\end{Desc}
+
+
+
+Definition at line 49 of file ESAPICEncoder.h.
+
+\hypertarget{_e_s_a_p_i_c_encoder_8h_af4b9f1c8f83fc1f697a6c6fb2ba5749c}{
+\index{ESAPICEncoder.h@{ESAPICEncoder.h}!ESAPIEncodingType@{ESAPIEncodingType}}
+\index{ESAPIEncodingType@{ESAPIEncodingType}!ESAPICEncoder.h@{ESAPICEncoder.h}}
+\subsubsection[{ESAPIEncodingType}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf ESAPIEncodingType}}}
+\label{_e_s_a_p_i_c_encoder_8h_af4b9f1c8f83fc1f697a6c6fb2ba5749c}
+
+
+This is the header of the ESAPI C Encoder Functions. These function are designed to assist in encoding functionality in various scenarios. 
+
+\par
+ Encoding:
+
+Currently Supported Encodings: 
+\begin{DoxyEnumerate}
+\item URL Encoding 
+\item 
+\begin{DoxyEnumerate}
+\end{DoxyEnumerate}\par
+
+
+The OWASP ESAPI C Library is still not complete and the release is a ALPHA QUALITY release. Kindly let us know of any bugs through email to \href{mailto:deepak.subramanian@owasp.org}{\tt deepak.subramanian@owasp.org} The enum that describes the possible encodings available with the ESAPI Library 
+\end{DoxyEnumerate}\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{ESAPIEncodingTypePercentEncoding@{ESAPIEncodingTypePercentEncoding}!ESAPICEncoder.h@{ESAPICEncoder.h}}\index{ESAPICEncoder.h@{ESAPICEncoder.h}!ESAPIEncodingTypePercentEncoding@{ESAPIEncodingTypePercentEncoding}}\item[{\em 
+\hypertarget{_e_s_a_p_i_c_encoder_8h_af4b9f1c8f83fc1f697a6c6fb2ba5749ca6b143b8248f2d6b9dc93b178c5a2df66}{
+ESAPIEncodingTypePercentEncoding}
+\label{_e_s_a_p_i_c_encoder_8h_af4b9f1c8f83fc1f697a6c6fb2ba5749ca6b143b8248f2d6b9dc93b178c5a2df66}
+}]Percentage encoding is generally used in the get and post requests to cate for multiple parameters. \index{ESAPIEncodingTypeURLEncoding@{ESAPIEncodingTypeURLEncoding}!ESAPICEncoder.h@{ESAPICEncoder.h}}\index{ESAPICEncoder.h@{ESAPICEncoder.h}!ESAPIEncodingTypeURLEncoding@{ESAPIEncodingTypeURLEncoding}}\item[{\em 
+\hypertarget{_e_s_a_p_i_c_encoder_8h_af4b9f1c8f83fc1f697a6c6fb2ba5749ca061d2b58fed020025c2b059ed1d90759}{
+ESAPIEncodingTypeURLEncoding}
+\label{_e_s_a_p_i_c_encoder_8h_af4b9f1c8f83fc1f697a6c6fb2ba5749ca061d2b58fed020025c2b059ed1d90759}
+}]Same as percent encoding. Catering for redundancy of names. \index{ESAPIEncodingTypeBase64Encoding@{ESAPIEncodingTypeBase64Encoding}!ESAPICEncoder.h@{ESAPICEncoder.h}}\index{ESAPICEncoder.h@{ESAPICEncoder.h}!ESAPIEncodingTypeBase64Encoding@{ESAPIEncodingTypeBase64Encoding}}\item[{\em 
+\hypertarget{_e_s_a_p_i_c_encoder_8h_af4b9f1c8f83fc1f697a6c6fb2ba5749cab30d4a386be2c9db1ac213bca008c547}{
+ESAPIEncodingTypeBase64Encoding}
+\label{_e_s_a_p_i_c_encoder_8h_af4b9f1c8f83fc1f697a6c6fb2ba5749cab30d4a386be2c9db1ac213bca008c547}
+}]The base64 encoding. \end{description}
+\end{Desc}
+
+
+
+Definition at line 42 of file ESAPICEncoder.h.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{_e_s_a_p_i_c_encoder_8h_a6c2931ce40e18b2a2244c441bc9bbd9b}{
+\index{ESAPICEncoder.h@{ESAPICEncoder.h}!ESAPIDecode@{ESAPIDecode}}
+\index{ESAPIDecode@{ESAPIDecode}!ESAPICEncoder.h@{ESAPICEncoder.h}}
+\subsubsection[{ESAPIDecode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ESAPIStringOperation}$\ast$ ESAPIDecode (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{inputString, }
+\item[{{\bf ESAPIEncodingType}}]{typeOfEncoding}
+\end{DoxyParamCaption}
+)}}
+\label{_e_s_a_p_i_c_encoder_8h_a6c2931ce40e18b2a2244c441bc9bbd9b}
+
+
+This function is used to decode the given string and return the resultant decoded string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inputString} & -\/ The string to be encoded. \\
+\hline
+{\em typeOfEncoding} & -\/ The type of encoding required\\
+\hline
+\end{DoxyParams}
+EXAMPLE \{ 
+\begin{DoxyCode}
+        char inputString[] = "sometext";
+        ESAPIStringOperation * decodedStringOperation = ESAPIDecode ( inputString
+      , ESAPIEncodingTypePercentEncoding );
+        if ( *decodedStringOperation->operationSuccessful )
+        {
+                char * decodedString = decodedStringOperation->returnString;
+                //Use the decodedString for operations.
+                free ( decodedString );
+        }
+        else
+        {
+                char * errorDescription = encodedStringOperation->
+      errorDescription;
+                //The decoding has failed. Manage accordingly.
+                free ( errorDescription );
+        }
+        free ( decodedStringOperation );
+\end{DoxyCode}
+ \} 
+
+Definition at line 63 of file ESAPICEncoder.c.
+
+
+
+Here is the call graph for this function:
+
+
+\hypertarget{_e_s_a_p_i_c_encoder_8h_a452d1773180a64b14c95a47686847737}{
+\index{ESAPICEncoder.h@{ESAPICEncoder.h}!ESAPIEncode@{ESAPIEncode}}
+\index{ESAPIEncode@{ESAPIEncode}!ESAPICEncoder.h@{ESAPICEncoder.h}}
+\subsubsection[{ESAPIEncode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ESAPIStringOperation}$\ast$ ESAPIEncode (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{inputString, }
+\item[{{\bf ESAPIEncodingType}}]{typeOfEncoding}
+\end{DoxyParamCaption}
+)}}
+\label{_e_s_a_p_i_c_encoder_8h_a452d1773180a64b14c95a47686847737}
+
+
+This function is used to encode the given string and return the resultant encoded string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inputString} & -\/ The string to be encoded. \\
+\hline
+{\em typeOfEncoding} & -\/ The type of encoding required. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+encodedString -\/ The encoded string using the ESAPIEncodingType is returned.
+\end{DoxyReturn}
+EXAMPLE \{ 
+\begin{DoxyCode}
+        char inputString[] = "sometext";
+        ESAPIStringOperation * encodedStringOperation = ESAPIEncode ( inputString
+      , ESAPIEncodingTypePercentEncoding );
+        if ( encodedStringOperation->operationSuccessful )
+        {
+                char * encodedString = encodedStringOperation->returnString;
+                //Use the encodedString for operations.
+                free ( encodedString );
+        }
+        else
+        {
+                char * errorDescription = encodedStringOperation->
+      errorDescription;
+                //The encoding has failed. Manage accordingly.
+                free ( errorDescription );
+        }
+        free ( encodedStringOperation );
+\end{DoxyCode}
+ \} 
+
+Definition at line 18 of file ESAPICEncoder.c.
+
+
+
+Here is the call graph for this function:
+
+
+
+
+Here is the caller graph for this function:
+
+

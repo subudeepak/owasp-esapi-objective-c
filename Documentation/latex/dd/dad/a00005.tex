@@ -1,0 +1,83 @@
+\hypertarget{a00005}{
+\section{/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI\_\-COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPICommonFunctions/ESAPICAuxiliaryFunctions.h File Reference}
+\label{dd/dad/a00005}\index{/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI\_\-COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPICommonFunctions/ESAPICAuxiliaryFunctions.h@{/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI\_\-COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPICommonFunctions/ESAPICAuxiliaryFunctions.h}}
+}
+{\ttfamily \#include $<$stdbool.h$>$}\par
+{\ttfamily \#include $<$string.h$>$}\par
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{a00002}{ESAPIStringOperation}
+\begin{DoxyCompactList}\small\item\em Sends the results and sets the required flags. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char \hyperlink{a00005_add5c1df19752ca8972a0ad9271044105}{from\_\-hex} (char hexadecimalChar)
+\begin{DoxyCompactList}\small\item\em Returns the decimal value for a given hexadecimal character. \end{DoxyCompactList}\item 
+char \hyperlink{a00005_a95b5f7a5b7b116ffbe9a4a439ad167dc}{to\_\-hex} (char decimalChar)
+\begin{DoxyCompactList}\small\item\em Returns the hexadecimal value for a given decimal character. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{a00005_add5c1df19752ca8972a0ad9271044105}{
+\index{Pure C functions/ESAPICommonFunctions/ESAPICAuxiliaryFunctions.h@{Pure C functions/ESAPICommonFunctions/ESAPICAuxiliaryFunctions.h}!from\_\-hex@{from\_\-hex}}
+\index{from\_\-hex@{from\_\-hex}!Pure C functions/ESAPICommonFunctions/ESAPICAuxiliaryFunctions.h@{Pure C functions/ESAPICommonFunctions/ESAPICAuxiliaryFunctions.h}}
+\subsubsection[{from\_\-hex}]{\setlength{\rightskip}{0pt plus 5cm}char from\_\-hex (
+\begin{DoxyParamCaption}
+\item[{char}]{ch}
+\end{DoxyParamCaption}
+)}}
+\label{dd/dad/a00005_add5c1df19752ca8972a0ad9271044105}
+
+
+Returns the decimal value for a given hexadecimal character. 
+
+This code has been downloaded from \href{http://www.geekhideout.com/urlcode.shtml}{\tt http://www.geekhideout.com/urlcode.shtml} on April 16, 2011
+
+
+\begin{DoxyParams}{Parameters}
+{\em hexadecimalChar} & -\/ The given hexadecimal character\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ The equivalent decimal value
+\end{DoxyReturn}
+\{ 
+\begin{DoxyCode}
+        char int = from_hex('a');
+\end{DoxyCode}
+ \} 
+
+Definition at line 17 of file ESAPICAuxiliaryFunctions.c.
+
+\hypertarget{a00005_a95b5f7a5b7b116ffbe9a4a439ad167dc}{
+\index{Pure C functions/ESAPICommonFunctions/ESAPICAuxiliaryFunctions.h@{Pure C functions/ESAPICommonFunctions/ESAPICAuxiliaryFunctions.h}!to\_\-hex@{to\_\-hex}}
+\index{to\_\-hex@{to\_\-hex}!Pure C functions/ESAPICommonFunctions/ESAPICAuxiliaryFunctions.h@{Pure C functions/ESAPICommonFunctions/ESAPICAuxiliaryFunctions.h}}
+\subsubsection[{to\_\-hex}]{\setlength{\rightskip}{0pt plus 5cm}char to\_\-hex (
+\begin{DoxyParamCaption}
+\item[{char}]{code}
+\end{DoxyParamCaption}
+)}}
+\label{dd/dad/a00005_a95b5f7a5b7b116ffbe9a4a439ad167dc}
+
+
+Returns the hexadecimal value for a given decimal character. 
+
+This code has been downloaded from \href{http://www.geekhideout.com/urlcode.shtml}{\tt http://www.geekhideout.com/urlcode.shtml} on April 16, 2011
+
+
+\begin{DoxyParams}{Parameters}
+{\em decimalChar} & -\/ The given decimal character\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ The hexadecimal equivalent value
+\end{DoxyReturn}
+\{ 
+\begin{DoxyCode}
+        char int = to_hex('9');
+\end{DoxyCode}
+ \} 
+
+Definition at line 25 of file ESAPICAuxiliaryFunctions.c.
+

@@ -1,0 +1,262 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="d8/d84/a00001" kind="class" prot="public">
+    <compoundname>ESAPIEncoder</compoundname>
+    <includes refid="df/d86/a00012" local="no">ESAPIEncoder.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d8/d84/a00001_1ab5c2f76d076134d64c4e547bf0cf282a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d1/d7c/a00003" kindref="compound">NSString</ref> *</type>
+        <definition>NSString * encodeString:withEncoding:</definition>
+        <argsstring>(NSString *givenString,[withEncoding] ESAPIEncodingType encodingType)</argsstring>
+        <name>encodeString:withEncoding:</name>
+        <param>
+          <type><ref refid="d1/d7c/a00003" kindref="compound">NSString</ref> *</type>
+          <declname>givenString</declname>
+        </param>
+        <param>
+          <attributes>[withEncoding]</attributes>
+          <type><ref refid="d4/dee/a00008_1af4b9f1c8f83fc1f697a6c6fb2ba5749c" kindref="member">ESAPIEncodingType</ref></type>
+          <declname>encodingType</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to encode the given string with the given encoding and return the encoded string. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>givenString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- The given string to be encoded. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>encodingType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- The type of encoding to be encoded with. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/build/Release/ESAPI.framework/Versions/A/Headers/ESAPIEncoder.h" line="28" bodyfile="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/ESAPIEncoder/ESAPIEncoder.m" bodystart="20" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d84/a00001_1a6926a8a8a6813154b7550ac018c73dde" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d1/d7c/a00003" kindref="compound">NSString</ref> *</type>
+        <definition>NSString * decodeString:withEncoding:</definition>
+        <argsstring>(NSString *givenString,[withEncoding] ESAPIEncodingType encodingType)</argsstring>
+        <name>decodeString:withEncoding:</name>
+        <param>
+          <type><ref refid="d1/d7c/a00003" kindref="compound">NSString</ref> *</type>
+          <declname>givenString</declname>
+        </param>
+        <param>
+          <attributes>[withEncoding]</attributes>
+          <type><ref refid="d4/dee/a00008_1af4b9f1c8f83fc1f697a6c6fb2ba5749c" kindref="member">ESAPIEncodingType</ref></type>
+          <declname>encodingType</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to decode the given string with the given encoding and return the decoded string. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>givenString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- The given string to be decoded. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>encodingType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- The type of encoding to be decoded with. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/build/Release/ESAPI.framework/Versions/A/Headers/ESAPIEncoder.h" line="29" bodyfile="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/ESAPIEncoder/ESAPIEncoder.m" bodystart="46" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d84/a00001_1a4857fc98d2991953378a93a7b4dee5ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d1/d7c/a00003" kindref="compound">NSString</ref> *</type>
+        <definition>NSString * canonicalizeString:forSpecificEncoding:strict:</definition>
+        <argsstring>(NSString *givenString,[forSpecificEncoding] ESAPIEncodingType encodingType,[strict] BOOL strict)</argsstring>
+        <name>canonicalizeString:forSpecificEncoding:strict:</name>
+        <param>
+          <type><ref refid="d1/d7c/a00003" kindref="compound">NSString</ref> *</type>
+          <declname>givenString</declname>
+        </param>
+        <param>
+          <attributes>[forSpecificEncoding]</attributes>
+          <type><ref refid="d4/dee/a00008_1af4b9f1c8f83fc1f697a6c6fb2ba5749c" kindref="member">ESAPIEncodingType</ref></type>
+          <declname>encodingType</declname>
+        </param>
+        <param>
+          <attributes>[strict]</attributes>
+          <type>BOOL</type>
+          <declname>strict</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to canonicalize the given string with the given encoding and return the encoded string. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>givenString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- The given string to be encoded. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>encodingType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- The type of encoding to be encoded with. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>strict</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- The boolean value which is used </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/build/Release/ESAPI.framework/Versions/A/Headers/ESAPIEncoder.h" line="30" bodyfile="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/ESAPIEncoder/ESAPIEncoder.m" bodystart="72" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d84/a00001_1a0235404f388683e1e078796722398060" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d1/d7c/a00003" kindref="compound">NSString</ref> *</type>
+        <definition>NSString * canonicalizeStringForAllAvailableEncodings:strict:</definition>
+        <argsstring>(NSString *givenString,[strict] BOOL strict)</argsstring>
+        <name>canonicalizeStringForAllAvailableEncodings:strict:</name>
+        <param>
+          <type><ref refid="d1/d7c/a00003" kindref="compound">NSString</ref> *</type>
+          <declname>givenString</declname>
+        </param>
+        <param>
+          <attributes>[strict]</attributes>
+          <type>BOOL</type>
+          <declname>strict</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/build/Release/ESAPI.framework/Versions/A/Headers/ESAPIEncoder.h" line="31" bodyfile="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/ESAPIEncoder/ESAPIEncoder.m" bodystart="91" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d84/a00001_1ab5c2f76d076134d64c4e547bf0cf282a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d1/d7c/a00003" kindref="compound">NSString</ref> *</type>
+        <definition>NSString * encodeString:withEncoding:</definition>
+        <argsstring>(NSString *givenString,[withEncoding] ESAPIEncodingType encodingType)</argsstring>
+        <name>encodeString:withEncoding:</name>
+        <param>
+          <type><ref refid="d1/d7c/a00003" kindref="compound">NSString</ref> *</type>
+          <declname>givenString</declname>
+        </param>
+        <param>
+          <attributes>[withEncoding]</attributes>
+          <type><ref refid="d4/dee/a00008_1af4b9f1c8f83fc1f697a6c6fb2ba5749c" kindref="member">ESAPIEncodingType</ref></type>
+          <declname>encodingType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/ESAPIEncoder/ESAPIEncoder.h" line="28"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d84/a00001_1a6926a8a8a6813154b7550ac018c73dde" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d1/d7c/a00003" kindref="compound">NSString</ref> *</type>
+        <definition>NSString * decodeString:withEncoding:</definition>
+        <argsstring>(NSString *givenString,[withEncoding] ESAPIEncodingType encodingType)</argsstring>
+        <name>decodeString:withEncoding:</name>
+        <param>
+          <type><ref refid="d1/d7c/a00003" kindref="compound">NSString</ref> *</type>
+          <declname>givenString</declname>
+        </param>
+        <param>
+          <attributes>[withEncoding]</attributes>
+          <type><ref refid="d4/dee/a00008_1af4b9f1c8f83fc1f697a6c6fb2ba5749c" kindref="member">ESAPIEncodingType</ref></type>
+          <declname>encodingType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/ESAPIEncoder/ESAPIEncoder.h" line="29"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d84/a00001_1a4857fc98d2991953378a93a7b4dee5ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d1/d7c/a00003" kindref="compound">NSString</ref> *</type>
+        <definition>NSString * canonicalizeString:forSpecificEncoding:strict:</definition>
+        <argsstring>(NSString *givenString,[forSpecificEncoding] ESAPIEncodingType encodingType,[strict] BOOL strict)</argsstring>
+        <name>canonicalizeString:forSpecificEncoding:strict:</name>
+        <param>
+          <type><ref refid="d1/d7c/a00003" kindref="compound">NSString</ref> *</type>
+          <declname>givenString</declname>
+        </param>
+        <param>
+          <attributes>[forSpecificEncoding]</attributes>
+          <type><ref refid="d4/dee/a00008_1af4b9f1c8f83fc1f697a6c6fb2ba5749c" kindref="member">ESAPIEncodingType</ref></type>
+          <declname>encodingType</declname>
+        </param>
+        <param>
+          <attributes>[strict]</attributes>
+          <type>BOOL</type>
+          <declname>strict</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/ESAPIEncoder/ESAPIEncoder.h" line="30"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d84/a00001_1a0235404f388683e1e078796722398060" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d1/d7c/a00003" kindref="compound">NSString</ref> *</type>
+        <definition>NSString * canonicalizeStringForAllAvailableEncodings:strict:</definition>
+        <argsstring>(NSString *givenString,[strict] BOOL strict)</argsstring>
+        <name>canonicalizeStringForAllAvailableEncodings:strict:</name>
+        <param>
+          <type><ref refid="d1/d7c/a00003" kindref="compound">NSString</ref> *</type>
+          <declname>givenString</declname>
+        </param>
+        <param>
+          <attributes>[strict]</attributes>
+          <type>BOOL</type>
+          <declname>strict</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/ESAPIEncoder/ESAPIEncoder.h" line="31"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This is the interface. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/build/Release/ESAPI.framework/Versions/A/Headers/ESAPIEncoder.h" line="25" bodyfile="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/build/Release/ESAPI.framework/Versions/A/Headers/ESAPIEncoder.h" bodystart="24" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="d8/d84/a00001_1a4857fc98d2991953378a93a7b4dee5ca" prot="public" virt="virtual"><scope>ESAPIEncoder</scope><name>canonicalizeString:forSpecificEncoding:strict:</name></member>
+      <member refid="d8/d84/a00001_1a4857fc98d2991953378a93a7b4dee5ca" prot="public" virt="virtual"><scope>ESAPIEncoder</scope><name>canonicalizeString:forSpecificEncoding:strict:</name></member>
+      <member refid="d8/d84/a00001_1a0235404f388683e1e078796722398060" prot="public" virt="virtual"><scope>ESAPIEncoder</scope><name>canonicalizeStringForAllAvailableEncodings:strict:</name></member>
+      <member refid="d8/d84/a00001_1a0235404f388683e1e078796722398060" prot="public" virt="virtual"><scope>ESAPIEncoder</scope><name>canonicalizeStringForAllAvailableEncodings:strict:</name></member>
+      <member refid="d8/d84/a00001_1a6926a8a8a6813154b7550ac018c73dde" prot="public" virt="virtual"><scope>ESAPIEncoder</scope><name>decodeString:withEncoding:</name></member>
+      <member refid="d8/d84/a00001_1a6926a8a8a6813154b7550ac018c73dde" prot="public" virt="virtual"><scope>ESAPIEncoder</scope><name>decodeString:withEncoding:</name></member>
+      <member refid="d8/d84/a00001_1ab5c2f76d076134d64c4e547bf0cf282a" prot="public" virt="virtual"><scope>ESAPIEncoder</scope><name>encodeString:withEncoding:</name></member>
+      <member refid="d8/d84/a00001_1ab5c2f76d076134d64c4e547bf0cf282a" prot="public" virt="virtual"><scope>ESAPIEncoder</scope><name>encodeString:withEncoding:</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

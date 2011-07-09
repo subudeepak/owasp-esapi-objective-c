@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="d7/d46/a00002" kind="struct" prot="public">
+    <compoundname>ESAPIStringOperation</compoundname>
+    <includes refid="d0/d0b/a00004" local="no">ESAPICAuxiliaryFunctions.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d7/d46/a00002_1a60d5c2a9f6ce8f351a24f7c3d816de5c" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool operationSuccessful</definition>
+        <argsstring></argsstring>
+        <name>operationSuccessful</name>
+        <briefdescription>
+<para>Indicates if the given operation was successful. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/build/Release/ESAPI.framework/Versions/A/Headers/ESAPICAuxiliaryFunctions.h" line="21" bodyfile="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/build/Release/ESAPI.framework/Versions/A/Headers/ESAPICAuxiliaryFunctions.h" bodystart="21" bodyend="-1"/>
+        <referencedby refid="de/d5e/a00007_1a3be3ccff3afe8d96d3e381febc3b61c4" compoundref="de/d11/a00021" startline="256" endline="387">ESAPICBase64EncoderDecode</referencedby>
+        <referencedby refid="de/d5e/a00007_1a89aaefabce9c6d0abf9bfa83d53c2126" compoundref="de/d11/a00021" startline="181" endline="248">ESAPICBase64EncoderEncode</referencedby>
+        <referencedby refid="da/da0/a00009_1a5f98e370493474885f0c51813256297a" compoundref="d7/de0/a00022" startline="121" endline="184">ESAPICCanonicalizationAllAvailableEncodings</referencedby>
+        <referencedby refid="da/da0/a00009_1ab47fc5e8e4f31e52eca5e3cb54be5251" compoundref="d7/de0/a00022" startline="59" endline="119">ESAPICCanonicalizationForSpecificEncodingType</referencedby>
+        <referencedby refid="da/da0/a00009_1a6a62cfbac366a2b25744c3da2337ea2f" compoundref="d7/de0/a00022" startline="40" endline="57">ESAPICDecode</referencedby>
+        <referencedby refid="da/da0/a00009_1a262035b714026233703ab8549b8cc408" compoundref="d7/de0/a00022" startline="21" endline="38">ESAPICEncode</referencedby>
+        <referencedby refid="da/d45/a00011_1a77844763f8628b07716dcbb830aba544" compoundref="d3/d52/a00023" startline="78" endline="128">ESAPICUrlEncoderDecode</referencedby>
+        <referencedby refid="da/d45/a00011_1a70680314259b6234f6ec145fe7e14d05" compoundref="d3/d52/a00023" startline="27" endline="68">ESAPICUrlEncoderEncode</referencedby>
+        <referencedby refid="dc/de2/a00024_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="dc/de2/a00024" startline="13" endline="30">main</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d46/a00002_1ae335833c00b0feebd0ba7610cb1863a8" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char * returnString</definition>
+        <argsstring></argsstring>
+        <name>returnString</name>
+        <briefdescription>
+<para>The string to be returned after a successful operation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/build/Release/ESAPI.framework/Versions/A/Headers/ESAPICAuxiliaryFunctions.h" line="22" bodyfile="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/build/Release/ESAPI.framework/Versions/A/Headers/ESAPICAuxiliaryFunctions.h" bodystart="22" bodyend="-1"/>
+        <referencedby refid="de/d5e/a00007_1a3be3ccff3afe8d96d3e381febc3b61c4" compoundref="de/d11/a00021" startline="256" endline="387">ESAPICBase64EncoderDecode</referencedby>
+        <referencedby refid="de/d5e/a00007_1a89aaefabce9c6d0abf9bfa83d53c2126" compoundref="de/d11/a00021" startline="181" endline="248">ESAPICBase64EncoderEncode</referencedby>
+        <referencedby refid="da/da0/a00009_1a5f98e370493474885f0c51813256297a" compoundref="d7/de0/a00022" startline="121" endline="184">ESAPICCanonicalizationAllAvailableEncodings</referencedby>
+        <referencedby refid="da/da0/a00009_1ab47fc5e8e4f31e52eca5e3cb54be5251" compoundref="d7/de0/a00022" startline="59" endline="119">ESAPICCanonicalizationForSpecificEncodingType</referencedby>
+        <referencedby refid="da/d45/a00011_1a77844763f8628b07716dcbb830aba544" compoundref="d3/d52/a00023" startline="78" endline="128">ESAPICUrlEncoderDecode</referencedby>
+        <referencedby refid="da/d45/a00011_1a70680314259b6234f6ec145fe7e14d05" compoundref="d3/d52/a00023" startline="27" endline="68">ESAPICUrlEncoderEncode</referencedby>
+        <referencedby refid="dc/de2/a00024_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="dc/de2/a00024" startline="13" endline="30">main</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d46/a00002_1a7b2f8d3eac842c2b166bd94c5e59deed" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char * errorDescription</definition>
+        <argsstring></argsstring>
+        <name>errorDescription</name>
+        <briefdescription>
+<para>The error description should the operation fail. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/build/Release/ESAPI.framework/Versions/A/Headers/ESAPICAuxiliaryFunctions.h" line="23" bodyfile="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/build/Release/ESAPI.framework/Versions/A/Headers/ESAPICAuxiliaryFunctions.h" bodystart="23" bodyend="-1"/>
+        <referencedby refid="de/d5e/a00007_1a3be3ccff3afe8d96d3e381febc3b61c4" compoundref="de/d11/a00021" startline="256" endline="387">ESAPICBase64EncoderDecode</referencedby>
+        <referencedby refid="de/d5e/a00007_1a89aaefabce9c6d0abf9bfa83d53c2126" compoundref="de/d11/a00021" startline="181" endline="248">ESAPICBase64EncoderEncode</referencedby>
+        <referencedby refid="da/da0/a00009_1a5f98e370493474885f0c51813256297a" compoundref="d7/de0/a00022" startline="121" endline="184">ESAPICCanonicalizationAllAvailableEncodings</referencedby>
+        <referencedby refid="da/da0/a00009_1ab47fc5e8e4f31e52eca5e3cb54be5251" compoundref="d7/de0/a00022" startline="59" endline="119">ESAPICCanonicalizationForSpecificEncodingType</referencedby>
+        <referencedby refid="da/da0/a00009_1a6a62cfbac366a2b25744c3da2337ea2f" compoundref="d7/de0/a00022" startline="40" endline="57">ESAPICDecode</referencedby>
+        <referencedby refid="da/da0/a00009_1a262035b714026233703ab8549b8cc408" compoundref="d7/de0/a00022" startline="21" endline="38">ESAPICEncode</referencedby>
+        <referencedby refid="da/d45/a00011_1a77844763f8628b07716dcbb830aba544" compoundref="d3/d52/a00023" startline="78" endline="128">ESAPICUrlEncoderDecode</referencedby>
+        <referencedby refid="da/d45/a00011_1a70680314259b6234f6ec145fe7e14d05" compoundref="d3/d52/a00023" startline="27" endline="68">ESAPICUrlEncoderEncode</referencedby>
+        <referencedby refid="dc/de2/a00024_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="dc/de2/a00024" startline="13" endline="30">main</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Sends the results and sets the required flags. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/build/Release/ESAPI.framework/Versions/A/Headers/ESAPICAuxiliaryFunctions.h" line="20" bodyfile="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/build/Release/ESAPI.framework/Versions/A/Headers/ESAPICAuxiliaryFunctions.h" bodystart="19" bodyend="24"/>
+    <listofallmembers>
+      <member refid="d7/d46/a00002_1a7b2f8d3eac842c2b166bd94c5e59deed" prot="public" virt="non-virtual"><scope>ESAPIStringOperation</scope><name>errorDescription</name></member>
+      <member refid="d7/d46/a00002_1a60d5c2a9f6ce8f351a24f7c3d816de5c" prot="public" virt="non-virtual"><scope>ESAPIStringOperation</scope><name>operationSuccessful</name></member>
+      <member refid="d7/d46/a00002_1ae335833c00b0feebd0ba7610cb1863a8" prot="public" virt="non-virtual"><scope>ESAPIStringOperation</scope><name>returnString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

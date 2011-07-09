@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.7.4">
+  <compound refid="d8/d84/a00001" kind="class"><name>ESAPIEncoder</name>
+    <member refid="d8/d84/a00001_1ab5c2f76d076134d64c4e547bf0cf282a" kind="function"><name>encodeString:withEncoding:</name></member>
+    <member refid="d8/d84/a00001_1a6926a8a8a6813154b7550ac018c73dde" kind="function"><name>decodeString:withEncoding:</name></member>
+    <member refid="d8/d84/a00001_1a4857fc98d2991953378a93a7b4dee5ca" kind="function"><name>canonicalizeString:forSpecificEncoding:strict:</name></member>
+    <member refid="d8/d84/a00001_1a0235404f388683e1e078796722398060" kind="function"><name>canonicalizeStringForAllAvailableEncodings:strict:</name></member>
+    <member refid="d8/d84/a00001_1ab5c2f76d076134d64c4e547bf0cf282a" kind="function"><name>encodeString:withEncoding:</name></member>
+    <member refid="d8/d84/a00001_1a6926a8a8a6813154b7550ac018c73dde" kind="function"><name>decodeString:withEncoding:</name></member>
+    <member refid="d8/d84/a00001_1a4857fc98d2991953378a93a7b4dee5ca" kind="function"><name>canonicalizeString:forSpecificEncoding:strict:</name></member>
+    <member refid="d8/d84/a00001_1a0235404f388683e1e078796722398060" kind="function"><name>canonicalizeStringForAllAvailableEncodings:strict:</name></member>
+  </compound>
+  <compound refid="d7/d46/a00002" kind="struct"><name>ESAPIStringOperation</name>
+    <member refid="d7/d46/a00002_1a60d5c2a9f6ce8f351a24f7c3d816de5c" kind="variable"><name>operationSuccessful</name></member>
+    <member refid="d7/d46/a00002_1ae335833c00b0feebd0ba7610cb1863a8" kind="variable"><name>returnString</name></member>
+    <member refid="d7/d46/a00002_1a7b2f8d3eac842c2b166bd94c5e59deed" kind="variable"><name>errorDescription</name></member>
+  </compound>
+  <compound refid="d1/d7c/a00003" kind="class"><name>NSString</name>
+  </compound>
+  <compound refid="d5/d16/a00029" kind="class"><name>NSString(ESAPIEncoderMethods)</name>
+    <member refid="d5/d16/a00029_1a6592cbfd5d1d3b1ece4e952cf1f137b4" kind="function"><name>encodeWithEncoding:</name></member>
+    <member refid="d5/d16/a00029_1a18e08623161eb968db16be1540003995" kind="function"><name>decodeWithEncoding:</name></member>
+    <member refid="d5/d16/a00029_1a546b5c1c013384d8e2d3c0fe3c74b4bd" kind="function"><name>canonicalStringForAllAvailableEncodingsStrict:</name></member>
+    <member refid="d5/d16/a00029_1a7b8494014fa7da33d181f32b5f006ac4" kind="function"><name>canonicalStringForSpecificEncoding:isStrict:</name></member>
+    <member refid="d5/d16/a00029_1a6592cbfd5d1d3b1ece4e952cf1f137b4" kind="function"><name>encodeWithEncoding:</name></member>
+    <member refid="d5/d16/a00029_1a18e08623161eb968db16be1540003995" kind="function"><name>decodeWithEncoding:</name></member>
+    <member refid="d5/d16/a00029_1a546b5c1c013384d8e2d3c0fe3c74b4bd" kind="function"><name>canonicalStringForAllAvailableEncodingsStrict:</name></member>
+    <member refid="d5/d16/a00029_1a7b8494014fa7da33d181f32b5f006ac4" kind="function"><name>canonicalStringForSpecificEncoding:isStrict:</name></member>
+  </compound>
+  <compound refid="d0/d0b/a00004" kind="file"><name>ESAPICAuxiliaryFunctions.h</name>
+    <member refid="d0/d0b/a00004_1add5c1df19752ca8972a0ad9271044105" kind="function"><name>from_hex</name></member>
+    <member refid="d0/d0b/a00004_1a95b5f7a5b7b116ffbe9a4a439ad167dc" kind="function"><name>to_hex</name></member>
+  </compound>
+  <compound refid="dd/dad/a00005" kind="file"><name>ESAPICAuxiliaryFunctions.h</name>
+    <member refid="dd/dad/a00005_1add5c1df19752ca8972a0ad9271044105" kind="function"><name>from_hex</name></member>
+    <member refid="dd/dad/a00005_1a95b5f7a5b7b116ffbe9a4a439ad167dc" kind="function"><name>to_hex</name></member>
+  </compound>
+  <compound refid="de/d21/a00006" kind="file"><name>ESAPICBase64Encoder.h</name>
+    <member refid="de/d21/a00006_1a9a3f479a4a67e06261402416657952b8" kind="define"><name>ESAPICBase64Encoder_H</name></member>
+    <member refid="de/d21/a00006_1a89aaefabce9c6d0abf9bfa83d53c2126" kind="function"><name>ESAPICBase64EncoderEncode</name></member>
+    <member refid="de/d21/a00006_1a3be3ccff3afe8d96d3e381febc3b61c4" kind="function"><name>ESAPICBase64EncoderDecode</name></member>
+    <member refid="de/d21/a00006_1afaf89639d27c67e0a3ee705d9d170fc0" kind="function"><name>isbase64</name></member>
+  </compound>
+  <compound refid="de/d5e/a00007" kind="file"><name>ESAPICBase64Encoder.h</name>
+    <member refid="de/d5e/a00007_1a89aaefabce9c6d0abf9bfa83d53c2126" kind="function"><name>ESAPICBase64EncoderEncode</name></member>
+    <member refid="de/d5e/a00007_1a3be3ccff3afe8d96d3e381febc3b61c4" kind="function"><name>ESAPICBase64EncoderDecode</name></member>
+    <member refid="de/d5e/a00007_1afaf89639d27c67e0a3ee705d9d170fc0" kind="function"><name>isbase64</name></member>
+  </compound>
+  <compound refid="d4/dee/a00008" kind="file"><name>ESAPICEncoder.h</name>
+    <member refid="d4/dee/a00008_1af4b9f1c8f83fc1f697a6c6fb2ba5749c" kind="enum"><name>ESAPIEncodingType</name></member>
+    <member refid="d4/dee/a00008_1af4b9f1c8f83fc1f697a6c6fb2ba5749ca6b143b8248f2d6b9dc93b178c5a2df66" kind="enumvalue"><name>ESAPIEncodingTypePercentEncoding</name></member>
+    <member refid="d4/dee/a00008_1af4b9f1c8f83fc1f697a6c6fb2ba5749ca061d2b58fed020025c2b059ed1d90759" kind="enumvalue"><name>ESAPIEncodingTypeURLEncoding</name></member>
+    <member refid="d4/dee/a00008_1af4b9f1c8f83fc1f697a6c6fb2ba5749cab30d4a386be2c9db1ac213bca008c547" kind="enumvalue"><name>ESAPIEncodingTypeBase64Encoding</name></member>
+    <member refid="da/da0/a00009_1af4b9f1c8f83fc1f697a6c6fb2ba5749ca6b143b8248f2d6b9dc93b178c5a2df66" kind="enumvalue"><name>ESAPIEncodingTypePercentEncoding</name></member>
+    <member refid="da/da0/a00009_1af4b9f1c8f83fc1f697a6c6fb2ba5749ca061d2b58fed020025c2b059ed1d90759" kind="enumvalue"><name>ESAPIEncodingTypeURLEncoding</name></member>
+    <member refid="da/da0/a00009_1af4b9f1c8f83fc1f697a6c6fb2ba5749cab30d4a386be2c9db1ac213bca008c547" kind="enumvalue"><name>ESAPIEncodingTypeBase64Encoding</name></member>
+    <member refid="d4/dee/a00008_1a262035b714026233703ab8549b8cc408" kind="function"><name>ESAPICEncode</name></member>
+    <member refid="d4/dee/a00008_1a6a62cfbac366a2b25744c3da2337ea2f" kind="function"><name>ESAPICDecode</name></member>
+    <member refid="d4/dee/a00008_1ab47fc5e8e4f31e52eca5e3cb54be5251" kind="function"><name>ESAPICCanonicalizationForSpecificEncodingType</name></member>
+    <member refid="d4/dee/a00008_1a5f98e370493474885f0c51813256297a" kind="function"><name>ESAPICCanonicalizationAllAvailableEncodings</name></member>
+  </compound>
+  <compound refid="da/da0/a00009" kind="file"><name>ESAPICEncoder.h</name>
+    <member refid="da/da0/a00009_1af4b9f1c8f83fc1f697a6c6fb2ba5749c" kind="enum"><name>ESAPIEncodingType</name></member>
+    <member refid="d4/dee/a00008_1af4b9f1c8f83fc1f697a6c6fb2ba5749ca6b143b8248f2d6b9dc93b178c5a2df66" kind="enumvalue"><name>ESAPIEncodingTypePercentEncoding</name></member>
+    <member refid="d4/dee/a00008_1af4b9f1c8f83fc1f697a6c6fb2ba5749ca061d2b58fed020025c2b059ed1d90759" kind="enumvalue"><name>ESAPIEncodingTypeURLEncoding</name></member>
+    <member refid="d4/dee/a00008_1af4b9f1c8f83fc1f697a6c6fb2ba5749cab30d4a386be2c9db1ac213bca008c547" kind="enumvalue"><name>ESAPIEncodingTypeBase64Encoding</name></member>
+    <member refid="da/da0/a00009_1af4b9f1c8f83fc1f697a6c6fb2ba5749ca6b143b8248f2d6b9dc93b178c5a2df66" kind="enumvalue"><name>ESAPIEncodingTypePercentEncoding</name></member>
+    <member refid="da/da0/a00009_1af4b9f1c8f83fc1f697a6c6fb2ba5749ca061d2b58fed020025c2b059ed1d90759" kind="enumvalue"><name>ESAPIEncodingTypeURLEncoding</name></member>
+    <member refid="da/da0/a00009_1af4b9f1c8f83fc1f697a6c6fb2ba5749cab30d4a386be2c9db1ac213bca008c547" kind="enumvalue"><name>ESAPIEncodingTypeBase64Encoding</name></member>
+    <member refid="da/da0/a00009_1a262035b714026233703ab8549b8cc408" kind="function"><name>ESAPICEncode</name></member>
+    <member refid="da/da0/a00009_1a6a62cfbac366a2b25744c3da2337ea2f" kind="function"><name>ESAPICDecode</name></member>
+    <member refid="da/da0/a00009_1ab47fc5e8e4f31e52eca5e3cb54be5251" kind="function"><name>ESAPICCanonicalizationForSpecificEncodingType</name></member>
+    <member refid="da/da0/a00009_1a5f98e370493474885f0c51813256297a" kind="function"><name>ESAPICCanonicalizationAllAvailableEncodings</name></member>
+  </compound>
+  <compound refid="d7/dec/a00010" kind="file"><name>ESAPICUrlEncoder.h</name>
+    <member refid="d7/dec/a00010_1a70680314259b6234f6ec145fe7e14d05" kind="function"><name>ESAPICUrlEncoderEncode</name></member>
+    <member refid="d7/dec/a00010_1a77844763f8628b07716dcbb830aba544" kind="function"><name>ESAPICUrlEncoderDecode</name></member>
+  </compound>
+  <compound refid="da/d45/a00011" kind="file"><name>ESAPICUrlEncoder.h</name>
+    <member refid="da/d45/a00011_1a70680314259b6234f6ec145fe7e14d05" kind="function"><name>ESAPICUrlEncoderEncode</name></member>
+    <member refid="da/d45/a00011_1a77844763f8628b07716dcbb830aba544" kind="function"><name>ESAPICUrlEncoderDecode</name></member>
+  </compound>
+  <compound refid="df/d86/a00012" kind="file"><name>ESAPIEncoder.h</name>
+  </compound>
+  <compound refid="d7/dd4/a00013" kind="file"><name>ESAPIEncoder.h</name>
+  </compound>
+  <compound refid="d2/de7/a00014" kind="file"><name>ESAPIEncoderExample.h</name>
+  </compound>
+  <compound refid="dd/d1b/a00015" kind="file"><name>ESAPIEncoderExample.h</name>
+  </compound>
+  <compound refid="d7/d7a/a00016" kind="file"><name>ESAPIValidations.h</name>
+  </compound>
+  <compound refid="d4/d51/a00017" kind="file"><name>ESAPIValidations.h</name>
+  </compound>
+  <compound refid="d1/d2b/a00018" kind="file"><name>ESAPIEncoder.m</name>
+  </compound>
+  <compound refid="dd/da2/a00019" kind="file"><name>ESAPIValidations.c</name>
+  </compound>
+  <compound refid="db/db2/a00020" kind="file"><name>ESAPICAuxiliaryFunctions.c</name>
+    <member refid="db/db2/a00020_1a808bcf33a4b41b04fc0bc6a5f5813973" kind="function"><name>from_hex</name></member>
+    <member refid="db/db2/a00020_1a2729474e3f010e609583b6d3eef22e1a" kind="function"><name>to_hex</name></member>
+  </compound>
+  <compound refid="de/d11/a00021" kind="file"><name>ESAPICBase64Encoder.c</name>
+    <member refid="de/d11/a00021_1a8ce971890889c52c3c27cad0e00fd270" kind="define"><name>BASE64_ENCODE_LENGTH</name></member>
+    <member refid="de/d11/a00021_1a9aa433efacf01c0dc6cea513272a9195" kind="define"><name>BASE64_DECODE_LENGTH</name></member>
+    <member refid="de/d11/a00021_1a6efb717563bf5814129fb1058d1dfdb3" kind="define"><name>B64</name></member>
+    <member refid="de/d11/a00021_1a12c6c1b0c78f82cbe2ee3508b1c25f37" kind="define"><name>uchar_in_range</name></member>
+    <member refid="de/d11/a00021_1ae84dcd83d99f9fb8f8f77827a11b43f5" kind="variable"><name>b64</name></member>
+    <member refid="de/d11/a00021_1a3c0c1964c1c1a0c1d499ff6edf8a68b5" kind="function"><name>to_uchar</name></member>
+    <member refid="de/d11/a00021_1a2201d7841d9cd66d51b4019c2ba6f11e" kind="function"><name>isbase64</name></member>
+    <member refid="de/d11/a00021_1a89aaefabce9c6d0abf9bfa83d53c2126" kind="function"><name>ESAPICBase64EncoderEncode</name></member>
+    <member refid="de/d11/a00021_1a3be3ccff3afe8d96d3e381febc3b61c4" kind="function"><name>ESAPICBase64EncoderDecode</name></member>
+  </compound>
+  <compound refid="d7/de0/a00022" kind="file"><name>ESAPICEncoder.c</name>
+    <member refid="d7/de0/a00022_1a2e9860061ee6616b276f7cab7e0fba71" kind="variable"><name>numberOfAvailableCodecs</name></member>
+    <member refid="d7/de0/a00022_1a370f5a068adf4f7622dbaf6125a213e3" kind="variable"><name>encodingFunctionsArray</name></member>
+    <member refid="d7/de0/a00022_1a7f307a92758e8a838c0fa727d46bcb21" kind="variable"><name>decodingFunctionsArray</name></member>
+    <member refid="d7/de0/a00022_1a262035b714026233703ab8549b8cc408" kind="function"><name>ESAPICEncode</name></member>
+    <member refid="d7/de0/a00022_1a6a62cfbac366a2b25744c3da2337ea2f" kind="function"><name>ESAPICDecode</name></member>
+    <member refid="d7/de0/a00022_1ab47fc5e8e4f31e52eca5e3cb54be5251" kind="function"><name>ESAPICCanonicalizationForSpecificEncodingType</name></member>
+    <member refid="d7/de0/a00022_1a5f98e370493474885f0c51813256297a" kind="function"><name>ESAPICCanonicalizationAllAvailableEncodings</name></member>
+  </compound>
+  <compound refid="d3/d52/a00023" kind="file"><name>ESAPICUrlEncoder.c</name>
+    <member refid="d3/d52/a00023_1a70680314259b6234f6ec145fe7e14d05" kind="function"><name>ESAPICUrlEncoderEncode</name></member>
+    <member refid="d3/d52/a00023_1a77844763f8628b07716dcbb830aba544" kind="function"><name>ESAPICUrlEncoderDecode</name></member>
+  </compound>
+  <compound refid="dc/de2/a00024" kind="file"><name>ESAPIEncoderExample.c</name>
+    <member refid="dc/de2/a00024_1a840291bc02cba5474a4cb46a9b9566fe" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="d3/dfe/a00025" kind="file"><name>main.c</name>
+    <member refid="d3/dfe/a00025_1a840291bc02cba5474a4cb46a9b9566fe" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="d6/d5b/a00026" kind="file"><name>urlEncoder.c</name>
+    <member refid="d6/d5b/a00026_1a808bcf33a4b41b04fc0bc6a5f5813973" kind="function"><name>from_hex</name></member>
+    <member refid="d6/d5b/a00026_1a2729474e3f010e609583b6d3eef22e1a" kind="function"><name>to_hex</name></member>
+    <member refid="d6/d5b/a00026_1a8b27af4a03e8ce05aae7cfed09971f99" kind="function"><name>url_encode</name></member>
+    <member refid="d6/d5b/a00026_1aea3ffe702ce39d26857607be86e6ca83" kind="function"><name>url_decode</name></member>
+  </compound>
+  <compound refid="dir_c72ec94c22c902e1dacb83c316679cc7" kind="dir"><name>/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/build/Release/ESAPI.framework/Versions/A/</name>
+  </compound>
+  <compound refid="dir_402e6b34a514820f202ed289616a48c4" kind="dir"><name>/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/</name>
+  </compound>
+  <compound refid="dir_d0d632b9eb14d2e0bf5d5e1aac8e27a7" kind="dir"><name>/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/build/</name>
+  </compound>
+  <compound refid="dir_7934a8d2af9a6ad8304247624910ec94" kind="dir"><name>/Users/deepaksubramanian/Documents/</name>
+  </compound>
+  <compound refid="dir_96e40b2ee75f52b66702f5eea7ece3b9" kind="dir"><name>/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/</name>
+  </compound>
+  <compound refid="dir_77b7fbf068596bb8757c2e6ad2730f76" kind="dir"><name>/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/build/Release/ESAPI.framework/</name>
+  </compound>
+  <compound refid="dir_0ac9686c7640e7de383e7f7d2b892f8d" kind="dir"><name>/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/</name>
+  </compound>
+  <compound refid="dir_f00491ec73a3b2dc326b28fd4ea1889b" kind="dir"><name>/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPICommonFunctions/</name>
+  </compound>
+  <compound refid="dir_cf5ce1a37e3e29cf2606e2385d6ac4e5" kind="dir"><name>/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/ESAPIEncoder/</name>
+  </compound>
+  <compound refid="dir_471d10297d49df7fda6101b549c07b82" kind="dir"><name>/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/</name>
+  </compound>
+  <compound refid="dir_e14d337803b8da78ec3220de75dc01ea" kind="dir"><name>/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/</name>
+  </compound>
+  <compound refid="dir_843780a3c95c67a9720fcb84254cdbf5" kind="dir"><name>/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/</name>
+  </compound>
+  <compound refid="dir_3e3d5ca08e607b225b5827119fb49985" kind="dir"><name>/Users/deepaksubramanian/Documents/Folder of Documents/</name>
+  </compound>
+  <compound refid="dir_2439e4fc994cbf0b87730da4b81fb923" kind="dir"><name>/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/build/Release/ESAPI.framework/Versions/A/Headers/</name>
+  </compound>
+  <compound refid="dir_97a9745ec42c7235cd26cc8576707b88" kind="dir"><name>/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/</name>
+  </compound>
+  <compound refid="dir_a8aa54fd6ad99c0e2b5d1ec9aff230db" kind="dir"><name>/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/build/Release/</name>
+  </compound>
+  <compound refid="dir_c139e81f096fb41c8def0a16c784c041" kind="dir"><name>/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/build/Release/ESAPI.framework/Versions/</name>
+  </compound>
+  <compound refid="dir_e7a3c4f9803bd325d5bb6fdec40a1583" kind="dir"><name>/Users/deepaksubramanian/Documents/Folder of Documents/XCode/</name>
+  </compound>
+</doxygenindex>

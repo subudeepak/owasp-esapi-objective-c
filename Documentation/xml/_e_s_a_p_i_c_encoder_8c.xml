@@ -1,0 +1,274 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="_e_s_a_p_i_c_encoder_8c" kind="file">
+    <compoundname>ESAPICEncoder.c</compoundname>
+    <includes refid="_e_s_a_p_i_c_encoder_8h" local="yes">ESAPICEncoder.h</includes>
+    <includes refid="_e_s_a_p_i_c_url_encoder_8h" local="yes">ESAPICUrlEncoder.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <incdepgraph>
+      <node id="78">
+        <label>ESAPICUrlEncoder.h</label>
+        <link refid="_e_s_a_p_i_c_url_encoder_8h"/>
+      </node>
+      <node id="77">
+        <label>stdlib.h</label>
+      </node>
+      <node id="75">
+        <label>/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICEncoder.c</label>
+        <link refid="ESAPICEncoder.c"/>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>ESAPICEncoder.h</label>
+        <link refid="_e_s_a_p_i_c_encoder_8h"/>
+        <childnode refid="77" relation="include">
+        </childnode>
+      </node>
+      <node id="79">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_e_s_a_p_i_c_encoder_8c_1a452d1773180a64b14c95a47686847737" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_e_s_a_p_i_string_operation" kindref="compound">ESAPIStringOperation</ref> *</type>
+        <definition>ESAPIStringOperation* ESAPIEncode</definition>
+        <argsstring>(char *inputString, ESAPIEncodingType typeOfEncoding)</argsstring>
+        <name>ESAPIEncode</name>
+        <param>
+          <type>char *</type>
+          <declname>inputString</declname>
+        </param>
+        <param>
+          <type><ref refid="_e_s_a_p_i_c_encoder_8h_1af4b9f1c8f83fc1f697a6c6fb2ba5749c" kindref="member">ESAPIEncodingType</ref></type>
+          <declname>typeOfEncoding</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to encode the given string and return the resultant encoded string. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>inputString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- The string to be encoded. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>typeOfEncoding</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- The type of encoding required. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>encodedString - The encoded string using the ESAPIEncodingType is returned.</para></simplesect>
+EXAMPLE { <programlisting><codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>inputString[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;sometext&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_e_s_a_p_i_string_operation" kindref="compound" tooltip="Sends the results and sets the required flags.">ESAPIStringOperation</ref><sp/>*<sp/>encodedStringOperation<sp/>=<sp/><ref refid="_e_s_a_p_i_c_encoder_8c_1a452d1773180a64b14c95a47686847737" kindref="member" tooltip="This function is used to encode the given string and return the resultant encoded string...">ESAPIEncode</ref><sp/>(<sp/>inputString,<sp/><ref refid="_e_s_a_p_i_c_encoder_8h_1af4b9f1c8f83fc1f697a6c6fb2ba5749ca6b143b8248f2d6b9dc93b178c5a2df66" kindref="member" tooltip="Percentage encoding is generally used in the get and post requests to cate for multiple parameters...">ESAPIEncodingTypePercentEncoding</ref><sp/>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>encodedStringOperation-&gt;<ref refid="struct_e_s_a_p_i_string_operation_1a99cbce009aa937a6eb09f40510a95b73" kindref="member" tooltip="Indicates if the given operation was successful.">operationSuccessful</ref><sp/>)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>encodedString<sp/>=<sp/>encodedStringOperation-&gt;<ref refid="struct_e_s_a_p_i_string_operation_1a020a35264b82bab27173507c25c46c6b" kindref="member" tooltip="The string to be returned after a successful operation.">returnString</ref>;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Use<sp/>the<sp/>encodedString<sp/>for<sp/>operations.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free<sp/>(<sp/>encodedString<sp/>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>errorDescription<sp/>=<sp/>encodedStringOperation-&gt;<ref refid="struct_e_s_a_p_i_string_operation_1a7104ebbe41498ebd092ce412fe884b10" kindref="member" tooltip="The error description should the operation fail.">errorDescription</ref>;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//The<sp/>encoding<sp/>has<sp/>failed.<sp/>Manage<sp/>accordingly.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free<sp/>(<sp/>errorDescription<sp/>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free<sp/>(<sp/>encodedStringOperation<sp/>);</highlight></codeline>
+</programlisting> } </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICEncoder.c" line="19" bodyfile="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICEncoder.c" bodystart="18" bodyend="60"/>
+        <references refid="struct_e_s_a_p_i_string_operation_1a7104ebbe41498ebd092ce412fe884b10" compoundref="_e_s_a_p_i_c_encoder_8h" startline="61">ESAPIStringOperation::errorDescription</references>
+        <references refid="_e_s_a_p_i_c_url_encoder_8c_1ad730b879e9ba0a6bbc8c632731bfdd82" compoundref="_e_s_a_p_i_c_url_encoder_8c" startline="28" endline="46">ESAPICUrlEncoderEncode</references>
+        <references refid="_e_s_a_p_i_c_encoder_8h_1af4b9f1c8f83fc1f697a6c6fb2ba5749cab30d4a386be2c9db1ac213bca008c547" compoundref="_e_s_a_p_i_c_encoder_8h" startline="46">ESAPIEncodingTypeBase64Encoding</references>
+        <references refid="_e_s_a_p_i_c_encoder_8h_1af4b9f1c8f83fc1f697a6c6fb2ba5749ca061d2b58fed020025c2b059ed1d90759" compoundref="_e_s_a_p_i_c_encoder_8h" startline="45">ESAPIEncodingTypeURLEncoding</references>
+        <references refid="_e_s_a_p_i_c_encoder_8h_1aec7e62084419d7857ae740a4c68241cfaa1e095cc966dbecf6a0d8aad75348d1a" compoundref="_e_s_a_p_i_c_encoder_8h" startline="51">FALSE</references>
+        <references refid="struct_e_s_a_p_i_string_operation_1a99cbce009aa937a6eb09f40510a95b73" compoundref="_e_s_a_p_i_c_encoder_8h" startline="59">ESAPIStringOperation::operationSuccessful</references>
+        <references refid="struct_e_s_a_p_i_string_operation_1a020a35264b82bab27173507c25c46c6b" compoundref="_e_s_a_p_i_c_encoder_8h" startline="60">ESAPIStringOperation::returnString</references>
+        <references refid="_e_s_a_p_i_c_encoder_8h_1aec7e62084419d7857ae740a4c68241cfaa82764c3079aea4e60c80e45befbb839" compoundref="_e_s_a_p_i_c_encoder_8h" startline="52">TRUE</references>
+        <referencedby refid="_e_s_a_p_i_encoder_example_8c_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="_e_s_a_p_i_encoder_example_8c" startline="13" endline="30">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_e_s_a_p_i_c_encoder_8c_1a6c2931ce40e18b2a2244c441bc9bbd9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_e_s_a_p_i_string_operation" kindref="compound">ESAPIStringOperation</ref> *</type>
+        <definition>ESAPIStringOperation* ESAPIDecode</definition>
+        <argsstring>(char *inputString, ESAPIEncodingType typeOfEncoding)</argsstring>
+        <name>ESAPIDecode</name>
+        <param>
+          <type>char *</type>
+          <declname>inputString</declname>
+        </param>
+        <param>
+          <type><ref refid="_e_s_a_p_i_c_encoder_8h_1af4b9f1c8f83fc1f697a6c6fb2ba5749c" kindref="member">ESAPIEncodingType</ref></type>
+          <declname>typeOfEncoding</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to decode the given string and return the resultant decoded string. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>inputString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- The string to be encoded. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>typeOfEncoding</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- The type of encoding required</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+EXAMPLE { <programlisting><codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>inputString[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;sometext&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_e_s_a_p_i_string_operation" kindref="compound" tooltip="Sends the results and sets the required flags.">ESAPIStringOperation</ref><sp/>*<sp/>decodedStringOperation<sp/>=<sp/><ref refid="_e_s_a_p_i_c_encoder_8c_1a6c2931ce40e18b2a2244c441bc9bbd9b" kindref="member" tooltip="This function is used to decode the given string and return the resultant decoded string...">ESAPIDecode</ref><sp/>(<sp/>inputString,<sp/><ref refid="_e_s_a_p_i_c_encoder_8h_1af4b9f1c8f83fc1f697a6c6fb2ba5749ca6b143b8248f2d6b9dc93b178c5a2df66" kindref="member" tooltip="Percentage encoding is generally used in the get and post requests to cate for multiple parameters...">ESAPIEncodingTypePercentEncoding</ref><sp/>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>*decodedStringOperation-&gt;<ref refid="struct_e_s_a_p_i_string_operation_1a99cbce009aa937a6eb09f40510a95b73" kindref="member" tooltip="Indicates if the given operation was successful.">operationSuccessful</ref><sp/>)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>decodedString<sp/>=<sp/>decodedStringOperation-&gt;<ref refid="struct_e_s_a_p_i_string_operation_1a020a35264b82bab27173507c25c46c6b" kindref="member" tooltip="The string to be returned after a successful operation.">returnString</ref>;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Use<sp/>the<sp/>decodedString<sp/>for<sp/>operations.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free<sp/>(<sp/>decodedString<sp/>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>errorDescription<sp/>=<sp/>encodedStringOperation-&gt;<ref refid="struct_e_s_a_p_i_string_operation_1a7104ebbe41498ebd092ce412fe884b10" kindref="member" tooltip="The error description should the operation fail.">errorDescription</ref>;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//The<sp/>decoding<sp/>has<sp/>failed.<sp/>Manage<sp/>accordingly.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free<sp/>(<sp/>errorDescription<sp/>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free<sp/>(<sp/>decodedStringOperation<sp/>);</highlight></codeline>
+</programlisting> } </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICEncoder.c" line="64" bodyfile="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICEncoder.c" bodystart="63" bodyend="105"/>
+        <references refid="struct_e_s_a_p_i_string_operation_1a7104ebbe41498ebd092ce412fe884b10" compoundref="_e_s_a_p_i_c_encoder_8h" startline="61">ESAPIStringOperation::errorDescription</references>
+        <references refid="_e_s_a_p_i_c_url_encoder_8c_1ae873a9107bec72e66b546950c5e83e38" compoundref="_e_s_a_p_i_c_url_encoder_8c" startline="56" endline="81">ESAPICUrlEncoderDecode</references>
+        <references refid="_e_s_a_p_i_c_encoder_8h_1af4b9f1c8f83fc1f697a6c6fb2ba5749cab30d4a386be2c9db1ac213bca008c547" compoundref="_e_s_a_p_i_c_encoder_8h" startline="46">ESAPIEncodingTypeBase64Encoding</references>
+        <references refid="_e_s_a_p_i_c_encoder_8h_1af4b9f1c8f83fc1f697a6c6fb2ba5749ca061d2b58fed020025c2b059ed1d90759" compoundref="_e_s_a_p_i_c_encoder_8h" startline="45">ESAPIEncodingTypeURLEncoding</references>
+        <references refid="_e_s_a_p_i_c_encoder_8h_1aec7e62084419d7857ae740a4c68241cfaa1e095cc966dbecf6a0d8aad75348d1a" compoundref="_e_s_a_p_i_c_encoder_8h" startline="51">FALSE</references>
+        <references refid="struct_e_s_a_p_i_string_operation_1a99cbce009aa937a6eb09f40510a95b73" compoundref="_e_s_a_p_i_c_encoder_8h" startline="59">ESAPIStringOperation::operationSuccessful</references>
+        <references refid="struct_e_s_a_p_i_string_operation_1a020a35264b82bab27173507c25c46c6b" compoundref="_e_s_a_p_i_c_encoder_8h" startline="60">ESAPIStringOperation::returnString</references>
+        <references refid="_e_s_a_p_i_c_encoder_8h_1aec7e62084419d7857ae740a4c68241cfaa82764c3079aea4e60c80e45befbb839" compoundref="_e_s_a_p_i_c_encoder_8h" startline="52">TRUE</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/><sp/>ESAPICEncoder.c</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/><sp/>ESAPI</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/>Created<sp/>by<sp/>DEEPAK<sp/>SUBRAMANIAN<sp/>on<sp/>4/16/11.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/>Copyright<sp/>2011<sp/>OWASP<sp/>Foundation.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_e_s_a_p_i_c_encoder_8h" kindref="compound">ESAPICEncoder.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_e_s_a_p_i_c_url_encoder_8h" kindref="compound">ESAPICUrlEncoder.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//#include<sp/>&quot;urlEncoder.c&quot;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="_e_s_a_p_i_c_encoder_8h_1a452d1773180a64b14c95a47686847737" refkind="member"><highlight class="normal"><ref refid="struct_e_s_a_p_i_string_operation" kindref="compound" tooltip="Sends the results and sets the required flags.">ESAPIStringOperation</ref><sp/>*<sp/><ref refid="_e_s_a_p_i_c_encoder_8c_1a452d1773180a64b14c95a47686847737" kindref="member" tooltip="This function is used to encode the given string and return the resultant encoded string...">ESAPIEncode</ref><sp/>(<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>inputString,<sp/><ref refid="_e_s_a_p_i_c_encoder_8h_1af4b9f1c8f83fc1f697a6c6fb2ba5749c" kindref="member" tooltip="This is the header of the ESAPI C Encoder Functions. These function are designed to assist in encodin...">ESAPIEncodingType</ref><sp/>typeOfEncoding<sp/>)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(<sp/></highlight><highlight class="stringliteral">&quot;\nI<sp/>am<sp/>printing<sp/>=&gt;<sp/>ESAPI<sp/>Encoder<sp/>Encode<sp/>with<sp/>inputString<sp/>as<sp/>%s&quot;</highlight><highlight class="normal">,inputString<sp/>);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Initiate<sp/>a<sp/>encodedStringOperation<sp/>(Allocate<sp/>memory)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//ESAPIStringOperation<sp/>temp;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_e_s_a_p_i_string_operation" kindref="compound" tooltip="Sends the results and sets the required flags.">ESAPIStringOperation</ref><sp/>*<sp/>encodedStringOperation<sp/>=<sp/>(<sp/><ref refid="struct_e_s_a_p_i_string_operation" kindref="compound" tooltip="Sends the results and sets the required flags.">ESAPIStringOperation</ref><sp/>*<sp/>)<sp/>malloc(<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_e_s_a_p_i_string_operation" kindref="compound" tooltip="Sends the results and sets the required flags.">ESAPIStringOperation</ref>)<sp/>+<sp/>1<sp/>);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//The<sp/>operation<sp/>to<sp/>be<sp/>performed<sp/>is<sp/>still<sp/>not<sp/>complete<sp/>-<sp/>Mark<sp/>as<sp/>unsuccessful</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>encodedStringOperation-&gt;<ref refid="struct_e_s_a_p_i_string_operation_1a99cbce009aa937a6eb09f40510a95b73" kindref="member" tooltip="Indicates if the given operation was successful.">operationSuccessful</ref><sp/>=<sp/><ref refid="_e_s_a_p_i_c_encoder_8h_1aec7e62084419d7857ae740a4c68241cfaa1e095cc966dbecf6a0d8aad75348d1a" kindref="member">FALSE</ref>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Check<sp/>which<sp/>encoding<sp/>to<sp/>perform</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(<sp/>typeOfEncoding<sp/>)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_e_s_a_p_i_c_encoder_8h_1af4b9f1c8f83fc1f697a6c6fb2ba5749ca061d2b58fed020025c2b059ed1d90759" kindref="member" tooltip="Same as percent encoding. Catering for redundancy of names.">ESAPIEncodingTypeURLEncoding</ref>:<sp/></highlight><highlight class="comment">//ESAPIEncodingTypePercentEncoding</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Perform<sp/>encoding</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>someString[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Print<sp/>String&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>encodedStringOperation-&gt;<ref refid="struct_e_s_a_p_i_string_operation_1a020a35264b82bab27173507c25c46c6b" kindref="member" tooltip="The string to be returned after a successful operation.">returnString</ref><sp/>=<sp/><ref refid="_e_s_a_p_i_c_url_encoder_8c_1ad730b879e9ba0a6bbc8c632731bfdd82" kindref="member" tooltip="Returns a url-encoded version of the given input string.">ESAPICUrlEncoderEncode</ref>(<sp/>inputString<sp/>);<sp/></highlight><highlight class="comment">//Perform<sp/>Url<sp/>Encoding</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Set<sp/>operation<sp/>as<sp/>successful</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>encodedStringOperation-&gt;<ref refid="struct_e_s_a_p_i_string_operation_1a99cbce009aa937a6eb09f40510a95b73" kindref="member" tooltip="Indicates if the given operation was successful.">operationSuccessful</ref><sp/>=<sp/><ref refid="_e_s_a_p_i_c_encoder_8h_1aec7e62084419d7857ae740a4c68241cfaa82764c3079aea4e60c80e45befbb839" kindref="member">TRUE</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_e_s_a_p_i_c_encoder_8h_1af4b9f1c8f83fc1f697a6c6fb2ba5749cab30d4a386be2c9db1ac213bca008c547" kindref="member" tooltip="The base64 encoding.">ESAPIEncodingTypeBase64Encoding</ref>:</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//INCOMPLETE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Set<sp/>operation<sp/>successful<sp/>as<sp/>false</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>encodedStringOperation-&gt;<ref refid="struct_e_s_a_p_i_string_operation_1a99cbce009aa937a6eb09f40510a95b73" kindref="member" tooltip="Indicates if the given operation was successful.">operationSuccessful</ref><sp/>=<sp/><ref refid="_e_s_a_p_i_c_encoder_8h_1aec7e62084419d7857ae740a4c68241cfaa1e095cc966dbecf6a0d8aad75348d1a" kindref="member">FALSE</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Set<sp/>an<sp/>error<sp/>description<sp/>message</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>encodedStringOperation-&gt;<ref refid="struct_e_s_a_p_i_string_operation_1a7104ebbe41498ebd092ce412fe884b10" kindref="member" tooltip="The error description should the operation fail.">errorDescription</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;This<sp/>Encoding<sp/>is<sp/>not<sp/>yet<sp/>implemented&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Invalid<sp/>encoding</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Set<sp/>operation<sp/>as<sp/>failed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>encodedStringOperation-&gt;<ref refid="struct_e_s_a_p_i_string_operation_1a99cbce009aa937a6eb09f40510a95b73" kindref="member" tooltip="Indicates if the given operation was successful.">operationSuccessful</ref><sp/>=<sp/><ref refid="_e_s_a_p_i_c_encoder_8h_1aec7e62084419d7857ae740a4c68241cfaa1e095cc966dbecf6a0d8aad75348d1a" kindref="member">FALSE</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Set<sp/>an<sp/>error<sp/>message</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(encodedStringOperation-&gt;<ref refid="struct_e_s_a_p_i_string_operation_1a7104ebbe41498ebd092ce412fe884b10" kindref="member" tooltip="The error description should the operation fail.">errorDescription</ref>)<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Invalid<sp/>encoding<sp/>error<sp/>-<sp/>This<sp/>encoding<sp/>is<sp/>currently<sp/>not<sp/>supported&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>encodedStringOperation;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="_e_s_a_p_i_c_encoder_8h_1a6c2931ce40e18b2a2244c441bc9bbd9b" refkind="member"><highlight class="normal"><ref refid="struct_e_s_a_p_i_string_operation" kindref="compound" tooltip="Sends the results and sets the required flags.">ESAPIStringOperation</ref><sp/>*<sp/><ref refid="_e_s_a_p_i_c_encoder_8c_1a6c2931ce40e18b2a2244c441bc9bbd9b" kindref="member" tooltip="This function is used to decode the given string and return the resultant decoded string...">ESAPIDecode</ref><sp/>(<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>inputString,<sp/><ref refid="_e_s_a_p_i_c_encoder_8h_1af4b9f1c8f83fc1f697a6c6fb2ba5749c" kindref="member" tooltip="This is the header of the ESAPI C Encoder Functions. These function are designed to assist in encodin...">ESAPIEncodingType</ref><sp/>typeOfEncoding<sp/>)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(<sp/></highlight><highlight class="stringliteral">&quot;\nI<sp/>am<sp/>printing<sp/>=&gt;<sp/>ESAPI<sp/>Encoder<sp/>Decode<sp/>with<sp/>inputString<sp/>as<sp/>%s&quot;</highlight><highlight class="normal">,inputString<sp/>);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Initiate<sp/>a<sp/>encodedStringOperation<sp/>(Allocate<sp/>memory)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//ESAPIStringOperation<sp/>temp;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_e_s_a_p_i_string_operation" kindref="compound" tooltip="Sends the results and sets the required flags.">ESAPIStringOperation</ref><sp/>*<sp/>decodedStringOperation<sp/>=<sp/>(<sp/><ref refid="struct_e_s_a_p_i_string_operation" kindref="compound" tooltip="Sends the results and sets the required flags.">ESAPIStringOperation</ref><sp/>*<sp/>)<sp/>malloc(<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_e_s_a_p_i_string_operation" kindref="compound" tooltip="Sends the results and sets the required flags.">ESAPIStringOperation</ref>)<sp/>+<sp/>1<sp/>);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//The<sp/>operation<sp/>to<sp/>be<sp/>performed<sp/>is<sp/>still<sp/>not<sp/>complete<sp/>-<sp/>Mark<sp/>as<sp/>unsuccessful</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>decodedStringOperation-&gt;<ref refid="struct_e_s_a_p_i_string_operation_1a99cbce009aa937a6eb09f40510a95b73" kindref="member" tooltip="Indicates if the given operation was successful.">operationSuccessful</ref><sp/>=<sp/><ref refid="_e_s_a_p_i_c_encoder_8h_1aec7e62084419d7857ae740a4c68241cfaa1e095cc966dbecf6a0d8aad75348d1a" kindref="member">FALSE</ref>;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Check<sp/>which<sp/>encoding<sp/>to<sp/>perform</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(<sp/>typeOfEncoding<sp/>)</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_e_s_a_p_i_c_encoder_8h_1af4b9f1c8f83fc1f697a6c6fb2ba5749ca061d2b58fed020025c2b059ed1d90759" kindref="member" tooltip="Same as percent encoding. Catering for redundancy of names.">ESAPIEncodingTypeURLEncoding</ref>:<sp/></highlight><highlight class="comment">//ESAPIEncodingTypePercentEncoding</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Perform<sp/>encoding</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>someString[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Print<sp/>String&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>decodedStringOperation-&gt;<ref refid="struct_e_s_a_p_i_string_operation_1a020a35264b82bab27173507c25c46c6b" kindref="member" tooltip="The string to be returned after a successful operation.">returnString</ref><sp/>=<sp/><ref refid="_e_s_a_p_i_c_url_encoder_8c_1ae873a9107bec72e66b546950c5e83e38" kindref="member" tooltip="Returns a url-decoded version of the given string.">ESAPICUrlEncoderDecode</ref>(<sp/>inputString<sp/>);<sp/></highlight><highlight class="comment">//Perform<sp/>Url<sp/>Decoding</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Set<sp/>operation<sp/>as<sp/>successful</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>decodedStringOperation-&gt;<ref refid="struct_e_s_a_p_i_string_operation_1a99cbce009aa937a6eb09f40510a95b73" kindref="member" tooltip="Indicates if the given operation was successful.">operationSuccessful</ref><sp/>=<sp/><ref refid="_e_s_a_p_i_c_encoder_8h_1aec7e62084419d7857ae740a4c68241cfaa82764c3079aea4e60c80e45befbb839" kindref="member">TRUE</ref>;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_e_s_a_p_i_c_encoder_8h_1af4b9f1c8f83fc1f697a6c6fb2ba5749cab30d4a386be2c9db1ac213bca008c547" kindref="member" tooltip="The base64 encoding.">ESAPIEncodingTypeBase64Encoding</ref>:</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//INCOMPLETE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Set<sp/>operation<sp/>successful<sp/>as<sp/>false</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>decodedStringOperation-&gt;<ref refid="struct_e_s_a_p_i_string_operation_1a99cbce009aa937a6eb09f40510a95b73" kindref="member" tooltip="Indicates if the given operation was successful.">operationSuccessful</ref><sp/>=<sp/><ref refid="_e_s_a_p_i_c_encoder_8h_1aec7e62084419d7857ae740a4c68241cfaa1e095cc966dbecf6a0d8aad75348d1a" kindref="member">FALSE</ref>;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Set<sp/>an<sp/>error<sp/>description<sp/>message</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>decodedStringOperation-&gt;<ref refid="struct_e_s_a_p_i_string_operation_1a7104ebbe41498ebd092ce412fe884b10" kindref="member" tooltip="The error description should the operation fail.">errorDescription</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;This<sp/>Encoding<sp/>is<sp/>not<sp/>yet<sp/>implemented&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Invalid<sp/>encoding</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Set<sp/>operation<sp/>as<sp/>failed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>decodedStringOperation-&gt;<ref refid="struct_e_s_a_p_i_string_operation_1a99cbce009aa937a6eb09f40510a95b73" kindref="member" tooltip="Indicates if the given operation was successful.">operationSuccessful</ref><sp/>=<sp/><ref refid="_e_s_a_p_i_c_encoder_8h_1aec7e62084419d7857ae740a4c68241cfaa1e095cc966dbecf6a0d8aad75348d1a" kindref="member">FALSE</ref>;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Set<sp/>an<sp/>error<sp/>message</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>decodedStringOperation-&gt;<ref refid="struct_e_s_a_p_i_string_operation_1a7104ebbe41498ebd092ce412fe884b10" kindref="member" tooltip="The error description should the operation fail.">errorDescription</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Invalid<sp/>encoding<sp/>error<sp/>-<sp/>This<sp/>encoding<sp/>is<sp/>currently<sp/>not<sp/>supported&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>decodedStringOperation;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICEncoder.c"/>
+  </compounddef>
+</doxygen>

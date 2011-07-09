@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="dir_471d10297d49df7fda6101b549c07b82" kind="dir">
+    <compoundname>/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/</compoundname>
+    <innerdir refid="dir_843780a3c95c67a9720fcb84254cdbf5">/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/</innerdir>
+    <innerfile refid="de/d11/a00021">ESAPICBase64Encoder.c</innerfile>
+    <innerfile refid="de/d5e/a00007">ESAPICBase64Encoder.h</innerfile>
+    <innerfile refid="d7/de0/a00022">ESAPICEncoder.c</innerfile>
+    <innerfile refid="da/da0/a00009">ESAPICEncoder.h</innerfile>
+    <innerfile refid="d3/d52/a00023">ESAPICUrlEncoder.c</innerfile>
+    <innerfile refid="da/d45/a00011">ESAPICUrlEncoder.h</innerfile>
+    <innerfile refid="d6/d5b/a00026">urlEncoder.c</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/"/>
+  </compounddef>
+</doxygen>

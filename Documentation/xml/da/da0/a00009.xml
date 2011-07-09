@@ -1,0 +1,427 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="da/da0/a00009" kind="file">
+    <compoundname>ESAPICEncoder.h</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <includes local="yes">ESAPICAuxiliaryFunctions.h</includes>
+    <includedby refid="d7/dd4/a00013" local="yes">/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/ESAPIEncoder/ESAPIEncoder.h</includedby>
+    <includedby refid="d1/d2b/a00018" local="yes">/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/ESAPIEncoder/ESAPIEncoder.m</includedby>
+    <includedby refid="d7/de0/a00022" local="yes">/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICEncoder.c</includedby>
+    <includedby refid="dc/de2/a00024" local="yes">/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample.c</includedby>
+    <includedby refid="d3/dfe/a00025" local="yes">/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/main.c</includedby>
+    <incdepgraph>
+      <node id="39">
+        <label>stdlib.h</label>
+      </node>
+      <node id="40">
+        <label>ESAPICAuxiliaryFunctions.h</label>
+      </node>
+      <node id="38">
+        <label>/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICEncoder.h</label>
+        <link refid="Pure C functions/ESAPIEncoder/ESAPICEncoder.h"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="46">
+        <label>/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/main.c</label>
+        <link refid="d3/dfe/a00025"/>
+      </node>
+      <node id="42">
+        <label>/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/ESAPIEncoder/ESAPIEncoder.h</label>
+        <link refid="d7/dd4/a00013"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/ESAPIEncoder/ESAPIEncoder.m</label>
+        <link refid="d1/d2b/a00018"/>
+      </node>
+      <node id="44">
+        <label>/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICEncoder.c</label>
+        <link refid="d7/de0/a00022"/>
+      </node>
+      <node id="41">
+        <label>/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICEncoder.h</label>
+        <link refid="Pure C functions/ESAPIEncoder/ESAPICEncoder.h"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample.c</label>
+        <link refid="dc/de2/a00024"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="da/da0/a00009_1af4b9f1c8f83fc1f697a6c6fb2ba5749c" prot="public" static="no">
+        <name>ESAPIEncodingType</name>
+        <enumvalue id="d4/dee/a00008_1af4b9f1c8f83fc1f697a6c6fb2ba5749ca6b143b8248f2d6b9dc93b178c5a2df66" prot="public">
+          <name>ESAPIEncodingTypePercentEncoding</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+<para>Percentage encoding is generally used in the get and post requests to cate for multiple parameters. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d4/dee/a00008_1af4b9f1c8f83fc1f697a6c6fb2ba5749ca061d2b58fed020025c2b059ed1d90759" prot="public">
+          <name>ESAPIEncodingTypeURLEncoding</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+<para>Same as percent encoding. Catering for redundancy of names. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d4/dee/a00008_1af4b9f1c8f83fc1f697a6c6fb2ba5749cab30d4a386be2c9db1ac213bca008c547" prot="public">
+          <name>ESAPIEncodingTypeBase64Encoding</name>
+          <initializer> 1</initializer>
+          <briefdescription>
+<para>The base64 encoding. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="da/da0/a00009_1af4b9f1c8f83fc1f697a6c6fb2ba5749ca6b143b8248f2d6b9dc93b178c5a2df66" prot="public">
+          <name>ESAPIEncodingTypePercentEncoding</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+<para>Percentage encoding is generally used in the get and post requests to cate for multiple parameters. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="da/da0/a00009_1af4b9f1c8f83fc1f697a6c6fb2ba5749ca061d2b58fed020025c2b059ed1d90759" prot="public">
+          <name>ESAPIEncodingTypeURLEncoding</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+<para>Same as percent encoding. Catering for redundancy of names. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="da/da0/a00009_1af4b9f1c8f83fc1f697a6c6fb2ba5749cab30d4a386be2c9db1ac213bca008c547" prot="public">
+          <name>ESAPIEncodingTypeBase64Encoding</name>
+          <initializer> 1</initializer>
+          <briefdescription>
+<para>The base64 encoding. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>This is the header of the ESAPI C Encoder Functions. </para>        </briefdescription>
+        <detaileddescription>
+<para>These function are designed to assist in encoding functionality in various scenarios. ` <linebreak/>
+ Encoding:</para><para>Currently Supported Encodings: <orderedlist>
+<listitem>
+<para>URL Encoding </para></listitem>
+<listitem>
+<para><orderedlist>
+</orderedlist>
+<linebreak/>
+</para><para>The OWASP ESAPI C Library is still not complete and the release is a ALPHA QUALITY release. Kindly let us know of any bugs through email to <ulink url="mailto:deepak.subramanian@owasp.org">deepak.subramanian@owasp.org</ulink> The enum that describes the possible encodings available with the ESAPI Library </para></listitem>
+</orderedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICEncoder.h" line="48" bodyfile="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICEncoder.h" bodystart="47" bodyend="52"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="da/da0/a00009_1a262035b714026233703ab8549b8cc408" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d7/d46/a00002" kindref="compound">ESAPIStringOperation</ref> *</type>
+        <definition>ESAPIStringOperation* ESAPICEncode</definition>
+        <argsstring>(char *inputString, ESAPIEncodingType typeOfEncoding)</argsstring>
+        <name>ESAPICEncode</name>
+        <param>
+          <type>char *</type>
+          <declname>inputString</declname>
+        </param>
+        <param>
+          <type><ref refid="d4/dee/a00008_1af4b9f1c8f83fc1f697a6c6fb2ba5749c" kindref="member">ESAPIEncodingType</ref></type>
+          <declname>typeOfEncoding</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to encode the given string and return the resultant encoded string. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>inputString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- The string to be encoded. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>typeOfEncoding</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- The type of encoding required. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>encodedString - The encoded string using the ESAPIEncodingType is returned.</para></simplesect>
+{ <programlisting><codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>inputString[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;sometext&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/d46/a00002" kindref="compound" tooltip="Sends the results and sets the required flags.">ESAPIStringOperation</ref><sp/>*<sp/>encodedStringOperation<sp/>=<sp/>ESAPIEncode<sp/>(<sp/>inputString,<sp/><ref refid="d4/dee/a00008_1af4b9f1c8f83fc1f697a6c6fb2ba5749ca6b143b8248f2d6b9dc93b178c5a2df66" kindref="member" tooltip="Percentage encoding is generally used in the get and post requests to cate for multiple parameters...">ESAPIEncodingTypePercentEncoding</ref><sp/>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>encodedStringOperation-&gt;<ref refid="d7/d46/a00002_1a60d5c2a9f6ce8f351a24f7c3d816de5c" kindref="member" tooltip="Indicates if the given operation was successful.">operationSuccessful</ref><sp/>)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>encodedString<sp/>=<sp/>encodedStringOperation-&gt;<ref refid="d7/d46/a00002_1ae335833c00b0feebd0ba7610cb1863a8" kindref="member" tooltip="The string to be returned after a successful operation.">returnString</ref>;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Use<sp/>the<sp/>encodedString<sp/>for<sp/>operations.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free<sp/>(<sp/>encodedString<sp/>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>errorDescription<sp/>=<sp/>encodedStringOperation-&gt;<ref refid="d7/d46/a00002_1a7b2f8d3eac842c2b166bd94c5e59deed" kindref="member" tooltip="The error description should the operation fail.">errorDescription</ref>;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//The<sp/>encoding<sp/>has<sp/>failed.<sp/>Manage<sp/>accordingly.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free<sp/>(<sp/>errorDescription<sp/>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free<sp/>(<sp/>encodedStringOperation<sp/>);</highlight></codeline>
+</programlisting> } </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICEncoder.h" line="81" bodyfile="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICEncoder.c" bodystart="21" bodyend="38"/>
+        <references refid="d7/de0/a00022_1a370f5a068adf4f7622dbaf6125a213e3" compoundref="d7/de0/a00022" startline="18">encodingFunctionsArray</references>
+        <references refid="d7/d46/a00002_1a7b2f8d3eac842c2b166bd94c5e59deed" compoundref="d0/d0b/a00004" startline="23">ESAPIStringOperation::errorDescription</references>
+        <references refid="d7/de0/a00022_1a2e9860061ee6616b276f7cab7e0fba71" compoundref="d7/de0/a00022" startline="17">numberOfAvailableCodecs</references>
+        <references refid="d7/d46/a00002_1a60d5c2a9f6ce8f351a24f7c3d816de5c" compoundref="d0/d0b/a00004" startline="21">ESAPIStringOperation::operationSuccessful</references>
+      </memberdef>
+      <memberdef kind="function" id="da/da0/a00009_1a6a62cfbac366a2b25744c3da2337ea2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d7/d46/a00002" kindref="compound">ESAPIStringOperation</ref> *</type>
+        <definition>ESAPIStringOperation* ESAPICDecode</definition>
+        <argsstring>(char *inputString, ESAPIEncodingType typeOfEncoding)</argsstring>
+        <name>ESAPICDecode</name>
+        <param>
+          <type>char *</type>
+          <declname>inputString</declname>
+        </param>
+        <param>
+          <type><ref refid="d4/dee/a00008_1af4b9f1c8f83fc1f697a6c6fb2ba5749c" kindref="member">ESAPIEncodingType</ref></type>
+          <declname>typeOfEncoding</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to decode the given string and return the resultant decoded string. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>inputString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- The string to be encoded. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>typeOfEncoding</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- The type of encoding required</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+{ <programlisting><codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>inputString[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;sometext&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/d46/a00002" kindref="compound" tooltip="Sends the results and sets the required flags.">ESAPIStringOperation</ref><sp/>*<sp/>decodedStringOperation<sp/>=<sp/>ESAPIDecode<sp/>(<sp/>inputString,<sp/><ref refid="d4/dee/a00008_1af4b9f1c8f83fc1f697a6c6fb2ba5749ca6b143b8248f2d6b9dc93b178c5a2df66" kindref="member" tooltip="Percentage encoding is generally used in the get and post requests to cate for multiple parameters...">ESAPIEncodingTypePercentEncoding</ref><sp/>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>decodedStringOperation-&gt;<ref refid="d7/d46/a00002_1a60d5c2a9f6ce8f351a24f7c3d816de5c" kindref="member" tooltip="Indicates if the given operation was successful.">operationSuccessful</ref><sp/>)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>decodedString<sp/>=<sp/>decodedStringOperation-&gt;<ref refid="d7/d46/a00002_1ae335833c00b0feebd0ba7610cb1863a8" kindref="member" tooltip="The string to be returned after a successful operation.">returnString</ref>;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Use<sp/>the<sp/>decodedString<sp/>for<sp/>operations.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free<sp/>(<sp/>decodedString<sp/>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>errorDescription<sp/>=<sp/>encodedStringOperation-&gt;<ref refid="d7/d46/a00002_1a7b2f8d3eac842c2b166bd94c5e59deed" kindref="member" tooltip="The error description should the operation fail.">errorDescription</ref>;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//The<sp/>decoding<sp/>has<sp/>failed.<sp/>Manage<sp/>accordingly.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free<sp/>(<sp/>errorDescription<sp/>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free<sp/>(<sp/>decodedStringOperation<sp/>);</highlight></codeline>
+</programlisting> } </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICEncoder.h" line="110" bodyfile="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICEncoder.c" bodystart="40" bodyend="57"/>
+        <references refid="d7/de0/a00022_1a7f307a92758e8a838c0fa727d46bcb21" compoundref="d7/de0/a00022" startline="19">decodingFunctionsArray</references>
+        <references refid="d7/d46/a00002_1a7b2f8d3eac842c2b166bd94c5e59deed" compoundref="d0/d0b/a00004" startline="23">ESAPIStringOperation::errorDescription</references>
+        <references refid="d7/de0/a00022_1a2e9860061ee6616b276f7cab7e0fba71" compoundref="d7/de0/a00022" startline="17">numberOfAvailableCodecs</references>
+        <references refid="d7/d46/a00002_1a60d5c2a9f6ce8f351a24f7c3d816de5c" compoundref="d0/d0b/a00004" startline="21">ESAPIStringOperation::operationSuccessful</references>
+      </memberdef>
+      <memberdef kind="function" id="da/da0/a00009_1ab47fc5e8e4f31e52eca5e3cb54be5251" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d7/d46/a00002" kindref="compound">ESAPIStringOperation</ref> *</type>
+        <definition>ESAPIStringOperation* ESAPICCanonicalizationForSpecificEncodingType</definition>
+        <argsstring>(char *inputString, ESAPIEncodingType typeOfEncoding, bool strict)</argsstring>
+        <name>ESAPICCanonicalizationForSpecificEncodingType</name>
+        <param>
+          <type>char *</type>
+          <declname>inputString</declname>
+        </param>
+        <param>
+          <type><ref refid="d4/dee/a00008_1af4b9f1c8f83fc1f697a6c6fb2ba5749c" kindref="member">ESAPIEncodingType</ref></type>
+          <declname>typeOfEncoding</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>strict</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to decode the given string to canonical form and return the resultant decoded string. </para>        </briefdescription>
+        <detaileddescription>
+<para>NOTE: This function canonicalizes for only one given encoding type.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>inputString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- The string to be encoded. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>typeOfEncoding</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- The type of encoding required </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>strict</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- If the strict flag is set, the decoding will fail in case of Multiple encoding/Mixed encoding etc.,</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+{ <programlisting><codeline><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>inputString[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;sometext&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><ref refid="d7/d46/a00002" kindref="compound" tooltip="Sends the results and sets the required flags.">ESAPIStringOperation</ref><sp/>*<sp/>decodedStringOperation<sp/>=<sp/>ESAPICanonicalizationForSpecificEncodingType<sp/>(<sp/>inputString,<sp/><ref refid="d4/dee/a00008_1af4b9f1c8f83fc1f697a6c6fb2ba5749ca6b143b8248f2d6b9dc93b178c5a2df66" kindref="member" tooltip="Percentage encoding is generally used in the get and post requests to cate for multiple parameters...">ESAPIEncodingTypePercentEncoding</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>decodedStringOperation-&gt;<ref refid="d7/d46/a00002_1a60d5c2a9f6ce8f351a24f7c3d816de5c" kindref="member" tooltip="Indicates if the given operation was successful.">operationSuccessful</ref><sp/>)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>decodedString<sp/>=<sp/>decodedStringOperation-&gt;<ref refid="d7/d46/a00002_1ae335833c00b0feebd0ba7610cb1863a8" kindref="member" tooltip="The string to be returned after a successful operation.">returnString</ref>;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Use<sp/>the<sp/>decodedString<sp/>for<sp/>operations.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free<sp/>(<sp/>decodedString<sp/>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>errorDescription<sp/>=<sp/>encodedStringOperation-&gt;<ref refid="d7/d46/a00002_1a7b2f8d3eac842c2b166bd94c5e59deed" kindref="member" tooltip="The error description should the operation fail.">errorDescription</ref>;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//The<sp/>decoding<sp/>has<sp/>failed.<sp/>Manage<sp/>accordingly.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free<sp/>(<sp/>errorDescription<sp/>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/>free<sp/>(<sp/>decodedStringOperation<sp/>);</highlight></codeline>
+</programlisting> } </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICEncoder.h" line="140" bodyfile="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICEncoder.c" bodystart="59" bodyend="119"/>
+        <references refid="d7/d46/a00002_1a7b2f8d3eac842c2b166bd94c5e59deed" compoundref="d0/d0b/a00004" startline="23">ESAPIStringOperation::errorDescription</references>
+        <references refid="d4/dee/a00008_1a6a62cfbac366a2b25744c3da2337ea2f" compoundref="d7/de0/a00022" startline="40" endline="57">ESAPICDecode</references>
+        <references refid="d7/d46/a00002_1a60d5c2a9f6ce8f351a24f7c3d816de5c" compoundref="d0/d0b/a00004" startline="21">ESAPIStringOperation::operationSuccessful</references>
+        <references refid="d7/d46/a00002_1ae335833c00b0feebd0ba7610cb1863a8" compoundref="d0/d0b/a00004" startline="22">ESAPIStringOperation::returnString</references>
+      </memberdef>
+      <memberdef kind="function" id="da/da0/a00009_1a5f98e370493474885f0c51813256297a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d7/d46/a00002" kindref="compound">ESAPIStringOperation</ref> *</type>
+        <definition>ESAPIStringOperation* ESAPICCanonicalizationAllAvailableEncodings</definition>
+        <argsstring>(char *inputString, bool strict)</argsstring>
+        <name>ESAPICCanonicalizationAllAvailableEncodings</name>
+        <param>
+          <type>char *</type>
+          <declname>inputString</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>strict</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to decode the given string to canonical form and return the resultant decoded string. </para>        </briefdescription>
+        <detaileddescription>
+<para>NOTE: This function canonicalizes for all available encodings.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>inputString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- The string to be encoded. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>typeOfEncoding</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- The type of encoding required </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>strict</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- If the strict flag is set, the decoding will fail in case of Multiple encoding/Mixed encoding etc.,</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+{ <programlisting><codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>inputString[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;sometext&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/d46/a00002" kindref="compound" tooltip="Sends the results and sets the required flags.">ESAPIStringOperation</ref><sp/>*<sp/>decodedStringOperation<sp/>=<sp/><ref refid="d4/dee/a00008_1a5f98e370493474885f0c51813256297a" kindref="member" tooltip="This function is used to decode the given string to canonical form and return the resultant decoded s...">ESAPICCanonicalizationAllAvailableEncodings</ref><sp/>(<sp/>inputString,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>decodedStringOperation-&gt;<ref refid="d7/d46/a00002_1a60d5c2a9f6ce8f351a24f7c3d816de5c" kindref="member" tooltip="Indicates if the given operation was successful.">operationSuccessful</ref><sp/>)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>decodedString<sp/>=<sp/>decodedStringOperation-&gt;<ref refid="d7/d46/a00002_1ae335833c00b0feebd0ba7610cb1863a8" kindref="member" tooltip="The string to be returned after a successful operation.">returnString</ref>;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Use<sp/>the<sp/>decodedString<sp/>for<sp/>operations.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free<sp/>(<sp/>decodedString<sp/>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>errorDescription<sp/>=<sp/>encodedStringOperation-&gt;<ref refid="d7/d46/a00002_1a7b2f8d3eac842c2b166bd94c5e59deed" kindref="member" tooltip="The error description should the operation fail.">errorDescription</ref>;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//The<sp/>decoding<sp/>has<sp/>failed.<sp/>Manage<sp/>accordingly.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free<sp/>(<sp/>errorDescription<sp/>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free<sp/>(<sp/>decodedStringOperation<sp/>);</highlight></codeline>
+</programlisting> } </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICEncoder.h" line="170" bodyfile="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICEncoder.c" bodystart="121" bodyend="184"/>
+        <references refid="d7/d46/a00002_1a7b2f8d3eac842c2b166bd94c5e59deed" compoundref="d0/d0b/a00004" startline="23">ESAPIStringOperation::errorDescription</references>
+        <references refid="d4/dee/a00008_1ab47fc5e8e4f31e52eca5e3cb54be5251" compoundref="d7/de0/a00022" startline="59" endline="119">ESAPICCanonicalizationForSpecificEncodingType</references>
+        <references refid="d7/de0/a00022_1a2e9860061ee6616b276f7cab7e0fba71" compoundref="d7/de0/a00022" startline="17">numberOfAvailableCodecs</references>
+        <references refid="d7/d46/a00002_1a60d5c2a9f6ce8f351a24f7c3d816de5c" compoundref="d0/d0b/a00004" startline="21">ESAPIStringOperation::operationSuccessful</references>
+        <references refid="d7/d46/a00002_1ae335833c00b0feebd0ba7610cb1863a8" compoundref="d0/d0b/a00004" startline="22">ESAPIStringOperation::returnString</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/><sp/>ESAPICEncoder.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/><sp/>ESAPI</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>OWASP<sp/>Enterprise<sp/>Security<sp/>API<sp/>(ESAPI)</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>Open<sp/>Web<sp/>Application<sp/>Security<sp/>Project<sp/>(OWASP)</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Enterprise<sp/>Security<sp/>API<sp/>(ESAPI)<sp/>project.<sp/>For<sp/>details,<sp/>please<sp/>see</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>&lt;a<sp/>href=&quot;http://www.owasp.org/index.php/ESAPI&quot;&gt;http://www.owasp.org/index.php/ESAPI&lt;/a&gt;.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>The<sp/>ESAPI<sp/>is<sp/>published<sp/>by<sp/>OWASP<sp/>under<sp/>the<sp/>BSD<sp/>license.<sp/>You<sp/>should<sp/>read<sp/>and<sp/>accept<sp/>the</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>LICENSE<sp/>before<sp/>you<sp/>use,<sp/>modify,<sp/>and/or<sp/>redistribute<sp/>this<sp/>software.</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/><sp/>Created<sp/>by<sp/>DEEPAK<sp/>SUBRAMANIAN<sp/>on<sp/>4/16/11.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/>Copyright<sp/>2011<sp/>OWASP<sp/>Foundation.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ESAPICAuxiliaryFunctions.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ESAPICEncoder_H</highlight></codeline>
+<codeline lineno="23"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ESAPICEncoder_H</highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="47" refid="da/da0/a00009_1af4b9f1c8f83fc1f697a6c6fb2ba5749c" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="49" refid="da/da0/a00009_1af4b9f1c8f83fc1f697a6c6fb2ba5749ca6b143b8248f2d6b9dc93b178c5a2df66" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d4/dee/a00008_1af4b9f1c8f83fc1f697a6c6fb2ba5749ca6b143b8248f2d6b9dc93b178c5a2df66" kindref="member" tooltip="Percentage encoding is generally used in the get and post requests to cate for multiple parameters...">ESAPIEncodingTypePercentEncoding</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="50" refid="da/da0/a00009_1af4b9f1c8f83fc1f697a6c6fb2ba5749ca061d2b58fed020025c2b059ed1d90759" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d4/dee/a00008_1af4b9f1c8f83fc1f697a6c6fb2ba5749ca061d2b58fed020025c2b059ed1d90759" kindref="member" tooltip="Same as percent encoding. Catering for redundancy of names.">ESAPIEncodingTypeURLEncoding</ref><sp/>=<sp/>0,<sp/></highlight></codeline>
+<codeline lineno="51" refid="da/da0/a00009_1af4b9f1c8f83fc1f697a6c6fb2ba5749cab30d4a386be2c9db1ac213bca008c547" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d4/dee/a00008_1af4b9f1c8f83fc1f697a6c6fb2ba5749cab30d4a386be2c9db1ac213bca008c547" kindref="member" tooltip="The base64 encoding.">ESAPIEncodingTypeBase64Encoding</ref><sp/>=<sp/>1<sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}<sp/><ref refid="d4/dee/a00008_1af4b9f1c8f83fc1f697a6c6fb2ba5749c" kindref="member" tooltip="This is the header of the ESAPI C Encoder Functions.">ESAPIEncodingType</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="d7/d46/a00002" kindref="compound" tooltip="Sends the results and sets the required flags.">ESAPIStringOperation</ref><sp/>*<sp/><ref refid="d4/dee/a00008_1a262035b714026233703ab8549b8cc408" kindref="member" tooltip="This function is used to encode the given string and return the resultant encoded string...">ESAPICEncode</ref><sp/>(<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>inputString,<sp/><ref refid="d4/dee/a00008_1af4b9f1c8f83fc1f697a6c6fb2ba5749c" kindref="member" tooltip="This is the header of the ESAPI C Encoder Functions.">ESAPIEncodingType</ref><sp/>typeOfEncoding<sp/>);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="d7/d46/a00002" kindref="compound" tooltip="Sends the results and sets the required flags.">ESAPIStringOperation</ref><sp/>*<sp/><ref refid="d4/dee/a00008_1a6a62cfbac366a2b25744c3da2337ea2f" kindref="member" tooltip="This function is used to decode the given string and return the resultant decoded string...">ESAPICDecode</ref><sp/>(<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>inputString,<sp/><ref refid="d4/dee/a00008_1af4b9f1c8f83fc1f697a6c6fb2ba5749c" kindref="member" tooltip="This is the header of the ESAPI C Encoder Functions.">ESAPIEncodingType</ref><sp/>typeOfEncoding<sp/>);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="d7/d46/a00002" kindref="compound" tooltip="Sends the results and sets the required flags.">ESAPIStringOperation</ref><sp/>*<sp/><ref refid="d4/dee/a00008_1ab47fc5e8e4f31e52eca5e3cb54be5251" kindref="member" tooltip="This function is used to decode the given string to canonical form and return the resultant decoded s...">ESAPICCanonicalizationForSpecificEncodingType</ref><sp/>(<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>inputString<sp/>,<sp/><ref refid="d4/dee/a00008_1af4b9f1c8f83fc1f697a6c6fb2ba5749c" kindref="member" tooltip="This is the header of the ESAPI C Encoder Functions.">ESAPIEncodingType</ref><sp/>typeOfEncoding,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>strict<sp/>);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="d7/d46/a00002" kindref="compound" tooltip="Sends the results and sets the required flags.">ESAPIStringOperation</ref><sp/>*<sp/><ref refid="d4/dee/a00008_1a5f98e370493474885f0c51813256297a" kindref="member" tooltip="This function is used to decode the given string to canonical form and return the resultant decoded s...">ESAPICCanonicalizationAllAvailableEncodings</ref><sp/>(<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>inputString,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>strict<sp/>);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICEncoder.h"/>
+  </compounddef>
+</doxygen>
