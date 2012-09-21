@@ -1,0 +1,80 @@
+.TH "/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICUrlEncoder.c" 3 "Sat Jul 9 2011" "Version v0.0.1 (Alpha)" "ESAPI" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICUrlEncoder.c \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'ESAPICUrlEncoder.h'\fP
+.br
+\fC#include <math.h>\fP
+.br
+\fC#include <stdio.h>\fP
+.br
+\fC#include <stdlib.h>\fP
+.br
+\fC#include <ctype.h>\fP
+.br
+\fC#include <string.h>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBESAPIStringOperation\fP * \fBESAPICUrlEncoderEncode\fP (char *inputString)"
+.br
+.RI "\fI\fBESAPICUrlEncoder.c\fP ESAPI. \fP"
+.ti -1c
+.RI "\fBESAPIStringOperation\fP * \fBESAPICUrlEncoderDecode\fP (char *inputString)"
+.br
+.RI "\fIReturns a url-decoded version of the given string. \fP"
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "\fBESAPIStringOperation\fP* ESAPICUrlEncoderDecode (char *inputString)"
+.PP
+Returns a url-decoded version of the given string. This code has been downloaded from http://www.geekhideout.com/urlcode.shtml on April 16, 2011
+.PP
+\fBParameters:\fP
+.RS 4
+\fIinputString\fP - This is the input string which needs to be decoded 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+The decoded string IMPORTANT: be sure to free() the returned string after use 
+.RE
+.PP
+
+.PP
+Definition at line 78 of file ESAPICUrlEncoder.c.
+.PP
+References ESAPIStringOperation::errorDescription, from_hex(), ESAPIStringOperation::operationSuccessful, and ESAPIStringOperation::returnString.
+.SS "\fBESAPIStringOperation\fP* ESAPICUrlEncoderEncode (char *inputString)"
+.PP
+\fBESAPICUrlEncoder.c\fP ESAPI. Returns a url-encoded version of the given input string.
+.PP
+Created by DEEPAK SUBRAMANIAN on 4/18/11. Copyright 2011 OWASP Foundation. All rights reserved. This code has been downloaded from http://www.geekhideout.com/urlcode.shtml on April 16, 2011 Returns a url-encoded version of the given input string
+.PP
+IMPORTANT: be sure to free() the returned string after use This code has been downloaded from http://www.geekhideout.com/urlcode.shtml on April 16, 2011
+.PP
+\fBParameters:\fP
+.RS 4
+\fIinputString\fP - This is the input string which needs to be decoded 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+The decoded string IMPORTANT: be sure to free() the returned string after use 
+.RE
+.PP
+
+.PP
+Definition at line 27 of file ESAPICUrlEncoder.c.
+.PP
+References ESAPIStringOperation::errorDescription, ESAPIStringOperation::operationSuccessful, ESAPIStringOperation::returnString, and to_hex().
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for ESAPI from the source code.

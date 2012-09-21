@@ -1,0 +1,293 @@
+\hypertarget{a00022}{
+\section{/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI\_\-COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICEncoder.c File Reference}
+\label{d7/de0/a00022}\index{/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI\_\-COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICEncoder.c@{/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI\_\-COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICEncoder.c}}
+}
+{\ttfamily \#include \char`\"{}ESAPICEncoder.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}ESAPICUrlEncoder.h\char`\"{}}\par
+{\ttfamily \#include $<$stdio.h$>$}\par
+{\ttfamily \#include \char`\"{}ESAPICBase64Encoder.h\char`\"{}}\par
+{\ttfamily \#include $<$string.h$>$}\par
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00002}{ESAPIStringOperation} $\ast$ \hyperlink{a00022_a262035b714026233703ab8549b8cc408}{ESAPICEncode} (char $\ast$inputString, \hyperlink{a00008_af4b9f1c8f83fc1f697a6c6fb2ba5749c}{ESAPIEncodingType} typeOfEncoding)
+\begin{DoxyCompactList}\small\item\em This function is used to encode the given string and return the resultant encoded string. \end{DoxyCompactList}\item 
+\hyperlink{a00002}{ESAPIStringOperation} $\ast$ \hyperlink{a00022_a6a62cfbac366a2b25744c3da2337ea2f}{ESAPICDecode} (char $\ast$inputString, \hyperlink{a00008_af4b9f1c8f83fc1f697a6c6fb2ba5749c}{ESAPIEncodingType} typeOfEncoding)
+\begin{DoxyCompactList}\small\item\em This function is used to decode the given string and return the resultant decoded string. \end{DoxyCompactList}\item 
+\hyperlink{a00002}{ESAPIStringOperation} $\ast$ \hyperlink{a00022_ab47fc5e8e4f31e52eca5e3cb54be5251}{ESAPICCanonicalizationForSpecificEncodingType} (char $\ast$inputString, \hyperlink{a00008_af4b9f1c8f83fc1f697a6c6fb2ba5749c}{ESAPIEncodingType} typeOfEncoding, bool strict)
+\begin{DoxyCompactList}\small\item\em This function is used to decode the given string to canonical form and return the resultant decoded string. \end{DoxyCompactList}\item 
+\hyperlink{a00002}{ESAPIStringOperation} $\ast$ \hyperlink{a00022_a5f98e370493474885f0c51813256297a}{ESAPICCanonicalizationAllAvailableEncodings} (char $\ast$inputString, bool strict)
+\begin{DoxyCompactList}\small\item\em This function is used to decode the given string to canonical form and return the resultant decoded string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const int \hyperlink{a00022_a2e9860061ee6616b276f7cab7e0fba71}{numberOfAvailableCodecs} = 2
+\item 
+\hyperlink{a00002}{ESAPIStringOperation} $\ast$($\ast$ \hyperlink{a00022_a370f5a068adf4f7622dbaf6125a213e3}{encodingFunctionsArray} \mbox{[}2\mbox{]})(char $\ast$) = \{ ESAPICUrlEncoderEncode , ESAPICBase64EncoderEncode \}
+\item 
+\hyperlink{a00002}{ESAPIStringOperation} $\ast$($\ast$ \hyperlink{a00022_a7f307a92758e8a838c0fa727d46bcb21}{decodingFunctionsArray} \mbox{[}2\mbox{]})(char $\ast$) = \{ ESAPICUrlEncoderDecode , ESAPICBase64EncoderDecode \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{a00022_a5f98e370493474885f0c51813256297a}{
+\index{ESAPICEncoder.c@{ESAPICEncoder.c}!ESAPICCanonicalizationAllAvailableEncodings@{ESAPICCanonicalizationAllAvailableEncodings}}
+\index{ESAPICCanonicalizationAllAvailableEncodings@{ESAPICCanonicalizationAllAvailableEncodings}!ESAPICEncoder.c@{ESAPICEncoder.c}}
+\subsubsection[{ESAPICCanonicalizationAllAvailableEncodings}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ESAPIStringOperation}$\ast$ ESAPICCanonicalizationAllAvailableEncodings (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{inputString, }
+\item[{bool}]{strict}
+\end{DoxyParamCaption}
+)}}
+\label{d7/de0/a00022_a5f98e370493474885f0c51813256297a}
+
+
+This function is used to decode the given string to canonical form and return the resultant decoded string. 
+
+NOTE: This function canonicalizes for all available encodings.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inputString} & -\/ The string to be encoded. \\
+\hline
+{\em typeOfEncoding} & -\/ The type of encoding required \\
+\hline
+{\em strict} & -\/ If the strict flag is set, the decoding will fail in case of Multiple encoding/Mixed encoding etc.,\\
+\hline
+\end{DoxyParams}
+\{ 
+\begin{DoxyCode}
+        char inputString[] = "sometext";
+        ESAPIStringOperation * decodedStringOperation = 
+      ESAPICCanonicalizationAllAvailableEncodings ( inputString, false );
+        if ( decodedStringOperation->operationSuccessful )
+        {
+                char * decodedString = decodedStringOperation->returnString;
+                //Use the decodedString for operations.
+                free ( decodedString );
+        }
+        else
+        {
+                char * errorDescription = encodedStringOperation->
+      errorDescription;
+                //The decoding has failed. Manage accordingly.
+                free ( errorDescription );
+        }
+        free ( decodedStringOperation );
+\end{DoxyCode}
+ \} 
+
+Definition at line 121 of file ESAPICEncoder.c.
+
+
+
+References ESAPIStringOperation::errorDescription, ESAPICCanonicalizationForSpecificEncodingType(), numberOfAvailableCodecs, ESAPIStringOperation::operationSuccessful, and ESAPIStringOperation::returnString.
+
+\hypertarget{a00022_ab47fc5e8e4f31e52eca5e3cb54be5251}{
+\index{ESAPICEncoder.c@{ESAPICEncoder.c}!ESAPICCanonicalizationForSpecificEncodingType@{ESAPICCanonicalizationForSpecificEncodingType}}
+\index{ESAPICCanonicalizationForSpecificEncodingType@{ESAPICCanonicalizationForSpecificEncodingType}!ESAPICEncoder.c@{ESAPICEncoder.c}}
+\subsubsection[{ESAPICCanonicalizationForSpecificEncodingType}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ESAPIStringOperation}$\ast$ ESAPICCanonicalizationForSpecificEncodingType (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{inputString, }
+\item[{{\bf ESAPIEncodingType}}]{typeOfEncoding, }
+\item[{bool}]{strict}
+\end{DoxyParamCaption}
+)}}
+\label{d7/de0/a00022_ab47fc5e8e4f31e52eca5e3cb54be5251}
+
+
+This function is used to decode the given string to canonical form and return the resultant decoded string. 
+
+NOTE: This function canonicalizes for only one given encoding type.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inputString} & -\/ The string to be encoded. \\
+\hline
+{\em typeOfEncoding} & -\/ The type of encoding required \\
+\hline
+{\em strict} & -\/ If the strict flag is set, the decoding will fail in case of Multiple encoding/Mixed encoding etc.,\\
+\hline
+\end{DoxyParams}
+\{ 
+\begin{DoxyCode}
+ char inputString[] = "sometext";
+ ESAPIStringOperation * decodedStringOperation = ESAPICanonicalizationForSpecific
+      EncodingType ( inputString, ESAPIEncodingTypePercentEncoding, false );
+ if ( decodedStringOperation->operationSuccessful )
+ {
+        char * decodedString = decodedStringOperation->returnString;
+        //Use the decodedString for operations.
+        free ( decodedString );
+ }
+ else
+ {
+        char * errorDescription = encodedStringOperation->errorDescription;
+        //The decoding has failed. Manage accordingly.
+        free ( errorDescription );
+ }
+ free ( decodedStringOperation );
+\end{DoxyCode}
+ \} 
+
+Definition at line 59 of file ESAPICEncoder.c.
+
+
+
+References ESAPIStringOperation::errorDescription, ESAPICDecode(), ESAPIStringOperation::operationSuccessful, and ESAPIStringOperation::returnString.
+
+
+
+Referenced by ESAPICCanonicalizationAllAvailableEncodings(), and main().
+
+\hypertarget{a00022_a6a62cfbac366a2b25744c3da2337ea2f}{
+\index{ESAPICEncoder.c@{ESAPICEncoder.c}!ESAPICDecode@{ESAPICDecode}}
+\index{ESAPICDecode@{ESAPICDecode}!ESAPICEncoder.c@{ESAPICEncoder.c}}
+\subsubsection[{ESAPICDecode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ESAPIStringOperation}$\ast$ ESAPICDecode (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{inputString, }
+\item[{{\bf ESAPIEncodingType}}]{typeOfEncoding}
+\end{DoxyParamCaption}
+)}}
+\label{d7/de0/a00022_a6a62cfbac366a2b25744c3da2337ea2f}
+
+
+This function is used to decode the given string and return the resultant decoded string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inputString} & -\/ The string to be encoded. \\
+\hline
+{\em typeOfEncoding} & -\/ The type of encoding required\\
+\hline
+\end{DoxyParams}
+\{ 
+\begin{DoxyCode}
+        char inputString[] = "sometext";
+        ESAPIStringOperation * decodedStringOperation = ESAPIDecode ( inputString
+      , ESAPIEncodingTypePercentEncoding );
+        if ( decodedStringOperation->operationSuccessful )
+        {
+                char * decodedString = decodedStringOperation->returnString;
+                //Use the decodedString for operations.
+                free ( decodedString );
+        }
+        else
+        {
+                char * errorDescription = encodedStringOperation->
+      errorDescription;
+                //The decoding has failed. Manage accordingly.
+                free ( errorDescription );
+        }
+        free ( decodedStringOperation );
+\end{DoxyCode}
+ \} 
+
+Definition at line 40 of file ESAPICEncoder.c.
+
+
+
+References decodingFunctionsArray, ESAPIStringOperation::errorDescription, numberOfAvailableCodecs, and ESAPIStringOperation::operationSuccessful.
+
+
+
+Referenced by ESAPICCanonicalizationForSpecificEncodingType().
+
+\hypertarget{a00022_a262035b714026233703ab8549b8cc408}{
+\index{ESAPICEncoder.c@{ESAPICEncoder.c}!ESAPICEncode@{ESAPICEncode}}
+\index{ESAPICEncode@{ESAPICEncode}!ESAPICEncoder.c@{ESAPICEncoder.c}}
+\subsubsection[{ESAPICEncode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ESAPIStringOperation}$\ast$ ESAPICEncode (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{inputString, }
+\item[{{\bf ESAPIEncodingType}}]{typeOfEncoding}
+\end{DoxyParamCaption}
+)}}
+\label{d7/de0/a00022_a262035b714026233703ab8549b8cc408}
+
+
+This function is used to encode the given string and return the resultant encoded string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inputString} & -\/ The string to be encoded. \\
+\hline
+{\em typeOfEncoding} & -\/ The type of encoding required. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+encodedString -\/ The encoded string using the ESAPIEncodingType is returned.
+\end{DoxyReturn}
+\{ 
+\begin{DoxyCode}
+        char inputString[] = "sometext";
+        ESAPIStringOperation * encodedStringOperation = ESAPIEncode ( inputString
+      , ESAPIEncodingTypePercentEncoding );
+        if ( encodedStringOperation->operationSuccessful )
+        {
+                char * encodedString = encodedStringOperation->returnString;
+                //Use the encodedString for operations.
+                free ( encodedString );
+        }
+        else
+        {
+                char * errorDescription = encodedStringOperation->
+      errorDescription;
+                //The encoding has failed. Manage accordingly.
+                free ( errorDescription );
+        }
+        free ( encodedStringOperation );
+\end{DoxyCode}
+ \} 
+
+Definition at line 21 of file ESAPICEncoder.c.
+
+
+
+References encodingFunctionsArray, ESAPIStringOperation::errorDescription, numberOfAvailableCodecs, and ESAPIStringOperation::operationSuccessful.
+
+
+
+Referenced by main().
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{a00022_a7f307a92758e8a838c0fa727d46bcb21}{
+\index{ESAPICEncoder.c@{ESAPICEncoder.c}!decodingFunctionsArray@{decodingFunctionsArray}}
+\index{decodingFunctionsArray@{decodingFunctionsArray}!ESAPICEncoder.c@{ESAPICEncoder.c}}
+\subsubsection[{decodingFunctionsArray}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ESAPIStringOperation}$\ast$($\ast$  {\bf decodingFunctionsArray}\mbox{[}2\mbox{]})(char $\ast$) = \{ ESAPICUrlEncoderDecode , ESAPICBase64EncoderDecode \}}}
+\label{d7/de0/a00022_a7f307a92758e8a838c0fa727d46bcb21}
+
+
+Definition at line 19 of file ESAPICEncoder.c.
+
+
+
+Referenced by ESAPICDecode().
+
+\hypertarget{a00022_a370f5a068adf4f7622dbaf6125a213e3}{
+\index{ESAPICEncoder.c@{ESAPICEncoder.c}!encodingFunctionsArray@{encodingFunctionsArray}}
+\index{encodingFunctionsArray@{encodingFunctionsArray}!ESAPICEncoder.c@{ESAPICEncoder.c}}
+\subsubsection[{encodingFunctionsArray}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ESAPIStringOperation}$\ast$($\ast$  {\bf encodingFunctionsArray}\mbox{[}2\mbox{]})(char $\ast$) = \{ ESAPICUrlEncoderEncode , ESAPICBase64EncoderEncode \}}}
+\label{d7/de0/a00022_a370f5a068adf4f7622dbaf6125a213e3}
+
+
+Definition at line 18 of file ESAPICEncoder.c.
+
+
+
+Referenced by ESAPICEncode().
+
+\hypertarget{a00022_a2e9860061ee6616b276f7cab7e0fba71}{
+\index{ESAPICEncoder.c@{ESAPICEncoder.c}!numberOfAvailableCodecs@{numberOfAvailableCodecs}}
+\index{numberOfAvailableCodecs@{numberOfAvailableCodecs}!ESAPICEncoder.c@{ESAPICEncoder.c}}
+\subsubsection[{numberOfAvailableCodecs}]{\setlength{\rightskip}{0pt plus 5cm}const int {\bf numberOfAvailableCodecs} = 2}}
+\label{d7/de0/a00022_a2e9860061ee6616b276f7cab7e0fba71}
+
+
+Definition at line 17 of file ESAPICEncoder.c.
+
+
+
+Referenced by ESAPICCanonicalizationAllAvailableEncodings(), ESAPICDecode(), and ESAPICEncode().
+

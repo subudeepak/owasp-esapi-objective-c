@@ -1,0 +1,244 @@
+.TH "/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICEncoder.h" 3 "Sat Jul 9 2011" "Version v0.0.1 (Alpha)" "ESAPI" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICEncoder.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdlib.h>\fP
+.br
+\fC#include 'ESAPICAuxiliaryFunctions.h'\fP
+.br
+
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBESAPIEncodingType\fP { \fBESAPIEncodingTypePercentEncoding\fP =  0, \fBESAPIEncodingTypeURLEncoding\fP =  0, \fBESAPIEncodingTypeBase64Encoding\fP =  1, \fBESAPIEncodingTypePercentEncoding\fP =  0, \fBESAPIEncodingTypeURLEncoding\fP =  0, \fBESAPIEncodingTypeBase64Encoding\fP =  1 }"
+.br
+.RI "\fIThis is the header of the ESAPI C Encoder Functions. \fP"
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBESAPIStringOperation\fP * \fBESAPICEncode\fP (char *inputString, \fBESAPIEncodingType\fP typeOfEncoding)"
+.br
+.RI "\fIThis function is used to encode the given string and return the resultant encoded string. \fP"
+.ti -1c
+.RI "\fBESAPIStringOperation\fP * \fBESAPICDecode\fP (char *inputString, \fBESAPIEncodingType\fP typeOfEncoding)"
+.br
+.RI "\fIThis function is used to decode the given string and return the resultant decoded string. \fP"
+.ti -1c
+.RI "\fBESAPIStringOperation\fP * \fBESAPICCanonicalizationForSpecificEncodingType\fP (char *inputString, \fBESAPIEncodingType\fP typeOfEncoding, bool strict)"
+.br
+.RI "\fIThis function is used to decode the given string to canonical form and return the resultant decoded string. \fP"
+.ti -1c
+.RI "\fBESAPIStringOperation\fP * \fBESAPICCanonicalizationAllAvailableEncodings\fP (char *inputString, bool strict)"
+.br
+.RI "\fIThis function is used to decode the given string to canonical form and return the resultant decoded string. \fP"
+.in -1c
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum \fBESAPIEncodingType\fP"
+.PP
+This is the header of the ESAPI C Encoder Functions. These function are designed to assist in encoding functionality in various scenarios. ` 
+.br
+ Encoding:
+.PP
+Currently Supported Encodings: 
+.PD 0
+
+.IP "1." 4
+URL Encoding 
+.IP "2." 4
+.PD 0
+.PP
+
+.br
+.PP
+The OWASP ESAPI C Library is still not complete and the release is a ALPHA QUALITY release. Kindly let us know of any bugs through email to deepak.subramanian@owasp.org The enum that describes the possible encodings available with the ESAPI Library 
+.PP
+
+.PP
+\fBEnumerator: \fP
+.in +1c
+.TP
+\fB\fIESAPIEncodingTypePercentEncoding \fP\fP
+Percentage encoding is generally used in the get and post requests to cate for multiple parameters. 
+.TP
+\fB\fIESAPIEncodingTypeURLEncoding \fP\fP
+Same as percent encoding. Catering for redundancy of names. 
+.TP
+\fB\fIESAPIEncodingTypeBase64Encoding \fP\fP
+The base64 encoding. 
+.TP
+\fB\fIESAPIEncodingTypePercentEncoding \fP\fP
+Percentage encoding is generally used in the get and post requests to cate for multiple parameters. 
+.TP
+\fB\fIESAPIEncodingTypeURLEncoding \fP\fP
+Same as percent encoding. Catering for redundancy of names. 
+.TP
+\fB\fIESAPIEncodingTypeBase64Encoding \fP\fP
+The base64 encoding. 
+.PP
+Definition at line 47 of file ESAPICEncoder.h.
+.SH "Function Documentation"
+.PP 
+.SS "\fBESAPIStringOperation\fP* ESAPICCanonicalizationAllAvailableEncodings (char *inputString, boolstrict)"
+.PP
+This function is used to decode the given string to canonical form and return the resultant decoded string. NOTE: This function canonicalizes for all available encodings.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIinputString\fP - The string to be encoded. 
+.br
+\fItypeOfEncoding\fP - The type of encoding required 
+.br
+\fIstrict\fP - If the strict flag is set, the decoding will fail in case of Multiple encoding/Mixed encoding etc.,
+.RE
+.PP
+{ 
+.PP
+.nf
+      char inputString[] = 'sometext';
+        ESAPIStringOperation * decodedStringOperation = ESAPICCanonicalizationAllAvailableEncodings ( inputString, false );
+        if ( decodedStringOperation->operationSuccessful )
+        {
+                char * decodedString = decodedStringOperation->returnString;
+                //Use the decodedString for operations.
+                free ( decodedString );
+        }
+        else
+        {
+                char * errorDescription = encodedStringOperation->errorDescription;
+                //The decoding has failed. Manage accordingly.
+                free ( errorDescription );
+        }
+        free ( decodedStringOperation );
+
+.fi
+.PP
+ } 
+.PP
+Definition at line 121 of file ESAPICEncoder.c.
+.PP
+References ESAPIStringOperation::errorDescription, ESAPICCanonicalizationForSpecificEncodingType(), numberOfAvailableCodecs, ESAPIStringOperation::operationSuccessful, and ESAPIStringOperation::returnString.
+.SS "\fBESAPIStringOperation\fP* ESAPICCanonicalizationForSpecificEncodingType (char *inputString, \fBESAPIEncodingType\fPtypeOfEncoding, boolstrict)"
+.PP
+This function is used to decode the given string to canonical form and return the resultant decoded string. NOTE: This function canonicalizes for only one given encoding type.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIinputString\fP - The string to be encoded. 
+.br
+\fItypeOfEncoding\fP - The type of encoding required 
+.br
+\fIstrict\fP - If the strict flag is set, the decoding will fail in case of Multiple encoding/Mixed encoding etc.,
+.RE
+.PP
+{ 
+.PP
+.nf
+ char inputString[] = 'sometext';
+ ESAPIStringOperation * decodedStringOperation = ESAPICanonicalizationForSpecificEncodingType ( inputString, ESAPIEncodingTypePercentEncoding, false );
+ if ( decodedStringOperation->operationSuccessful )
+ {
+        char * decodedString = decodedStringOperation->returnString;
+        //Use the decodedString for operations.
+        free ( decodedString );
+ }
+ else
+ {
+        char * errorDescription = encodedStringOperation->errorDescription;
+        //The decoding has failed. Manage accordingly.
+        free ( errorDescription );
+ }
+ free ( decodedStringOperation );
+
+.fi
+.PP
+ } 
+.PP
+Definition at line 59 of file ESAPICEncoder.c.
+.PP
+References ESAPIStringOperation::errorDescription, ESAPICDecode(), ESAPIStringOperation::operationSuccessful, and ESAPIStringOperation::returnString.
+.SS "\fBESAPIStringOperation\fP* ESAPICDecode (char *inputString, \fBESAPIEncodingType\fPtypeOfEncoding)"
+.PP
+This function is used to decode the given string and return the resultant decoded string. \fBParameters:\fP
+.RS 4
+\fIinputString\fP - The string to be encoded. 
+.br
+\fItypeOfEncoding\fP - The type of encoding required
+.RE
+.PP
+{ 
+.PP
+.nf
+       char inputString[] = 'sometext';
+        ESAPIStringOperation * decodedStringOperation = ESAPIDecode ( inputString, ESAPIEncodingTypePercentEncoding );
+        if ( decodedStringOperation->operationSuccessful )
+        {
+                char * decodedString = decodedStringOperation->returnString;
+                //Use the decodedString for operations.
+                free ( decodedString );
+        }
+        else
+        {
+                char * errorDescription = encodedStringOperation->errorDescription;
+                //The decoding has failed. Manage accordingly.
+                free ( errorDescription );
+        }
+        free ( decodedStringOperation );
+
+.fi
+.PP
+ } 
+.PP
+Definition at line 40 of file ESAPICEncoder.c.
+.PP
+References decodingFunctionsArray, ESAPIStringOperation::errorDescription, numberOfAvailableCodecs, and ESAPIStringOperation::operationSuccessful.
+.SS "\fBESAPIStringOperation\fP* ESAPICEncode (char *inputString, \fBESAPIEncodingType\fPtypeOfEncoding)"
+.PP
+This function is used to encode the given string and return the resultant encoded string. \fBParameters:\fP
+.RS 4
+\fIinputString\fP - The string to be encoded. 
+.br
+\fItypeOfEncoding\fP - The type of encoding required. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+encodedString - The encoded string using the ESAPIEncodingType is returned.
+.RE
+.PP
+{ 
+.PP
+.nf
+  char inputString[] = 'sometext';
+        ESAPIStringOperation * encodedStringOperation = ESAPIEncode ( inputString, ESAPIEncodingTypePercentEncoding );
+        if ( encodedStringOperation->operationSuccessful )
+        {
+                char * encodedString = encodedStringOperation->returnString;
+                //Use the encodedString for operations.
+                free ( encodedString );
+        }
+        else
+        {
+                char * errorDescription = encodedStringOperation->errorDescription;
+                //The encoding has failed. Manage accordingly.
+                free ( errorDescription );
+        }
+        free ( encodedStringOperation );
+
+.fi
+.PP
+ } 
+.PP
+Definition at line 21 of file ESAPICEncoder.c.
+.PP
+References encodingFunctionsArray, ESAPIStringOperation::errorDescription, numberOfAvailableCodecs, and ESAPIStringOperation::operationSuccessful.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for ESAPI from the source code.

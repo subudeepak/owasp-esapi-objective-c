@@ -1,0 +1,122 @@
+\hypertarget{url_encoder_8c}{
+\section{/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI\_\-COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/urlEncoder.c File Reference}
+\label{url_encoder_8c}\index{/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI\_\-COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/urlEncoder.c@{/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI\_\-COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/urlEncoder.c}}
+}
+{\ttfamily \#include $<$math.h$>$}\par
+{\ttfamily \#include $<$stdio.h$>$}\par
+{\ttfamily \#include $<$stdlib.h$>$}\par
+{\ttfamily \#include $<$ctype.h$>$}\par
+{\ttfamily \#include $<$string.h$>$}\par
+Include dependency graph for urlEncoder.c:
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char \hyperlink{url_encoder_8c_a808bcf33a4b41b04fc0bc6a5f5813973}{from\_\-hex} (char ch)
+\begin{DoxyCompactList}\small\item\em Returns the decimal value for a given hexadecimal character. \end{DoxyCompactList}\item 
+char \hyperlink{url_encoder_8c_a2729474e3f010e609583b6d3eef22e1a}{to\_\-hex} (char code)
+\begin{DoxyCompactList}\small\item\em Returns the hexadecimal value for a given decimal character. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{url_encoder_8c_a8b27af4a03e8ce05aae7cfed09971f99}{url\_\-encode} (char $\ast$str)
+\item 
+char $\ast$ \hyperlink{url_encoder_8c_aea3ffe702ce39d26857607be86e6ca83}{url\_\-decode} (char $\ast$str)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{url_encoder_8c_a808bcf33a4b41b04fc0bc6a5f5813973}{
+\index{urlEncoder.c@{urlEncoder.c}!from\_\-hex@{from\_\-hex}}
+\index{from\_\-hex@{from\_\-hex}!urlEncoder.c@{urlEncoder.c}}
+\subsubsection[{from\_\-hex}]{\setlength{\rightskip}{0pt plus 5cm}char from\_\-hex (
+\begin{DoxyParamCaption}
+\item[{char}]{ch}
+\end{DoxyParamCaption}
+)}}
+\label{url_encoder_8c_a808bcf33a4b41b04fc0bc6a5f5813973}
+
+
+Returns the decimal value for a given hexadecimal character. 
+
+This code has been downloaded from \href{http://www.geekhideout.com/urlcode.shtml}{\tt http://www.geekhideout.com/urlcode.shtml} on April 16, 2011
+
+
+\begin{DoxyParams}{Parameters}
+{\em hexadecimalChar} & -\/ The given hexadecimal character\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ The equivalent decimal value
+\end{DoxyReturn}
+\{ 
+\begin{DoxyCode}
+        char int = from_hex('a');
+\end{DoxyCode}
+ \} 
+
+Definition at line 9 of file urlEncoder.c.
+
+\hypertarget{url_encoder_8c_a2729474e3f010e609583b6d3eef22e1a}{
+\index{urlEncoder.c@{urlEncoder.c}!to\_\-hex@{to\_\-hex}}
+\index{to\_\-hex@{to\_\-hex}!urlEncoder.c@{urlEncoder.c}}
+\subsubsection[{to\_\-hex}]{\setlength{\rightskip}{0pt plus 5cm}char to\_\-hex (
+\begin{DoxyParamCaption}
+\item[{char}]{code}
+\end{DoxyParamCaption}
+)}}
+\label{url_encoder_8c_a2729474e3f010e609583b6d3eef22e1a}
+
+
+Returns the hexadecimal value for a given decimal character. 
+
+This code has been downloaded from \href{http://www.geekhideout.com/urlcode.shtml}{\tt http://www.geekhideout.com/urlcode.shtml} on April 16, 2011
+
+
+\begin{DoxyParams}{Parameters}
+{\em decimalChar} & -\/ The given decimal character\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ The hexadecimal equivalent value
+\end{DoxyReturn}
+\{ 
+\begin{DoxyCode}
+        char int = to_hex('9');
+\end{DoxyCode}
+ \} 
+
+Definition at line 15 of file urlEncoder.c.
+
+\hypertarget{url_encoder_8c_aea3ffe702ce39d26857607be86e6ca83}{
+\index{urlEncoder.c@{urlEncoder.c}!url\_\-decode@{url\_\-decode}}
+\index{url\_\-decode@{url\_\-decode}!urlEncoder.c@{urlEncoder.c}}
+\subsubsection[{url\_\-decode}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ url\_\-decode (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{str}
+\end{DoxyParamCaption}
+)}}
+\label{url_encoder_8c_aea3ffe702ce39d26857607be86e6ca83}
+
+
+Definition at line 44 of file urlEncoder.c.
+
+
+
+Here is the call graph for this function:
+
+
+\hypertarget{url_encoder_8c_a8b27af4a03e8ce05aae7cfed09971f99}{
+\index{urlEncoder.c@{urlEncoder.c}!url\_\-encode@{url\_\-encode}}
+\index{url\_\-encode@{url\_\-encode}!urlEncoder.c@{urlEncoder.c}}
+\subsubsection[{url\_\-encode}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ url\_\-encode (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{str}
+\end{DoxyParamCaption}
+)}}
+\label{url_encoder_8c_a8b27af4a03e8ce05aae7cfed09971f99}
+
+
+Definition at line 23 of file urlEncoder.c.
+
+
+
+Here is the call graph for this function:
+
+

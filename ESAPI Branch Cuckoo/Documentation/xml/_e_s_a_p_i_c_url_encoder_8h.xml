@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="_e_s_a_p_i_c_url_encoder_8h" kind="file">
+    <compoundname>ESAPICUrlEncoder.h</compoundname>
+    <includedby refid="_e_s_a_p_i_c_encoder_8c" local="yes">/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICEncoder.c</includedby>
+    <includedby refid="_e_s_a_p_i_c_url_encoder_8c" local="yes">/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICUrlEncoder.c</includedby>
+    <invincdepgraph>
+      <node id="99">
+        <label>/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICUrlEncoder.c</label>
+        <link refid="_e_s_a_p_i_c_url_encoder_8c"/>
+      </node>
+      <node id="97">
+        <label>/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICUrlEncoder.h</label>
+        <link refid="ESAPICUrlEncoder.h"/>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+      </node>
+      <node id="98">
+        <label>/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICEncoder.c</label>
+        <link refid="_e_s_a_p_i_c_encoder_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_e_s_a_p_i_c_url_encoder_8h_1ad730b879e9ba0a6bbc8c632731bfdd82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* ESAPICUrlEncoderEncode</definition>
+        <argsstring>(char *inputString)</argsstring>
+        <name>ESAPICUrlEncoderEncode</name>
+        <param>
+          <type>char *</type>
+          <declname>inputString</declname>
+        </param>
+        <briefdescription>
+<para>Returns a url-encoded version of the given input string. </para>        </briefdescription>
+        <detaileddescription>
+<para>IMPORTANT: be sure to free() the returned string after use This code has been downloaded from <ulink url="http://www.geekhideout.com/urlcode.shtml">http://www.geekhideout.com/urlcode.shtml</ulink> on April 16, 2011</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>inputString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- This is the input string which needs to be decoded </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The decoded string IMPORTANT: be sure to free() the returned string after use</para></simplesect>
+<ref refid="_e_s_a_p_i_c_url_encoder_8c" kindref="compound">ESAPICUrlEncoder.c</ref> ESAPI</para><para>Created by DEEPAK SUBRAMANIAN on 4/18/11. Copyright 2011 OWASP Foundation. All rights reserved. This code has been downloaded from <ulink url="http://www.geekhideout.com/urlcode.shtml">http://www.geekhideout.com/urlcode.shtml</ulink> on April 16, 2011 IMPORTANT: be sure to free() the returned string after use This code has been downloaded from <ulink url="http://www.geekhideout.com/urlcode.shtml">http://www.geekhideout.com/urlcode.shtml</ulink> on April 16, 2011</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>inputString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- This is the input string which needs to be decoded </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The decoded string IMPORTANT: be sure to free() the returned string after use </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICUrlEncoder.h" line="20" bodyfile="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICUrlEncoder.c" bodystart="28" bodyend="46"/>
+        <references refid="_e_s_a_p_i_c_auxiliary_functions_8c_1a2729474e3f010e609583b6d3eef22e1a" compoundref="_e_s_a_p_i_c_auxiliary_functions_8c" startline="23" endline="27">to_hex</references>
+        <referencedby refid="_e_s_a_p_i_c_encoder_8h_1a452d1773180a64b14c95a47686847737" compoundref="_e_s_a_p_i_c_encoder_8c" startline="18" endline="60">ESAPIEncode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_e_s_a_p_i_c_url_encoder_8h_1ae873a9107bec72e66b546950c5e83e38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* ESAPICUrlEncoderDecode</definition>
+        <argsstring>(char *inputString)</argsstring>
+        <name>ESAPICUrlEncoderDecode</name>
+        <param>
+          <type>char *</type>
+          <declname>inputString</declname>
+        </param>
+        <briefdescription>
+<para>Returns a url-decoded version of the given string. </para>        </briefdescription>
+        <detaileddescription>
+<para>This code has been downloaded from <ulink url="http://www.geekhideout.com/urlcode.shtml">http://www.geekhideout.com/urlcode.shtml</ulink> on April 16, 2011</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>inputString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- This is the input string which needs to be decoded </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The decoded string IMPORTANT: be sure to free() the returned string after use </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICUrlEncoder.h" line="30" bodyfile="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICUrlEncoder.c" bodystart="56" bodyend="81"/>
+        <references refid="_e_s_a_p_i_c_auxiliary_functions_8c_1a808bcf33a4b41b04fc0bc6a5f5813973" compoundref="_e_s_a_p_i_c_auxiliary_functions_8c" startline="15" endline="18">from_hex</references>
+        <referencedby refid="_e_s_a_p_i_c_encoder_8h_1a6c2931ce40e18b2a2244c441bc9bbd9b" compoundref="_e_s_a_p_i_c_encoder_8c" startline="63" endline="105">ESAPIDecode</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/><sp/>ESAPICUrlEncoder.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/><sp/>ESAPI</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/>Created<sp/>by<sp/>DEEPAK<sp/>SUBRAMANIAN<sp/>on<sp/>4/18/11.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/>Copyright<sp/>2011<sp/>OWASP<sp/>Foundation.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="_e_s_a_p_i_c_url_encoder_8c_1ad730b879e9ba0a6bbc8c632731bfdd82" kindref="member" tooltip="Returns a url-encoded version of the given input string.">ESAPICUrlEncoderEncode</ref><sp/>(<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*inputString<sp/>);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="_e_s_a_p_i_c_url_encoder_8c_1ae873a9107bec72e66b546950c5e83e38" kindref="member" tooltip="Returns a url-decoded version of the given string.">ESAPICUrlEncoderDecode</ref><sp/>(<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*inputString<sp/>);</highlight></codeline>
+    </programlisting>
+    <location file="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICUrlEncoder.h"/>
+  </compounddef>
+</doxygen>

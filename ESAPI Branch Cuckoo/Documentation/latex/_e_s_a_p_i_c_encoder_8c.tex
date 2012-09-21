@@ -1,0 +1,127 @@
+\hypertarget{_e_s_a_p_i_c_encoder_8c}{
+\section{/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI\_\-COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICEncoder.c File Reference}
+\label{_e_s_a_p_i_c_encoder_8c}\index{/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI\_\-COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICEncoder.c@{/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI\_\-COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICEncoder.c}}
+}
+{\ttfamily \#include \char`\"{}ESAPICEncoder.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}ESAPICUrlEncoder.h\char`\"{}}\par
+{\ttfamily \#include $<$stdio.h$>$}\par
+{\ttfamily \#include $<$stdlib.h$>$}\par
+Include dependency graph for ESAPICEncoder.c:
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_e_s_a_p_i_string_operation}{ESAPIStringOperation} $\ast$ \hyperlink{_e_s_a_p_i_c_encoder_8c_a452d1773180a64b14c95a47686847737}{ESAPIEncode} (char $\ast$inputString, \hyperlink{_e_s_a_p_i_c_encoder_8h_af4b9f1c8f83fc1f697a6c6fb2ba5749c}{ESAPIEncodingType} typeOfEncoding)
+\begin{DoxyCompactList}\small\item\em This function is used to encode the given string and return the resultant encoded string. \end{DoxyCompactList}\item 
+\hyperlink{struct_e_s_a_p_i_string_operation}{ESAPIStringOperation} $\ast$ \hyperlink{_e_s_a_p_i_c_encoder_8c_a6c2931ce40e18b2a2244c441bc9bbd9b}{ESAPIDecode} (char $\ast$inputString, \hyperlink{_e_s_a_p_i_c_encoder_8h_af4b9f1c8f83fc1f697a6c6fb2ba5749c}{ESAPIEncodingType} typeOfEncoding)
+\begin{DoxyCompactList}\small\item\em This function is used to decode the given string and return the resultant decoded string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{_e_s_a_p_i_c_encoder_8c_a6c2931ce40e18b2a2244c441bc9bbd9b}{
+\index{ESAPICEncoder.c@{ESAPICEncoder.c}!ESAPIDecode@{ESAPIDecode}}
+\index{ESAPIDecode@{ESAPIDecode}!ESAPICEncoder.c@{ESAPICEncoder.c}}
+\subsubsection[{ESAPIDecode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ESAPIStringOperation}$\ast$ ESAPIDecode (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{inputString, }
+\item[{{\bf ESAPIEncodingType}}]{typeOfEncoding}
+\end{DoxyParamCaption}
+)}}
+\label{_e_s_a_p_i_c_encoder_8c_a6c2931ce40e18b2a2244c441bc9bbd9b}
+
+
+This function is used to decode the given string and return the resultant decoded string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inputString} & -\/ The string to be encoded. \\
+\hline
+{\em typeOfEncoding} & -\/ The type of encoding required\\
+\hline
+\end{DoxyParams}
+EXAMPLE \{ 
+\begin{DoxyCode}
+        char inputString[] = "sometext";
+        ESAPIStringOperation * decodedStringOperation = ESAPIDecode ( inputString
+      , ESAPIEncodingTypePercentEncoding );
+        if ( *decodedStringOperation->operationSuccessful )
+        {
+                char * decodedString = decodedStringOperation->returnString;
+                //Use the decodedString for operations.
+                free ( decodedString );
+        }
+        else
+        {
+                char * errorDescription = encodedStringOperation->errorDescriptio
+      n;
+                //The decoding has failed. Manage accordingly.
+                free ( errorDescription );
+        }
+        free ( decodedStringOperation );
+\end{DoxyCode}
+ \} 
+
+Definition at line 63 of file ESAPICEncoder.c.
+
+
+
+Here is the call graph for this function:
+
+
+\hypertarget{_e_s_a_p_i_c_encoder_8c_a452d1773180a64b14c95a47686847737}{
+\index{ESAPICEncoder.c@{ESAPICEncoder.c}!ESAPIEncode@{ESAPIEncode}}
+\index{ESAPIEncode@{ESAPIEncode}!ESAPICEncoder.c@{ESAPICEncoder.c}}
+\subsubsection[{ESAPIEncode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ESAPIStringOperation}$\ast$ ESAPIEncode (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{inputString, }
+\item[{{\bf ESAPIEncodingType}}]{typeOfEncoding}
+\end{DoxyParamCaption}
+)}}
+\label{_e_s_a_p_i_c_encoder_8c_a452d1773180a64b14c95a47686847737}
+
+
+This function is used to encode the given string and return the resultant encoded string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inputString} & -\/ The string to be encoded. \\
+\hline
+{\em typeOfEncoding} & -\/ The type of encoding required. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+encodedString -\/ The encoded string using the ESAPIEncodingType is returned.
+\end{DoxyReturn}
+EXAMPLE \{ 
+\begin{DoxyCode}
+        char inputString[] = "sometext";
+        ESAPIStringOperation * encodedStringOperation = ESAPIEncode ( inputString
+      , ESAPIEncodingTypePercentEncoding );
+        if ( encodedStringOperation->operationSuccessful )
+        {
+                char * encodedString = encodedStringOperation->returnString;
+                //Use the encodedString for operations.
+                free ( encodedString );
+        }
+        else
+        {
+                char * errorDescription = encodedStringOperation->
+      errorDescription;
+                //The encoding has failed. Manage accordingly.
+                free ( errorDescription );
+        }
+        free ( encodedStringOperation );
+\end{DoxyCode}
+ \} 
+
+Definition at line 18 of file ESAPICEncoder.c.
+
+
+
+Here is the call graph for this function:
+
+
+
+
+Here is the caller graph for this function:
+
+

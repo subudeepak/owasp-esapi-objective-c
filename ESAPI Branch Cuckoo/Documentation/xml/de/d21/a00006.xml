@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="de/d21/a00006" kind="file">
+    <compoundname>ESAPICBase64Encoder.h</compoundname>
+    <includes local="yes">ESAPICAuxiliaryFunctions.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <incdepgraph>
+      <node id="25">
+        <label>stdlib.h</label>
+      </node>
+      <node id="24">
+        <label>ESAPICAuxiliaryFunctions.h</label>
+      </node>
+      <node id="23">
+        <label>/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/build/Release/ESAPI.framework/Versions/A/Headers/ESAPICBase64Encoder.h</label>
+        <link refid="build/Release/ESAPI.framework/Versions/A/Headers/ESAPICBase64Encoder.h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="de/d21/a00006_1a9a3f479a4a67e06261402416657952b8" prot="public" static="no">
+        <name>ESAPICBase64Encoder_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/build/Release/ESAPI.framework/Versions/A/Headers/ESAPICBase64Encoder.h" line="15" bodyfile="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/build/Release/ESAPI.framework/Versions/A/Headers/ESAPICBase64Encoder.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="de/d21/a00006_1a89aaefabce9c6d0abf9bfa83d53c2126" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d7/d46/a00002" kindref="compound">ESAPIStringOperation</ref> *</type>
+        <definition>ESAPIStringOperation* ESAPICBase64EncoderEncode</definition>
+        <argsstring>(char *inputString)</argsstring>
+        <name>ESAPICBase64EncoderEncode</name>
+        <param>
+          <type>char *</type>
+          <declname>inputString</declname>
+        </param>
+        <briefdescription>
+<para>ESAPICBase64EncoderEncode - This function is used to encode a given inputString and return the string operation. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>inputString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- The given string to be encoded </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The output of the string operation.-&gt; The encoded string. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>&lt; Could be low on memory so a very short desc is used </para>        </inbodydescription>
+        <location file="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/build/Release/ESAPI.framework/Versions/A/Headers/ESAPICBase64Encoder.h" line="17" bodyfile="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICBase64Encoder.c" bodystart="181" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d21/a00006_1a3be3ccff3afe8d96d3e381febc3b61c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d7/d46/a00002" kindref="compound">ESAPIStringOperation</ref> *</type>
+        <definition>ESAPIStringOperation* ESAPICBase64EncoderDecode</definition>
+        <argsstring>(char *inputString)</argsstring>
+        <name>ESAPICBase64EncoderDecode</name>
+        <param>
+          <type>char *</type>
+          <declname>inputString</declname>
+        </param>
+        <briefdescription>
+<para>ESAPICBase64EncoderDecode - This function is used to decode a given inputString and return the string operation. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>inputString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- The given string to be decoded </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The output of the string operation.-&gt; The decoded string. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>&lt; Could be low on memory so a very short desc is used </para>        </inbodydescription>
+        <location file="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/build/Release/ESAPI.framework/Versions/A/Headers/ESAPICBase64Encoder.h" line="19" bodyfile="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICBase64Encoder.c" bodystart="256" bodyend="387"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d21/a00006_1afaf89639d27c67e0a3ee705d9d170fc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool isbase64</definition>
+        <argsstring>(char givenCharacter)</argsstring>
+        <name>isbase64</name>
+        <param>
+          <type>char</type>
+          <declname>givenCharacter</declname>
+          <defname>ch</defname>
+        </param>
+        <briefdescription>
+<para>Checks if the gven character is a base64 character. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>givenCharacter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- The character to verify as base64</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true - if the given character passes the test for base64. false if the test fails</para></simplesect>
+Return true if CH is a character from the Base64 alphabet, and false otherwise. Note that &apos;=&apos; is padding and not considered to be part of the alphabet.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>givenCharacter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- The character to verify as base64</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true - if the given character passes the test for base64. false if the test fails </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/build/Release/ESAPI.framework/Versions/A/Headers/ESAPICBase64Encoder.h" line="28" bodyfile="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICBase64Encoder.c" bodystart="171" bodyend="174"/>
+        <referencedby refid="de/d5e/a00007_1a3be3ccff3afe8d96d3e381febc3b61c4" compoundref="de/d11/a00021" startline="256" endline="387">ESAPICBase64EncoderDecode</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/><sp/>ESAPICBase64Encoder.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/><sp/>ESAPI</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/>Created<sp/>by<sp/>DEEPAK<sp/>SUBRAMANIAN<sp/>on<sp/>4/24/11.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/>Copyright<sp/>2011<sp/>OWASP<sp/>Foundation.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ESAPICAuxiliaryFunctions.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ESAPICBase64Encoder_H</highlight></codeline>
+<codeline lineno="15" refid="de/d21/a00006_1a9a3f479a4a67e06261402416657952b8" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>ESAPICBase64Encoder_H</highlight></codeline>
+<codeline lineno="16"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><ref refid="d7/d46/a00002" kindref="compound" tooltip="Sends the results and sets the required flags.">ESAPIStringOperation</ref><sp/>*<sp/><ref refid="de/d21/a00006_1a89aaefabce9c6d0abf9bfa83d53c2126" kindref="member" tooltip="ESAPICBase64EncoderEncode - This function is used to encode a given inputString and return the string...">ESAPICBase64EncoderEncode</ref><sp/>(<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>inputString<sp/>);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><ref refid="d7/d46/a00002" kindref="compound" tooltip="Sends the results and sets the required flags.">ESAPIStringOperation</ref><sp/>*<sp/><ref refid="de/d21/a00006_1a3be3ccff3afe8d96d3e381febc3b61c4" kindref="member" tooltip="ESAPICBase64EncoderDecode - This function is used to decode a given inputString and return the string...">ESAPICBase64EncoderDecode</ref><sp/>(<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>inputString<sp/>);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="de/d21/a00006_1afaf89639d27c67e0a3ee705d9d170fc0" kindref="member" tooltip="Checks if the gven character is a base64 character.">isbase64</ref>(<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>givenCharacter<sp/>);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*ESAPICBase64Encoder_H*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/build/Release/ESAPI.framework/Versions/A/Headers/ESAPICBase64Encoder.h"/>
+  </compounddef>
+</doxygen>

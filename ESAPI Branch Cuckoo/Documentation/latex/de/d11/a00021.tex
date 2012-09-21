@@ -1,0 +1,200 @@
+\hypertarget{a00021}{
+\section{/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI\_\-COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICBase64Encoder.c File Reference}
+\label{de/d11/a00021}\index{/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI\_\-COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICBase64Encoder.c@{/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI\_\-COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICBase64Encoder.c}}
+}
+{\ttfamily \#include \char`\"{}ESAPICBase64Encoder.h\char`\"{}}\par
+{\ttfamily \#include $<$ctype.h$>$}\par
+{\ttfamily \#include $<$string.h$>$}\par
+{\ttfamily \#include $<$stdio.h$>$}\par
+{\ttfamily \#include $<$limits.h$>$}\par
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{a00021_a8ce971890889c52c3c27cad0e00fd270}{BASE64\_\-ENCODE\_\-LENGTH}(inlen)~((((inlen) + 2) / 3) $\ast$ 4)
+\item 
+\#define \hyperlink{a00021_a9aa433efacf01c0dc6cea513272a9195}{BASE64\_\-DECODE\_\-LENGTH}(inlen)~(3 $\ast$ (inlen / 4) + 2)
+\item 
+\#define \hyperlink{a00021_a6efb717563bf5814129fb1058d1dfdb3}{B64}(\_\-)
+\item 
+\#define \hyperlink{a00021_a12c6c1b0c78f82cbe2ee3508b1c25f37}{uchar\_\-in\_\-range}(c)~((c) $<$= 255)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{a00021_a2201d7841d9cd66d51b4019c2ba6f11e}{isbase64} (char ch)
+\begin{DoxyCompactList}\small\item\em Checks if the gven character is a base64 character. \end{DoxyCompactList}\item 
+\hyperlink{a00002}{ESAPIStringOperation} $\ast$ \hyperlink{a00021_a89aaefabce9c6d0abf9bfa83d53c2126}{ESAPICBase64EncoderEncode} (char $\ast$inputString)
+\begin{DoxyCompactList}\small\item\em ESAPICBase64EncoderEncode -\/ This function is used to encode a given inputString and return the string operation. \end{DoxyCompactList}\item 
+\hyperlink{a00002}{ESAPIStringOperation} $\ast$ \hyperlink{a00021_a3be3ccff3afe8d96d3e381febc3b61c4}{ESAPICBase64EncoderDecode} (char $\ast$inputString)
+\begin{DoxyCompactList}\small\item\em ESAPICBase64EncoderDecode -\/ This function is used to decode a given inputString and return the string operation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{a00021_a6efb717563bf5814129fb1058d1dfdb3}{
+\index{ESAPICBase64Encoder.c@{ESAPICBase64Encoder.c}!B64@{B64}}
+\index{B64@{B64}!ESAPICBase64Encoder.c@{ESAPICBase64Encoder.c}}
+\subsubsection[{B64}]{\setlength{\rightskip}{0pt plus 5cm}\#define B64(
+\begin{DoxyParamCaption}
+\item[{}]{\_\-}
+\end{DoxyParamCaption}
+)}}
+\label{de/d11/a00021_a6efb717563bf5814129fb1058d1dfdb3}
+
+
+Definition at line 33 of file ESAPICBase64Encoder.c.
+
+\hypertarget{a00021_a9aa433efacf01c0dc6cea513272a9195}{
+\index{ESAPICBase64Encoder.c@{ESAPICBase64Encoder.c}!BASE64\_\-DECODE\_\-LENGTH@{BASE64\_\-DECODE\_\-LENGTH}}
+\index{BASE64\_\-DECODE\_\-LENGTH@{BASE64\_\-DECODE\_\-LENGTH}!ESAPICBase64Encoder.c@{ESAPICBase64Encoder.c}}
+\subsubsection[{BASE64\_\-DECODE\_\-LENGTH}]{\setlength{\rightskip}{0pt plus 5cm}\#define BASE64\_\-DECODE\_\-LENGTH(
+\begin{DoxyParamCaption}
+\item[{}]{inlen}
+\end{DoxyParamCaption}
+)~(3 $\ast$ (inlen / 4) + 2)}}
+\label{de/d11/a00021_a9aa433efacf01c0dc6cea513272a9195}
+
+
+Definition at line 19 of file ESAPICBase64Encoder.c.
+
+
+
+Referenced by ESAPICBase64EncoderDecode().
+
+\hypertarget{a00021_a8ce971890889c52c3c27cad0e00fd270}{
+\index{ESAPICBase64Encoder.c@{ESAPICBase64Encoder.c}!BASE64\_\-ENCODE\_\-LENGTH@{BASE64\_\-ENCODE\_\-LENGTH}}
+\index{BASE64\_\-ENCODE\_\-LENGTH@{BASE64\_\-ENCODE\_\-LENGTH}!ESAPICBase64Encoder.c@{ESAPICBase64Encoder.c}}
+\subsubsection[{BASE64\_\-ENCODE\_\-LENGTH}]{\setlength{\rightskip}{0pt plus 5cm}\#define BASE64\_\-ENCODE\_\-LENGTH(
+\begin{DoxyParamCaption}
+\item[{}]{inlen}
+\end{DoxyParamCaption}
+)~((((inlen) + 2) / 3) $\ast$ 4)}}
+\label{de/d11/a00021_a8ce971890889c52c3c27cad0e00fd270}
+
+
+Definition at line 18 of file ESAPICBase64Encoder.c.
+
+
+
+Referenced by ESAPICBase64EncoderEncode().
+
+\hypertarget{a00021_a12c6c1b0c78f82cbe2ee3508b1c25f37}{
+\index{ESAPICBase64Encoder.c@{ESAPICBase64Encoder.c}!uchar\_\-in\_\-range@{uchar\_\-in\_\-range}}
+\index{uchar\_\-in\_\-range@{uchar\_\-in\_\-range}!ESAPICBase64Encoder.c@{ESAPICBase64Encoder.c}}
+\subsubsection[{uchar\_\-in\_\-range}]{\setlength{\rightskip}{0pt plus 5cm}\#define uchar\_\-in\_\-range(
+\begin{DoxyParamCaption}
+\item[{}]{c}
+\end{DoxyParamCaption}
+)~((c) $<$= 255)}}
+\label{de/d11/a00021_a12c6c1b0c78f82cbe2ee3508b1c25f37}
+
+
+Definition at line 151 of file ESAPICBase64Encoder.c.
+
+
+
+Referenced by isbase64().
+
+
+
+\subsection{Function Documentation}
+\hypertarget{a00021_a3be3ccff3afe8d96d3e381febc3b61c4}{
+\index{ESAPICBase64Encoder.c@{ESAPICBase64Encoder.c}!ESAPICBase64EncoderDecode@{ESAPICBase64EncoderDecode}}
+\index{ESAPICBase64EncoderDecode@{ESAPICBase64EncoderDecode}!ESAPICBase64Encoder.c@{ESAPICBase64Encoder.c}}
+\subsubsection[{ESAPICBase64EncoderDecode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ESAPIStringOperation}$\ast$ ESAPICBase64EncoderDecode (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{inputString}
+\end{DoxyParamCaption}
+)}}
+\label{de/d11/a00021_a3be3ccff3afe8d96d3e381febc3b61c4}
+
+
+ESAPICBase64EncoderDecode -\/ This function is used to decode a given inputString and return the string operation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inputString} & -\/ The given string to be decoded \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The output of the string operation.-\/$>$ The decoded string. 
+\end{DoxyReturn}
+
+
+$<$ Could be low on memory so a very short desc is used 
+
+
+
+Definition at line 256 of file ESAPICBase64Encoder.c.
+
+
+
+References BASE64\_\-DECODE\_\-LENGTH, ESAPIStringOperation::errorDescription, isbase64(), ESAPIStringOperation::operationSuccessful, and ESAPIStringOperation::returnString.
+
+\hypertarget{a00021_a89aaefabce9c6d0abf9bfa83d53c2126}{
+\index{ESAPICBase64Encoder.c@{ESAPICBase64Encoder.c}!ESAPICBase64EncoderEncode@{ESAPICBase64EncoderEncode}}
+\index{ESAPICBase64EncoderEncode@{ESAPICBase64EncoderEncode}!ESAPICBase64Encoder.c@{ESAPICBase64Encoder.c}}
+\subsubsection[{ESAPICBase64EncoderEncode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ESAPIStringOperation}$\ast$ ESAPICBase64EncoderEncode (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{inputString}
+\end{DoxyParamCaption}
+)}}
+\label{de/d11/a00021_a89aaefabce9c6d0abf9bfa83d53c2126}
+
+
+ESAPICBase64EncoderEncode -\/ This function is used to encode a given inputString and return the string operation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inputString} & -\/ The given string to be encoded \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The output of the string operation.-\/$>$ The encoded string. 
+\end{DoxyReturn}
+
+
+$<$ Could be low on memory so a very short desc is used 
+
+
+
+Definition at line 181 of file ESAPICBase64Encoder.c.
+
+
+
+References BASE64\_\-ENCODE\_\-LENGTH, ESAPIStringOperation::errorDescription, ESAPIStringOperation::operationSuccessful, and ESAPIStringOperation::returnString.
+
+\hypertarget{a00021_a2201d7841d9cd66d51b4019c2ba6f11e}{
+\index{ESAPICBase64Encoder.c@{ESAPICBase64Encoder.c}!isbase64@{isbase64}}
+\index{isbase64@{isbase64}!ESAPICBase64Encoder.c@{ESAPICBase64Encoder.c}}
+\subsubsection[{isbase64}]{\setlength{\rightskip}{0pt plus 5cm}bool isbase64 (
+\begin{DoxyParamCaption}
+\item[{char}]{ch}
+\end{DoxyParamCaption}
+)}}
+\label{de/d11/a00021_a2201d7841d9cd66d51b4019c2ba6f11e}
+
+
+Checks if the gven character is a base64 character. 
+
+Return true if CH is a character from the Base64 alphabet, and false otherwise. Note that '=' is padding and not considered to be part of the alphabet.
+
+
+\begin{DoxyParams}{Parameters}
+{\em givenCharacter} & -\/ The character to verify as base64\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true -\/ if the given character passes the test for base64. false if the test fails 
+\end{DoxyReturn}
+
+
+Definition at line 171 of file ESAPICBase64Encoder.c.
+
+
+
+References uchar\_\-in\_\-range.
+
+
+
+Referenced by ESAPICBase64EncoderDecode().
+

@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="_e_s_a_p_i_c_auxiliary_functions_8c" kind="file">
+    <compoundname>ESAPICAuxiliaryFunctions.c</compoundname>
+    <includes refid="_e_s_a_p_i_c_auxiliary_functions_8h" local="yes">ESAPICAuxiliaryFunctions.h</includes>
+    <incdepgraph>
+      <node id="68">
+        <label>/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICAuxiliaryFunctions.c</label>
+        <link refid="ESAPICAuxiliaryFunctions.c"/>
+        <childnode refid="69" relation="include">
+        </childnode>
+      </node>
+      <node id="69">
+        <label>ESAPICAuxiliaryFunctions.h</label>
+        <link refid="_e_s_a_p_i_c_auxiliary_functions_8h"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_e_s_a_p_i_c_auxiliary_functions_8c_1a808bcf33a4b41b04fc0bc6a5f5813973" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char</type>
+        <definition>char from_hex</definition>
+        <argsstring>(char ch)</argsstring>
+        <name>from_hex</name>
+        <param>
+          <type>char</type>
+          <declname>ch</declname>
+        </param>
+        <briefdescription>
+<para>Converts a hex character to its integer value. </para>        </briefdescription>
+        <detaileddescription>
+<para>Returns the decimal value for a given hexadecimal character. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICAuxiliaryFunctions.c" line="16" bodyfile="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICAuxiliaryFunctions.c" bodystart="15" bodyend="18"/>
+        <referencedby refid="_e_s_a_p_i_c_url_encoder_8h_1ae873a9107bec72e66b546950c5e83e38" compoundref="_e_s_a_p_i_c_url_encoder_8c" startline="56" endline="81">ESAPICUrlEncoderDecode</referencedby>
+        <referencedby refid="url_encoder_8c_1aea3ffe702ce39d26857607be86e6ca83" compoundref="url_encoder_8c" startline="44" endline="69">url_decode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_e_s_a_p_i_c_auxiliary_functions_8c_1a2729474e3f010e609583b6d3eef22e1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char</type>
+        <definition>char to_hex</definition>
+        <argsstring>(char code)</argsstring>
+        <name>to_hex</name>
+        <param>
+          <type>char</type>
+          <declname>code</declname>
+        </param>
+        <briefdescription>
+<para>Converts an integer value to its hex character. </para>        </briefdescription>
+        <detaileddescription>
+<para>Returns the hexadecimal value for a given decimal character. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICAuxiliaryFunctions.c" line="24" bodyfile="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICAuxiliaryFunctions.c" bodystart="23" bodyend="27"/>
+        <referencedby refid="_e_s_a_p_i_c_url_encoder_8h_1ad730b879e9ba0a6bbc8c632731bfdd82" compoundref="_e_s_a_p_i_c_url_encoder_8c" startline="28" endline="46">ESAPICUrlEncoderEncode</referencedby>
+        <referencedby refid="url_encoder_8c_1a8b27af4a03e8ce05aae7cfed09971f99" compoundref="url_encoder_8c" startline="23" endline="40">url_encode</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/><sp/>ESAPICAuxiliaryFunctions.c</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/><sp/>ESAPI</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/>Created<sp/>by<sp/>DEEPAK<sp/>SUBRAMANIAN<sp/>on<sp/>4/18/11.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/>Copyright<sp/>2011<sp/>OWASP<sp/>Foundation.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_e_s_a_p_i_c_auxiliary_functions_8h" kindref="compound">ESAPICAuxiliaryFunctions.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="_e_s_a_p_i_c_auxiliary_functions_8h_1add5c1df19752ca8972a0ad9271044105" refkind="member"><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_e_s_a_p_i_c_auxiliary_functions_8c_1a808bcf33a4b41b04fc0bc6a5f5813973" kindref="member" tooltip="Converts a hex character to its integer value.">from_hex</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>ch)<sp/></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>isdigit(ch)<sp/>?<sp/>ch<sp/>-<sp/></highlight><highlight class="charliteral">&apos;0&apos;</highlight><highlight class="normal"><sp/>:<sp/>tolower(ch)<sp/>-<sp/></highlight><highlight class="charliteral">&apos;a&apos;</highlight><highlight class="normal"><sp/>+<sp/>10;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="_e_s_a_p_i_c_auxiliary_functions_8h_1a95b5f7a5b7b116ffbe9a4a439ad167dc" refkind="member"><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_e_s_a_p_i_c_auxiliary_functions_8c_1a2729474e3f010e609583b6d3eef22e1a" kindref="member" tooltip="Converts an integer value to its hex character.">to_hex</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>code)<sp/></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>hex[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;0123456789abcdef&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>hex[code<sp/>&amp;<sp/>15];</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICAuxiliaryFunctions.c"/>
+  </compounddef>
+</doxygen>

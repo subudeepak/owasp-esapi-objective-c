@@ -1,0 +1,298 @@
+\hypertarget{a00009}{
+\section{/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI\_\-COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICEncoder.h File Reference}
+\label{da/da0/a00009}\index{/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI\_\-COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICEncoder.h@{/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI\_\-COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICEncoder.h}}
+}
+{\ttfamily \#include $<$stdlib.h$>$}\par
+{\ttfamily \#include \char`\"{}ESAPICAuxiliaryFunctions.h\char`\"{}}\par
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{a00009_af4b9f1c8f83fc1f697a6c6fb2ba5749c}{ESAPIEncodingType} \{ \par
+\hyperlink{a00008_af4b9f1c8f83fc1f697a6c6fb2ba5749ca6b143b8248f2d6b9dc93b178c5a2df66}{ESAPIEncodingTypePercentEncoding} =  0, 
+\hyperlink{a00008_af4b9f1c8f83fc1f697a6c6fb2ba5749ca061d2b58fed020025c2b059ed1d90759}{ESAPIEncodingTypeURLEncoding} =  0, 
+\hyperlink{a00008_af4b9f1c8f83fc1f697a6c6fb2ba5749cab30d4a386be2c9db1ac213bca008c547}{ESAPIEncodingTypeBase64Encoding} =  1, 
+\hyperlink{a00009_af4b9f1c8f83fc1f697a6c6fb2ba5749ca6b143b8248f2d6b9dc93b178c5a2df66}{ESAPIEncodingTypePercentEncoding} =  0, 
+\par
+\hyperlink{a00009_af4b9f1c8f83fc1f697a6c6fb2ba5749ca061d2b58fed020025c2b059ed1d90759}{ESAPIEncodingTypeURLEncoding} =  0, 
+\hyperlink{a00009_af4b9f1c8f83fc1f697a6c6fb2ba5749cab30d4a386be2c9db1ac213bca008c547}{ESAPIEncodingTypeBase64Encoding} =  1
+ \}
+\begin{DoxyCompactList}\small\item\em This is the header of the ESAPI C Encoder Functions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00002}{ESAPIStringOperation} $\ast$ \hyperlink{a00009_a262035b714026233703ab8549b8cc408}{ESAPICEncode} (char $\ast$inputString, \hyperlink{a00008_af4b9f1c8f83fc1f697a6c6fb2ba5749c}{ESAPIEncodingType} typeOfEncoding)
+\begin{DoxyCompactList}\small\item\em This function is used to encode the given string and return the resultant encoded string. \end{DoxyCompactList}\item 
+\hyperlink{a00002}{ESAPIStringOperation} $\ast$ \hyperlink{a00009_a6a62cfbac366a2b25744c3da2337ea2f}{ESAPICDecode} (char $\ast$inputString, \hyperlink{a00008_af4b9f1c8f83fc1f697a6c6fb2ba5749c}{ESAPIEncodingType} typeOfEncoding)
+\begin{DoxyCompactList}\small\item\em This function is used to decode the given string and return the resultant decoded string. \end{DoxyCompactList}\item 
+\hyperlink{a00002}{ESAPIStringOperation} $\ast$ \hyperlink{a00009_ab47fc5e8e4f31e52eca5e3cb54be5251}{ESAPICCanonicalizationForSpecificEncodingType} (char $\ast$inputString, \hyperlink{a00008_af4b9f1c8f83fc1f697a6c6fb2ba5749c}{ESAPIEncodingType} typeOfEncoding, bool strict)
+\begin{DoxyCompactList}\small\item\em This function is used to decode the given string to canonical form and return the resultant decoded string. \end{DoxyCompactList}\item 
+\hyperlink{a00002}{ESAPIStringOperation} $\ast$ \hyperlink{a00009_a5f98e370493474885f0c51813256297a}{ESAPICCanonicalizationAllAvailableEncodings} (char $\ast$inputString, bool strict)
+\begin{DoxyCompactList}\small\item\em This function is used to decode the given string to canonical form and return the resultant decoded string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{a00009_af4b9f1c8f83fc1f697a6c6fb2ba5749c}{
+\index{Pure C functions/ESAPIEncoder/ESAPICEncoder.h@{Pure C functions/ESAPIEncoder/ESAPICEncoder.h}!ESAPIEncodingType@{ESAPIEncodingType}}
+\index{ESAPIEncodingType@{ESAPIEncodingType}!Pure C functions/ESAPIEncoder/ESAPICEncoder.h@{Pure C functions/ESAPIEncoder/ESAPICEncoder.h}}
+\subsubsection[{ESAPIEncodingType}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf ESAPIEncodingType}}}
+\label{da/da0/a00009_af4b9f1c8f83fc1f697a6c6fb2ba5749c}
+
+
+This is the header of the ESAPI C Encoder Functions. 
+
+These function are designed to assist in encoding functionality in various scenarios. ` \par
+ Encoding:
+
+Currently Supported Encodings: 
+\begin{DoxyEnumerate}
+\item URL Encoding 
+\item 
+\begin{DoxyEnumerate}
+\end{DoxyEnumerate}\par
+
+
+The OWASP ESAPI C Library is still not complete and the release is a ALPHA QUALITY release. Kindly let us know of any bugs through email to \href{mailto:deepak.subramanian@owasp.org}{\tt deepak.subramanian@owasp.org} The enum that describes the possible encodings available with the ESAPI Library 
+\end{DoxyEnumerate}\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{ESAPIEncodingTypePercentEncoding@{ESAPIEncodingTypePercentEncoding}!Pure C functions/ESAPIEncoder/ESAPICEncoder.h@{Pure C functions/ESAPIEncoder/ESAPICEncoder.h}}\index{Pure C functions/ESAPIEncoder/ESAPICEncoder.h@{Pure C functions/ESAPIEncoder/ESAPICEncoder.h}!ESAPIEncodingTypePercentEncoding@{ESAPIEncodingTypePercentEncoding}}\item[{\em 
+\hypertarget{a00009_af4b9f1c8f83fc1f697a6c6fb2ba5749ca6b143b8248f2d6b9dc93b178c5a2df66}{
+ESAPIEncodingTypePercentEncoding}
+\label{da/da0/a00009_af4b9f1c8f83fc1f697a6c6fb2ba5749ca6b143b8248f2d6b9dc93b178c5a2df66}
+}]Percentage encoding is generally used in the get and post requests to cate for multiple parameters. \index{ESAPIEncodingTypeURLEncoding@{ESAPIEncodingTypeURLEncoding}!Pure C functions/ESAPIEncoder/ESAPICEncoder.h@{Pure C functions/ESAPIEncoder/ESAPICEncoder.h}}\index{Pure C functions/ESAPIEncoder/ESAPICEncoder.h@{Pure C functions/ESAPIEncoder/ESAPICEncoder.h}!ESAPIEncodingTypeURLEncoding@{ESAPIEncodingTypeURLEncoding}}\item[{\em 
+\hypertarget{a00009_af4b9f1c8f83fc1f697a6c6fb2ba5749ca061d2b58fed020025c2b059ed1d90759}{
+ESAPIEncodingTypeURLEncoding}
+\label{da/da0/a00009_af4b9f1c8f83fc1f697a6c6fb2ba5749ca061d2b58fed020025c2b059ed1d90759}
+}]Same as percent encoding. Catering for redundancy of names. \index{ESAPIEncodingTypeBase64Encoding@{ESAPIEncodingTypeBase64Encoding}!Pure C functions/ESAPIEncoder/ESAPICEncoder.h@{Pure C functions/ESAPIEncoder/ESAPICEncoder.h}}\index{Pure C functions/ESAPIEncoder/ESAPICEncoder.h@{Pure C functions/ESAPIEncoder/ESAPICEncoder.h}!ESAPIEncodingTypeBase64Encoding@{ESAPIEncodingTypeBase64Encoding}}\item[{\em 
+\hypertarget{a00009_af4b9f1c8f83fc1f697a6c6fb2ba5749cab30d4a386be2c9db1ac213bca008c547}{
+ESAPIEncodingTypeBase64Encoding}
+\label{da/da0/a00009_af4b9f1c8f83fc1f697a6c6fb2ba5749cab30d4a386be2c9db1ac213bca008c547}
+}]The base64 encoding. \index{ESAPIEncodingTypePercentEncoding@{ESAPIEncodingTypePercentEncoding}!Pure C functions/ESAPIEncoder/ESAPICEncoder.h@{Pure C functions/ESAPIEncoder/ESAPICEncoder.h}}\index{Pure C functions/ESAPIEncoder/ESAPICEncoder.h@{Pure C functions/ESAPIEncoder/ESAPICEncoder.h}!ESAPIEncodingTypePercentEncoding@{ESAPIEncodingTypePercentEncoding}}\item[{\em 
+\hypertarget{a00009_af4b9f1c8f83fc1f697a6c6fb2ba5749ca6b143b8248f2d6b9dc93b178c5a2df66}{
+ESAPIEncodingTypePercentEncoding}
+\label{da/da0/a00009_af4b9f1c8f83fc1f697a6c6fb2ba5749ca6b143b8248f2d6b9dc93b178c5a2df66}
+}]Percentage encoding is generally used in the get and post requests to cate for multiple parameters. \index{ESAPIEncodingTypeURLEncoding@{ESAPIEncodingTypeURLEncoding}!Pure C functions/ESAPIEncoder/ESAPICEncoder.h@{Pure C functions/ESAPIEncoder/ESAPICEncoder.h}}\index{Pure C functions/ESAPIEncoder/ESAPICEncoder.h@{Pure C functions/ESAPIEncoder/ESAPICEncoder.h}!ESAPIEncodingTypeURLEncoding@{ESAPIEncodingTypeURLEncoding}}\item[{\em 
+\hypertarget{a00009_af4b9f1c8f83fc1f697a6c6fb2ba5749ca061d2b58fed020025c2b059ed1d90759}{
+ESAPIEncodingTypeURLEncoding}
+\label{da/da0/a00009_af4b9f1c8f83fc1f697a6c6fb2ba5749ca061d2b58fed020025c2b059ed1d90759}
+}]Same as percent encoding. Catering for redundancy of names. \index{ESAPIEncodingTypeBase64Encoding@{ESAPIEncodingTypeBase64Encoding}!Pure C functions/ESAPIEncoder/ESAPICEncoder.h@{Pure C functions/ESAPIEncoder/ESAPICEncoder.h}}\index{Pure C functions/ESAPIEncoder/ESAPICEncoder.h@{Pure C functions/ESAPIEncoder/ESAPICEncoder.h}!ESAPIEncodingTypeBase64Encoding@{ESAPIEncodingTypeBase64Encoding}}\item[{\em 
+\hypertarget{a00009_af4b9f1c8f83fc1f697a6c6fb2ba5749cab30d4a386be2c9db1ac213bca008c547}{
+ESAPIEncodingTypeBase64Encoding}
+\label{da/da0/a00009_af4b9f1c8f83fc1f697a6c6fb2ba5749cab30d4a386be2c9db1ac213bca008c547}
+}]The base64 encoding. \end{description}
+\end{Desc}
+
+
+
+Definition at line 47 of file ESAPICEncoder.h.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{a00009_a5f98e370493474885f0c51813256297a}{
+\index{Pure C functions/ESAPIEncoder/ESAPICEncoder.h@{Pure C functions/ESAPIEncoder/ESAPICEncoder.h}!ESAPICCanonicalizationAllAvailableEncodings@{ESAPICCanonicalizationAllAvailableEncodings}}
+\index{ESAPICCanonicalizationAllAvailableEncodings@{ESAPICCanonicalizationAllAvailableEncodings}!Pure C functions/ESAPIEncoder/ESAPICEncoder.h@{Pure C functions/ESAPIEncoder/ESAPICEncoder.h}}
+\subsubsection[{ESAPICCanonicalizationAllAvailableEncodings}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ESAPIStringOperation}$\ast$ ESAPICCanonicalizationAllAvailableEncodings (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{inputString, }
+\item[{bool}]{strict}
+\end{DoxyParamCaption}
+)}}
+\label{da/da0/a00009_a5f98e370493474885f0c51813256297a}
+
+
+This function is used to decode the given string to canonical form and return the resultant decoded string. 
+
+NOTE: This function canonicalizes for all available encodings.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inputString} & -\/ The string to be encoded. \\
+\hline
+{\em typeOfEncoding} & -\/ The type of encoding required \\
+\hline
+{\em strict} & -\/ If the strict flag is set, the decoding will fail in case of Multiple encoding/Mixed encoding etc.,\\
+\hline
+\end{DoxyParams}
+\{ 
+\begin{DoxyCode}
+        char inputString[] = "sometext";
+        ESAPIStringOperation * decodedStringOperation = 
+      ESAPICCanonicalizationAllAvailableEncodings ( inputString, false );
+        if ( decodedStringOperation->operationSuccessful )
+        {
+                char * decodedString = decodedStringOperation->returnString;
+                //Use the decodedString for operations.
+                free ( decodedString );
+        }
+        else
+        {
+                char * errorDescription = encodedStringOperation->
+      errorDescription;
+                //The decoding has failed. Manage accordingly.
+                free ( errorDescription );
+        }
+        free ( decodedStringOperation );
+\end{DoxyCode}
+ \} 
+
+Definition at line 121 of file ESAPICEncoder.c.
+
+
+
+References ESAPIStringOperation::errorDescription, ESAPICCanonicalizationForSpecificEncodingType(), numberOfAvailableCodecs, ESAPIStringOperation::operationSuccessful, and ESAPIStringOperation::returnString.
+
+\hypertarget{a00009_ab47fc5e8e4f31e52eca5e3cb54be5251}{
+\index{Pure C functions/ESAPIEncoder/ESAPICEncoder.h@{Pure C functions/ESAPIEncoder/ESAPICEncoder.h}!ESAPICCanonicalizationForSpecificEncodingType@{ESAPICCanonicalizationForSpecificEncodingType}}
+\index{ESAPICCanonicalizationForSpecificEncodingType@{ESAPICCanonicalizationForSpecificEncodingType}!Pure C functions/ESAPIEncoder/ESAPICEncoder.h@{Pure C functions/ESAPIEncoder/ESAPICEncoder.h}}
+\subsubsection[{ESAPICCanonicalizationForSpecificEncodingType}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ESAPIStringOperation}$\ast$ ESAPICCanonicalizationForSpecificEncodingType (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{inputString, }
+\item[{{\bf ESAPIEncodingType}}]{typeOfEncoding, }
+\item[{bool}]{strict}
+\end{DoxyParamCaption}
+)}}
+\label{da/da0/a00009_ab47fc5e8e4f31e52eca5e3cb54be5251}
+
+
+This function is used to decode the given string to canonical form and return the resultant decoded string. 
+
+NOTE: This function canonicalizes for only one given encoding type.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inputString} & -\/ The string to be encoded. \\
+\hline
+{\em typeOfEncoding} & -\/ The type of encoding required \\
+\hline
+{\em strict} & -\/ If the strict flag is set, the decoding will fail in case of Multiple encoding/Mixed encoding etc.,\\
+\hline
+\end{DoxyParams}
+\{ 
+\begin{DoxyCode}
+ char inputString[] = "sometext";
+ ESAPIStringOperation * decodedStringOperation = ESAPICanonicalizationForSpecific
+      EncodingType ( inputString, ESAPIEncodingTypePercentEncoding, false );
+ if ( decodedStringOperation->operationSuccessful )
+ {
+        char * decodedString = decodedStringOperation->returnString;
+        //Use the decodedString for operations.
+        free ( decodedString );
+ }
+ else
+ {
+        char * errorDescription = encodedStringOperation->errorDescription;
+        //The decoding has failed. Manage accordingly.
+        free ( errorDescription );
+ }
+ free ( decodedStringOperation );
+\end{DoxyCode}
+ \} 
+
+Definition at line 59 of file ESAPICEncoder.c.
+
+
+
+References ESAPIStringOperation::errorDescription, ESAPICDecode(), ESAPIStringOperation::operationSuccessful, and ESAPIStringOperation::returnString.
+
+\hypertarget{a00009_a6a62cfbac366a2b25744c3da2337ea2f}{
+\index{Pure C functions/ESAPIEncoder/ESAPICEncoder.h@{Pure C functions/ESAPIEncoder/ESAPICEncoder.h}!ESAPICDecode@{ESAPICDecode}}
+\index{ESAPICDecode@{ESAPICDecode}!Pure C functions/ESAPIEncoder/ESAPICEncoder.h@{Pure C functions/ESAPIEncoder/ESAPICEncoder.h}}
+\subsubsection[{ESAPICDecode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ESAPIStringOperation}$\ast$ ESAPICDecode (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{inputString, }
+\item[{{\bf ESAPIEncodingType}}]{typeOfEncoding}
+\end{DoxyParamCaption}
+)}}
+\label{da/da0/a00009_a6a62cfbac366a2b25744c3da2337ea2f}
+
+
+This function is used to decode the given string and return the resultant decoded string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inputString} & -\/ The string to be encoded. \\
+\hline
+{\em typeOfEncoding} & -\/ The type of encoding required\\
+\hline
+\end{DoxyParams}
+\{ 
+\begin{DoxyCode}
+        char inputString[] = "sometext";
+        ESAPIStringOperation * decodedStringOperation = ESAPIDecode ( inputString
+      , ESAPIEncodingTypePercentEncoding );
+        if ( decodedStringOperation->operationSuccessful )
+        {
+                char * decodedString = decodedStringOperation->returnString;
+                //Use the decodedString for operations.
+                free ( decodedString );
+        }
+        else
+        {
+                char * errorDescription = encodedStringOperation->
+      errorDescription;
+                //The decoding has failed. Manage accordingly.
+                free ( errorDescription );
+        }
+        free ( decodedStringOperation );
+\end{DoxyCode}
+ \} 
+
+Definition at line 40 of file ESAPICEncoder.c.
+
+
+
+References decodingFunctionsArray, ESAPIStringOperation::errorDescription, numberOfAvailableCodecs, and ESAPIStringOperation::operationSuccessful.
+
+\hypertarget{a00009_a262035b714026233703ab8549b8cc408}{
+\index{Pure C functions/ESAPIEncoder/ESAPICEncoder.h@{Pure C functions/ESAPIEncoder/ESAPICEncoder.h}!ESAPICEncode@{ESAPICEncode}}
+\index{ESAPICEncode@{ESAPICEncode}!Pure C functions/ESAPIEncoder/ESAPICEncoder.h@{Pure C functions/ESAPIEncoder/ESAPICEncoder.h}}
+\subsubsection[{ESAPICEncode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ESAPIStringOperation}$\ast$ ESAPICEncode (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{inputString, }
+\item[{{\bf ESAPIEncodingType}}]{typeOfEncoding}
+\end{DoxyParamCaption}
+)}}
+\label{da/da0/a00009_a262035b714026233703ab8549b8cc408}
+
+
+This function is used to encode the given string and return the resultant encoded string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inputString} & -\/ The string to be encoded. \\
+\hline
+{\em typeOfEncoding} & -\/ The type of encoding required. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+encodedString -\/ The encoded string using the ESAPIEncodingType is returned.
+\end{DoxyReturn}
+\{ 
+\begin{DoxyCode}
+        char inputString[] = "sometext";
+        ESAPIStringOperation * encodedStringOperation = ESAPIEncode ( inputString
+      , ESAPIEncodingTypePercentEncoding );
+        if ( encodedStringOperation->operationSuccessful )
+        {
+                char * encodedString = encodedStringOperation->returnString;
+                //Use the encodedString for operations.
+                free ( encodedString );
+        }
+        else
+        {
+                char * errorDescription = encodedStringOperation->
+      errorDescription;
+                //The encoding has failed. Manage accordingly.
+                free ( errorDescription );
+        }
+        free ( encodedStringOperation );
+\end{DoxyCode}
+ \} 
+
+Definition at line 21 of file ESAPICEncoder.c.
+
+
+
+References encodingFunctionsArray, ESAPIStringOperation::errorDescription, numberOfAvailableCodecs, and ESAPIStringOperation::operationSuccessful.
+

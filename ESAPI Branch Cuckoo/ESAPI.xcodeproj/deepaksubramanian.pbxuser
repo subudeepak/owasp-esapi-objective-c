@@ -1,0 +1,810 @@
+// !$*UTF8*$!
+{
+	0867D690FE84028FC02AAC07 /* Project object */ = {
+		activeBuildConfigurationName = Release;
+		activeTarget = 8DC2EF4F0486A6940098B216 /* ESAPI */;
+		addToTargets = (
+			8DC2EF4F0486A6940098B216 /* ESAPI */,
+		);
+		codeSenseManager = 143C4BA9123B21660061D80A /* Code sense */;
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXExecutablesDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXExecutablesDataSource_NameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					22,
+					300,
+					638,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXExecutablesDataSource_ActiveFlagID,
+					PBXExecutablesDataSource_NameID,
+					PBXExecutablesDataSource_CommentsID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					750,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					710,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 331876453;
+			PBXWorkspaceStateSaveDate = 331876453;
+		};
+		perUserProjectItems = {
+			140331F013C8052900CDA82B = 140331F013C8052900CDA82B /* PlistBookmark */;
+			140331F313C8052900CDA82B = 140331F313C8052900CDA82B /* PBXTextBookmark */;
+			140331F413C8052900CDA82B = 140331F413C8052900CDA82B /* PBXTextBookmark */;
+			1403C18F13C091E4009B9B37 = 1403C18F13C091E4009B9B37 /* PBXTextBookmark */;
+			1435E6B813C0BC86002520EA = 1435E6B813C0BC86002520EA /* PBXTextBookmark */;
+			144A03AF13A3B9BB00735946 = 144A03AF13A3B9BB00735946 /* PBXTextBookmark */;
+			144A03B013A3B9BB00735946 = 144A03B013A3B9BB00735946 /* PBXTextBookmark */;
+			146CEA5213C7FFAC00D73FFD = 146CEA5213C7FFAC00D73FFD /* PlistBookmark */;
+			146CEA5313C7FFAC00D73FFD = 146CEA5313C7FFAC00D73FFD /* PBXTextBookmark */;
+			146CEA5413C7FFAC00D73FFD = 146CEA5413C7FFAC00D73FFD /* PBXTextBookmark */;
+			146E008313618ADB00D4C142 = 146E008313618ADB00D4C142 /* PBXTextBookmark */;
+			146E008513618ADB00D4C142 = 146E008513618ADB00D4C142 /* PBXTextBookmark */;
+			1489B12A135AC468007460EE = 1489B12A135AC468007460EE /* PBXTextBookmark */;
+			1489B12B135AC468007460EE = 1489B12B135AC468007460EE /* PBXTextBookmark */;
+			1489B12C135AC468007460EE = 1489B12C135AC468007460EE /* PBXTextBookmark */;
+			1489B12E135AC468007460EE = 1489B12E135AC468007460EE /* PBXTextBookmark */;
+			1489B131135AC468007460EE = 1489B131135AC468007460EE /* PBXTextBookmark */;
+			1489B133135AC468007460EE = 1489B133135AC468007460EE /* PBXTextBookmark */;
+			1489B137135AC468007460EE = 1489B137135AC468007460EE /* PBXTextBookmark */;
+			1489B139135AC468007460EE = 1489B139135AC468007460EE /* PBXTextBookmark */;
+			1489B13B135AC468007460EE = 1489B13B135AC468007460EE /* PBXTextBookmark */;
+			149EF20113C61D54006BB6CD = 149EF20113C61D54006BB6CD /* PlistBookmark */;
+			149EF20213C61D54006BB6CD = 149EF20213C61D54006BB6CD /* PBXTextBookmark */;
+			149EF20313C61D54006BB6CD = 149EF20313C61D54006BB6CD /* PBXTextBookmark */;
+			14A17CF713A4A48F00B4DB4F = 14A17CF713A4A48F00B4DB4F /* PBXTextBookmark */;
+			14A17CFF13A4ACF500B4DB4F = 14A17CFF13A4ACF500B4DB4F /* PBXTextBookmark */;
+			14A17D0013A4ACF500B4DB4F = 14A17D0013A4ACF500B4DB4F /* PBXTextBookmark */;
+			14A17D0313A4ACF500B4DB4F = 14A17D0313A4ACF500B4DB4F /* PBXTextBookmark */;
+			14E92B8F13727A4F00A6741A = 14E92B8F13727A4F00A6741A /* PBXTextBookmark */;
+			14E92B9313727A4F00A6741A = 14E92B9313727A4F00A6741A /* PBXTextBookmark */;
+			14E92B9413727A4F00A6741A = 14E92B9413727A4F00A6741A /* PBXTextBookmark */;
+			14E92B9513727A4F00A6741A = 14E92B9513727A4F00A6741A /* PBXTextBookmark */;
+			14E92B9613727A4F00A6741A = 14E92B9613727A4F00A6741A /* PBXTextBookmark */;
+			14E92B9713727A4F00A6741A = 14E92B9713727A4F00A6741A /* PBXTextBookmark */;
+			14E92BAD13727A4F00A6741A = 14E92BAD13727A4F00A6741A /* PBXTextBookmark */;
+			14EB2721135C85EE00E3FD29 = 14EB2721135C85EE00E3FD29 /* PBXTextBookmark */;
+			14EB2723135C85EE00E3FD29 = 14EB2723135C85EE00E3FD29 /* PBXTextBookmark */;
+			14EB2725135C85EE00E3FD29 = 14EB2725135C85EE00E3FD29 /* PBXTextBookmark */;
+			14EB2727135C85EE00E3FD29 = 14EB2727135C85EE00E3FD29 /* PBXTextBookmark */;
+			14EB2729135C85EE00E3FD29 = 14EB2729135C85EE00E3FD29 /* PBXTextBookmark */;
+			14EB272E135C85EE00E3FD29 = 14EB272E135C85EE00E3FD29 /* PBXTextBookmark */;
+			14EB274F1360AF8000E3FD29 = 14EB274F1360AF8000E3FD29 /* PBXTextBookmark */;
+			14EB50AB13BF89F7007D20DC = 14EB50AB13BF89F7007D20DC /* PBXTextBookmark */;
+		};
+		sourceControlManager = 143C4BA8123B21660061D80A /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	089C1667FE841158C02AAC07 /* English */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {928, 393}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 45}";
+		};
+	};
+	140331F013C8052900CDA82B /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8DC2EF5A0486A6940098B216 /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+	140331F313C8052900CDA82B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 144A03AC13A3AF4900735946 /* ESAPIEncoder.m */;
+		name = "ESAPIEncoder.m: 29";
+		rLen = 0;
+		rLoc = 746;
+		rType = 0;
+		vrLen = 505;
+		vrLoc = 612;
+	};
+	140331F413C8052900CDA82B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 14EB273D135C874700E3FD29 /* ESAPICUrlEncoder.h */;
+		name = "ESAPICUrlEncoder.h: 33";
+		rLen = 0;
+		rLoc = 1056;
+		rType = 0;
+		vrLen = 1067;
+		vrLoc = 39;
+	};
+	1403C18F13C091E4009B9B37 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 144A03AB13A3AF4900735946 /* ESAPIEncoder.h */;
+		name = "ESAPIEncoder.h: 31";
+		rLen = 105;
+		rLoc = 1047;
+		rType = 0;
+		vrLen = 1014;
+		vrLoc = 143;
+	};
+	1435E6B813C0BC86002520EA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 144A03AC13A3AF4900735946 /* ESAPIEncoder.m */;
+		name = "ESAPIEncoder.m: 103";
+		rLen = 0;
+		rLoc = 2794;
+		rType = 0;
+		vrLen = 266;
+		vrLoc = 2686;
+	};
+	143C4BA8123B21660061D80A /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "ESAPI Objective C";
+			};
+		};
+	};
+	143C4BA9123B21660061D80A /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	1448F8B3123F8341001002F7 /* ESAPI.java */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.java;
+		name = ESAPI.java;
+		path = "/Users/deepaksubramanian/Downloads/ESAPI-2.0-rc7/src/main/java/org/owasp/esapi/ESAPI.java";
+		sourceTree = "<absolute>";
+	};
+	144A03AB13A3AF4900735946 /* ESAPIEncoder.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1453.31, 693}}";
+			sepNavSelRange = "{1047, 105}";
+			sepNavVisRange = "{143, 1014}";
+		};
+	};
+	144A03AC13A3AF4900735946 /* ESAPIEncoder.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {575, 5355}}";
+			sepNavSelRange = "{746, 0}";
+			sepNavVisRange = "{612, 505}";
+			sepNavWindowFrame = "{{646, 71}, {634, 625}}";
+		};
+	};
+	144A03AF13A3B9BB00735946 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 146E009413618B0600D4C142 /* ESAPIEncoderExample.c */;
+		name = "ESAPIEncoderExample.c: 24";
+		rLen = 0;
+		rLoc = 704;
+		rType = 0;
+		vrLen = 473;
+		vrLoc = 232;
+	};
+	144A03B013A3B9BB00735946 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1489B0D31358ABBF007460EE /* ESAPIValidations.c */;
+		name = "ESAPIValidations.c: 14";
+		rLen = 0;
+		rLoc = 202;
+		rType = 0;
+		vrLen = 202;
+		vrLoc = 0;
+	};
+	146CEA5213C7FFAC00D73FFD /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8DC2EF5A0486A6940098B216 /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+	146CEA5313C7FFAC00D73FFD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 144A03AC13A3AF4900735946 /* ESAPIEncoder.m */;
+		name = "ESAPIEncoder.m: 29";
+		rLen = 0;
+		rLoc = 746;
+		rType = 0;
+		vrLen = 505;
+		vrLoc = 612;
+	};
+	146CEA5413C7FFAC00D73FFD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 14EB273D135C874700E3FD29 /* ESAPICUrlEncoder.h */;
+		name = "ESAPICUrlEncoder.h: 33";
+		rLen = 0;
+		rLoc = 1056;
+		rType = 0;
+		vrLen = 1067;
+		vrLoc = 39;
+	};
+	146E008313618ADB00D4C142 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 146E008413618ADB00D4C142 /* access_ref_example.c */;
+		name = "access_ref_example.c: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 411;
+		vrLoc = 188;
+	};
+	146E008413618ADB00D4C142 /* access_ref_example.c */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.c;
+		name = access_ref_example.c;
+		path = "/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI C/example/access_ref_example.c";
+		sourceTree = "<absolute>";
+	};
+	146E008513618ADB00D4C142 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 146E008613618ADB00D4C142 /* codec.h */;
+		name = "codec.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 360;
+		vrLoc = 1143;
+	};
+	146E008613618ADB00D4C142 /* codec.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = codec.h;
+		path = "/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI C/include/codec.h";
+		sourceTree = "<absolute>";
+	};
+	146E009413618B0600D4C142 /* ESAPIEncoderExample.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1247.41, 630}}";
+			sepNavSelRange = "{704, 0}";
+			sepNavVisRange = "{232, 473}";
+			sepNavWindowFrame = "{{0, 66}, {1280, 709}}";
+		};
+	};
+	146E009513618B0600D4C142 /* ESAPIEncoderExample.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {928, 284}}";
+			sepNavSelRange = "{190, 0}";
+			sepNavVisRange = "{0, 190}";
+		};
+	};
+	1489B0D21358ABBF007460EE /* ESAPIValidations.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {928, 259}}";
+			sepNavSelRange = "{151, 0}";
+			sepNavVisRange = "{0, 151}";
+		};
+	};
+	1489B0D31358ABBF007460EE /* ESAPIValidations.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {928, 294}}";
+			sepNavSelRange = "{202, 0}";
+			sepNavVisRange = "{0, 202}";
+		};
+	};
+	1489B108135978EF007460EE /* ESAPICEncoder.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1594.19, 3675}}";
+			sepNavSelRange = "{1261, 32}";
+			sepNavVisRange = "{1241, 499}";
+			sepNavWindowFrame = "{{0, 66}, {1280, 709}}";
+		};
+	};
+	1489B109135978EF007460EE /* ESAPICEncoder.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {2125.2, 3780}}";
+			sepNavSelRange = "{589, 93}";
+			sepNavVisRange = "{872, 546}";
+			sepNavWindowFrame = "{{0, 66}, {1280, 709}}";
+		};
+	};
+	1489B12A135AC468007460EE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1448F8B3123F8341001002F7 /* ESAPI.java */;
+		name = "ESAPI.java: 99";
+		rLen = 4;
+		rLoc = 3691;
+		rType = 0;
+		vrLen = 1499;
+		vrLoc = 6903;
+	};
+	1489B12B135AC468007460EE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 32DBCF5E0370ADEE00C91783 /* ESAPI_Prefix.pch */;
+		name = "ESAPI_Prefix.pch: 8";
+		rLen = 0;
+		rLoc = 142;
+		rType = 0;
+		vrLen = 142;
+		vrLoc = 0;
+	};
+	1489B12C135AC468007460EE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1489B12D135AC468007460EE /* SecurityConfiguration.java */;
+		name = "SecurityConfiguration.java: 22";
+		rLen = 0;
+		rLoc = 832;
+		rType = 0;
+		vrLen = 1269;
+		vrLoc = 0;
+	};
+	1489B12D135AC468007460EE /* SecurityConfiguration.java */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.java;
+		name = SecurityConfiguration.java;
+		path = "/Users/deepaksubramanian/Downloads/ESAPI-2.0-rc10/src/main/java/org/owasp/esapi/SecurityConfiguration.java";
+		sourceTree = "<absolute>";
+	};
+	1489B12E135AC468007460EE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 089C1667FE841158C02AAC07 /* English */;
+		name = "InfoPlist.strings: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 45;
+		vrLoc = 0;
+	};
+	1489B131135AC468007460EE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1489B132135AC468007460EE /* Validator.java */;
+		name = "Validator.java: 119";
+		rLen = 1;
+		rLoc = 5513;
+		rType = 0;
+		vrLen = 1576;
+		vrLoc = 5241;
+	};
+	1489B132135AC468007460EE /* Validator.java */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.java;
+		name = Validator.java;
+		path = "/Users/deepaksubramanian/Downloads/ESAPI-2.0-rc10/src/main/java/org/owasp/esapi/Validator.java";
+		sourceTree = "<absolute>";
+	};
+	1489B133135AC468007460EE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1489B134135AC468007460EE /* FileBasedAuthenticator.java */;
+		name = "FileBasedAuthenticator.java: 11";
+		rLen = 6;
+		rLoc = 459;
+		rType = 0;
+		vrLen = 1348;
+		vrLoc = 0;
+	};
+	1489B134135AC468007460EE /* FileBasedAuthenticator.java */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.java;
+		name = FileBasedAuthenticator.java;
+		path = "/Users/deepaksubramanian/Downloads/ESAPI-2.0-rc10/src/main/java/org/owasp/esapi/reference/FileBasedAuthenticator.java";
+		sourceTree = "<absolute>";
+	};
+	1489B137135AC468007460EE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1489B138135AC468007460EE /* DefaultEncoder.java */;
+		name = "DefaultEncoder.java: 193";
+		rLen = 0;
+		rLoc = 6974;
+		rType = 0;
+		vrLen = 743;
+		vrLoc = 1512;
+	};
+	1489B138135AC468007460EE /* DefaultEncoder.java */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.java;
+		name = DefaultEncoder.java;
+		path = "/Users/deepaksubramanian/Downloads/ESAPI-2.0-rc10/src/main/java/org/owasp/esapi/reference/DefaultEncoder.java";
+		sourceTree = "<absolute>";
+	};
+	1489B139135AC468007460EE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1489B13A135AC468007460EE /* Encoder.java */;
+		name = "Encoder.java: 42";
+		rLen = 0;
+		rLoc = 1791;
+		rType = 0;
+		vrLen = 686;
+		vrLoc = 1439;
+	};
+	1489B13A135AC468007460EE /* Encoder.java */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.java;
+		name = Encoder.java;
+		path = "/Users/deepaksubramanian/Downloads/ESAPI-2.0-rc10/src/main/java/org/owasp/esapi/Encoder.java";
+		sourceTree = "<absolute>";
+	};
+	1489B13B135AC468007460EE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1489B13C135AC468007460EE /* PercentCodec.java */;
+		name = "PercentCodec.java: 108";
+		rLen = 0;
+		rLoc = 3893;
+		rType = 0;
+		vrLen = 462;
+		vrLoc = 3484;
+	};
+	1489B13C135AC468007460EE /* PercentCodec.java */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.java;
+		name = PercentCodec.java;
+		path = "/Users/deepaksubramanian/Downloads/ESAPI-2.0-rc10/src/main/java/org/owasp/esapi/codecs/PercentCodec.java";
+		sourceTree = "<absolute>";
+	};
+	148C26CD13632B5900EED5DA /* ESAPICAuxiliaryFunctions.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1221, 630}}";
+			sepNavSelRange = "{215, 0}";
+			sepNavVisRange = "{34, 506}";
+			sepNavWindowFrame = "{{0, 66}, {1280, 709}}";
+		};
+	};
+	148C26CE13632B5900EED5DA /* ESAPICAuxiliaryFunctions.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1030.67, 1302}}";
+			sepNavSelRange = "{1344, 0}";
+			sepNavVisRange = "{1161, 191}";
+			sepNavWindowFrame = "{{0, 66}, {1280, 709}}";
+		};
+	};
+	148C27021363AA4300EED5DA /* ESAPICBase64Encoder.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {987.322, 609}}";
+			sepNavSelRange = "{682, 0}";
+			sepNavVisRange = "{275, 440}";
+			sepNavWindowFrame = "{{0, 64}, {1280, 709}}";
+		};
+	};
+	148C27031363AA4300EED5DA /* ESAPICBase64Encoder.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1312.43, 7833}}";
+			sepNavSelRange = "{5837, 0}";
+			sepNavVisRange = "{5838, 499}";
+			sepNavWindowFrame = "{{0, 64}, {1280, 709}}";
+		};
+	};
+	149EF20113C61D54006BB6CD /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8DC2EF5A0486A6940098B216 /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+	149EF20213C61D54006BB6CD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 144A03AC13A3AF4900735946 /* ESAPIEncoder.m */;
+		name = "ESAPIEncoder.m: 29";
+		rLen = 0;
+		rLoc = 746;
+		rType = 0;
+		vrLen = 675;
+		vrLoc = 612;
+	};
+	149EF20313C61D54006BB6CD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 14EB273D135C874700E3FD29 /* ESAPICUrlEncoder.h */;
+		name = "ESAPICUrlEncoder.h: 33";
+		rLen = 0;
+		rLoc = 1056;
+		rType = 0;
+		vrLen = 997;
+		vrLoc = 39;
+	};
+	14A17CF713A4A48F00B4DB4F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1489B0D21358ABBF007460EE /* ESAPIValidations.h */;
+		name = "ESAPIValidations.h: 10";
+		rLen = 0;
+		rLoc = 151;
+		rType = 0;
+		vrLen = 151;
+		vrLoc = 0;
+	};
+	14A17CFF13A4ACF500B4DB4F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 148C26CE13632B5900EED5DA /* ESAPICAuxiliaryFunctions.h */;
+		name = "ESAPICAuxiliaryFunctions.h: 60";
+		rLen = 0;
+		rLoc = 1344;
+		rType = 0;
+		vrLen = 191;
+		vrLoc = 1161;
+	};
+	14A17D0013A4ACF500B4DB4F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1489B109135978EF007460EE /* ESAPICEncoder.c */;
+		name = "ESAPICEncoder.c: 86";
+		rLen = 0;
+		rLoc = 3637;
+		rType = 0;
+		vrLen = 274;
+		vrLoc = 3;
+	};
+	14A17D0313A4ACF500B4DB4F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1489B108135978EF007460EE /* ESAPICEncoder.h */;
+		name = "ESAPICEncoder.h: 49";
+		rLen = 32;
+		rLoc = 1261;
+		rType = 0;
+		vrLen = 555;
+		vrLoc = 1241;
+	};
+	14E92B8F13727A4F00A6741A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 148C26CD13632B5900EED5DA /* ESAPICAuxiliaryFunctions.c */;
+		name = "ESAPICAuxiliaryFunctions.c: 12";
+		rLen = 0;
+		rLoc = 215;
+		rType = 0;
+		vrLen = 285;
+		vrLoc = 158;
+	};
+	14E92B9313727A4F00A6741A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 148C27031363AA4300EED5DA /* ESAPICBase64Encoder.c */;
+		name = "ESAPICBase64Encoder.c: 165";
+		rLen = 0;
+		rLoc = 5837;
+		rType = 0;
+		vrLen = 499;
+		vrLoc = 5838;
+	};
+	14E92B9413727A4F00A6741A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 148C27021363AA4300EED5DA /* ESAPICBase64Encoder.h */;
+		name = "ESAPICBase64Encoder.h: 28";
+		rLen = 0;
+		rLoc = 682;
+		rType = 0;
+		vrLen = 440;
+		vrLoc = 275;
+	};
+	14E92B9513727A4F00A6741A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 146E009513618B0600D4C142 /* ESAPIEncoderExample.h */;
+		name = "ESAPIEncoderExample.h: 10";
+		rLen = 0;
+		rLoc = 190;
+		rType = 0;
+		vrLen = 190;
+		vrLoc = 0;
+	};
+	14E92B9613727A4F00A6741A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 14EB273D135C874700E3FD29 /* ESAPICUrlEncoder.h */;
+		name = "ESAPICUrlEncoder.h: 11";
+		rLen = 0;
+		rLoc = 247;
+		rType = 0;
+		vrLen = 477;
+		vrLoc = 594;
+	};
+	14E92B9713727A4F00A6741A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 14EB273E135C874700E3FD29 /* ESAPICUrlEncoder.c */;
+		name = "ESAPICUrlEncoder.c: 72";
+		rLen = 0;
+		rLoc = 1949;
+		rType = 0;
+		vrLen = 371;
+		vrLoc = 0;
+	};
+	14E92BAD13727A4F00A6741A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 14EB273E135C874700E3FD29 /* ESAPICUrlEncoder.c */;
+		name = "ESAPICUrlEncoder.c: 77";
+		rLen = 20;
+		rLoc = 2188;
+		rType = 0;
+		vrLen = 860;
+		vrLoc = 1744;
+	};
+	14EB2721135C85EE00E3FD29 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 14EB2722135C85EE00E3FD29 /* canonicalize.c */;
+		name = "canonicalize.c: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 611;
+		vrLoc = 832;
+	};
+	14EB2722135C85EE00E3FD29 /* canonicalize.c */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.c;
+		name = canonicalize.c;
+		path = "/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI C/src/canonicalize.c";
+		sourceTree = "<absolute>";
+	};
+	14EB2723135C85EE00E3FD29 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 14EB2724135C85EE00E3FD29 /* validate.c */;
+		name = "validate.c: 44";
+		rLen = 7;
+		rLoc = 749;
+		rType = 0;
+		vrLen = 376;
+		vrLoc = 229;
+	};
+	14EB2724135C85EE00E3FD29 /* validate.c */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.c;
+		name = validate.c;
+		path = "/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI C/src/validate.c";
+		sourceTree = "<absolute>";
+	};
+	14EB2725135C85EE00E3FD29 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 14EB2726135C85EE00E3FD29 /* windows_codec.c */;
+		name = "windows_codec.c: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 351;
+		vrLoc = 0;
+	};
+	14EB2726135C85EE00E3FD29 /* windows_codec.c */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.c;
+		name = windows_codec.c;
+		path = "/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI C/src/windows_codec.c";
+		sourceTree = "<absolute>";
+	};
+	14EB2727135C85EE00E3FD29 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 14EB2728135C85EE00E3FD29 /* authenticator.c */;
+		name = "authenticator.c: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 433;
+		vrLoc = 712;
+	};
+	14EB2728135C85EE00E3FD29 /* authenticator.c */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.c;
+		name = authenticator.c;
+		path = "/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI C/src/authenticator.c";
+		sourceTree = "<absolute>";
+	};
+	14EB2729135C85EE00E3FD29 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 14EB272A135C85EE00E3FD29 /* base64.c */;
+		name = "base64.c: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 593;
+		vrLoc = 0;
+	};
+	14EB272A135C85EE00E3FD29 /* base64.c */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.c;
+		name = base64.c;
+		path = "/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI C/src/base64.c";
+		sourceTree = "<absolute>";
+	};
+	14EB272E135C85EE00E3FD29 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 14EB272F135C85EE00E3FD29 /* esapi.h */;
+		name = "esapi.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 345;
+		vrLoc = 468;
+	};
+	14EB272F135C85EE00E3FD29 /* esapi.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = esapi.h;
+		path = "/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI C/include/esapi.h";
+		sourceTree = "<absolute>";
+	};
+	14EB2733135C85EE00E3FD29 /* base64.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = base64.h;
+		path = "/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI C/include/base64.h";
+		sourceTree = "<absolute>";
+	};
+	14EB273D135C874700E3FD29 /* ESAPICUrlEncoder.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1221, 714}}";
+			sepNavSelRange = "{1056, 0}";
+			sepNavVisRange = "{39, 1067}";
+			sepNavWindowFrame = "{{0, 66}, {1280, 709}}";
+		};
+	};
+	14EB273E135C874700E3FD29 /* ESAPICUrlEncoder.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1269.08, 2415}}";
+			sepNavSelRange = "{1987, 0}";
+			sepNavVisRange = "{0, 371}";
+			sepNavWindowFrame = "{{0, 66}, {1280, 709}}";
+		};
+	};
+	14EB274F1360AF8000E3FD29 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 14EB2733135C85EE00E3FD29 /* base64.h */;
+		name = "base64.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 570;
+		vrLoc = 1353;
+	};
+	14EB50AB13BF89F7007D20DC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 144A03AB13A3AF4900735946 /* ESAPIEncoder.h */;
+		name = "ESAPIEncoder.h: 15";
+		rLen = 0;
+		rLoc = 376;
+		rType = 0;
+		vrLen = 392;
+		vrLoc = 203;
+	};
+	32DBCF5E0370ADEE00C91783 /* ESAPI_Prefix.pch */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {928, 393}}";
+			sepNavSelRange = "{142, 0}";
+			sepNavVisRange = "{0, 142}";
+		};
+	};
+	8DC2EF4F0486A6940098B216 /* ESAPI */ = {
+		activeExec = 0;
+	};
+	8DC2EF5A0486A6940098B216 /* Info.plist */ = {
+		uiCtxt = {
+			sepNavWindowFrame = "{{61, 106}, {634, 625}}";
+		};
+	};
+}

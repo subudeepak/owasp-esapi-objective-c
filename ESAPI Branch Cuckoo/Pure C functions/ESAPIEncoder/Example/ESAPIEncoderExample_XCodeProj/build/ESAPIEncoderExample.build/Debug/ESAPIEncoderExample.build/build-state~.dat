@@ -1,0 +1,227 @@
+TESAPIEncoderExample
+v7
+r0
+t325229433.099751
+cCheck dependencies
+cCompileC build/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/Objects-normal/x86_64/main.o "/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/main.c" normal x86_64 c com.apple.compilers.gcc.4_2
+cCompileC build/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/Objects-normal/x86_64/ESAPICAuxiliaryFunctions.o "/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/../../ESAPICAuxiliaryFunctions.c" normal x86_64 c com.apple.compilers.gcc.4_2
+cCompileC build/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/Objects-normal/x86_64/ESAPICEncoder.o "/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/../../ESAPICEncoder.c" normal x86_64 c com.apple.compilers.gcc.4_2
+cCompileC build/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/Objects-normal/x86_64/ESAPICUrlEncoder.o "/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/../../ESAPICUrlEncoder.c" normal x86_64 c com.apple.compilers.gcc.4_2
+cCompileC build/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/Objects-normal/x86_64/urlEncoder.o "/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/../../urlEncoder.c" normal x86_64 c com.apple.compilers.gcc.4_2
+
+N/Developer/SDKs/MacOSX10.6.sdk
+c000000004ABBF0FD00000000000000EE
+t1253830909
+s238
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/ctype.h
+c000000004A5C14A60000000000002C18
+t1247548582
+s11288
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/math.h
+c000000004A5C14A000000000000004F1
+t1247548576
+s1265
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/stdio.h
+c000000004A5C14A70000000000004174
+t1247548583
+s16756
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/stdlib.h
+c000000004A5C14A70000000000002DF5
+t1247548583
+s11765
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/string.h
+c000000004A5C14A70000000000001731
+t1247548583
+s5937
+
+N/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICAuxiliaryFunctions.h
+c000000004DB1529200000000000002C1
+t1303466642
+s705
+
+N/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICEncoder.h
+c000000004DB25DD30000000000000E62
+t1303535059
+s3682
+i<stdlib.h>
+
+N/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICUrlEncoder.h
+c000000004DAC4FC70000000000000097
+t1303138247
+s151
+
+N/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/../../ESAPICAuxiliaryFunctions.c
+c000000004DAC55E700000000000001F7
+t1303139815
+s503
+i"ESAPICAuxiliaryFunctions.h"
+
+N/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/../../ESAPICEncoder.c
+c000000004DB25D2800000000000005F4
+t1303534888
+s1524
+i"ESAPICEncoder.h"
+i"urlEncoder.c"
+
+N/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/../../ESAPICEncoder.h
+c000000004DB25DD30000000000000E62
+t1303535059
+s3682
+i<stdlib.h>
+
+N/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/../../ESAPICUrlEncoder.c
+c000000004DB152EF000000000000058F
+t1303466735
+s1423
+i"ESAPICUrlEncoder.h"
+i"ESAPICAuxiliaryFunctions.h"
+i<math.h>
+i<stdio.h>
+i<stdlib.h>
+i<ctype.h>
+i<string.h>
+
+N/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/../../urlEncoder.c
+c000000004DAC54E100000000000005F1
+t1303139553
+s1521
+i<math.h>
+i<stdio.h>
+i<stdlib.h>
+i<ctype.h>
+i<string.h>
+
+N/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/build/Debug/ESAPIEncoderExample
+t2
+s0
+
+N/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/build/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/Objects-normal/x86_64/ESAPICAuxiliaryFunctions.o
+t1303536632
+s3280
+
+N/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/build/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/Objects-normal/x86_64/ESAPICEncoder.o
+t2
+s0
+
+N/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/build/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/Objects-normal/x86_64/ESAPICUrlEncoder.o
+t1303536633
+s6660
+
+N/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/build/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/Objects-normal/x86_64/ESAPIEncoderExample.LinkFileList
+c000000004DB263F80000000000000561
+t1303536632
+s1377
+
+N/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/build/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/Objects-normal/x86_64/main.o
+t2
+s0
+
+N/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/build/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/Objects-normal/x86_64/urlEncoder.o
+t1303536633
+s8876
+
+N/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/main.c
+c000000004DB263A10000000000000335
+t1303536545
+s821
+i<stdio.h>
+i"ESAPIEncoderExample.h"
+i"ESAPICEncoder.h"
+
+N/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/urlEncoder.c
+c000000004DAC54E100000000000005F1
+t1303139553
+s1521
+i<math.h>
+i<stdio.h>
+i<stdlib.h>
+i<ctype.h>
+i<string.h>
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies325229432#325229432#0(0"0(0#1#0"7237112451467661312#0"0#
+
+CCompileC build/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/Objects-normal/x86_64/ESAPICAuxiliaryFunctions.o "/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/../../ESAPICAuxiliaryFunctions.c" normal x86_64 c com.apple.compilers.gcc.4_2
+s325229432.939296
+e325229432.980323
+r1
+xCompileC
+xbuild/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/Objects-normal/x86_64/ESAPICAuxiliaryFunctions.o
+x/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/../../ESAPICAuxiliaryFunctions.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.gcc.4_2
+o/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/../../ESAPICAuxiliaryFunctions.c: In function 'from_hex':
+o/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/../../ESAPICAuxiliaryFunctions.c:17: warning: implicit declaration of function 'isdigit'
+o/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/../../ESAPICAuxiliaryFunctions.c:17: warning: implicit declaration of function 'tolower'
+lSLF07#2@213"Compile /Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/../../ESAPICAuxiliaryFunctions.c325229432#325229432#0(755"/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/../../ESAPICAuxiliaryFunctions.c: In function 'from_hex':/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/../../ESAPICAuxiliaryFunctions.c:17: warning: implicit declaration of function 'isdigit'/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/../../ESAPICAuxiliaryFunctions.c:17: warning: implicit declaration of function 'tolower'2(22@42"Implicit declaration of function 'isdigit'325229432#231#262#0(6@205"/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/../../ESAPICAuxiliaryFunctions.c324832615#17#0#17#0#36"implicit declaration of function '*'0(22@42"Implicit declaration of function 'tolower'325229432#493#262#0(6@205"/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/../../ESAPICAuxiliaryFunctions.c324832615#17#0#17#0#36"implicit declaration of function '*'0(0#0#205"/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/../../ESAPICAuxiliaryFunctions.c4300885448#3028"    cd "/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/build/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/ESAPIEncoderExample-generated-files.hmap" "-I/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/build/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/ESAPIEncoderExample-own-target-headers.hmap" "-I/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/build/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/ESAPIEncoderExample-all-target-headers.hmap" -iquote "/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/build/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/ESAPIEncoderExample-project-headers.hmap" "-F/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/build/Debug" "-I/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/build/Debug/include" "-I/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/build/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/DerivedSources/x86_64" "-I/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/build/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/DerivedSources" -c "/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/../../ESAPICAuxiliaryFunctions.c" -o "/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/build/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/Objects-normal/x86_64/ESAPICAuxiliaryFunctions.o"0#
+
+CCompileC build/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/Objects-normal/x86_64/ESAPICEncoder.o "/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/../../ESAPICEncoder.c" normal x86_64 c com.apple.compilers.gcc.4_2
+s325229432.980443
+e325229433.040429
+r0
+xCompileC
+xbuild/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/Objects-normal/x86_64/ESAPICEncoder.o
+x/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/../../ESAPICEncoder.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.gcc.4_2
+o/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/../../ESAPICEncoder.c: In function 'ESAPIEncode':
+o/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/../../ESAPICEncoder.c:26: warning: assignment makes integer from pointer without a cast
+o/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/../../ESAPICEncoder.c:38: warning: assignment makes integer from pointer without a cast
+o/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/../../ESAPICEncoder.c:46: error: invalid type argument of 'unary *'
+o/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/../../ESAPICEncoder.c:48: error: invalid type argument of 'unary *'
+o/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/../../ESAPICEncoder.c:52: warning: control reaches end of non-void function
+lSLF07#2@202"Compile /Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/../../ESAPICEncoder.c325229432#325229433#0(1476"/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/../../ESAPICEncoder.c: In function 'ESAPIEncode':/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/../../ESAPICEncoder.c:26: warning: assignment makes integer from pointer without a cast/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/../../ESAPICEncoder.c:38: warning: assignment makes integer from pointer without a cast/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/../../ESAPICEncoder.c:46: error: invalid type argument of 'unary *'/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/../../ESAPICEncoder.c:48: error: invalid type argument of 'unary *'/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/../../ESAPICEncoder.c:52: warning: control reaches end of non-void function5(22@52"Assignment makes integer from pointer without a cast325229433#223#261#0(6@194"/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/../../ESAPICEncoder.c325227688#26#0#26#0#0"0(22@52"Assignment makes integer from pointer without a cast325229433#484#261#0(6@194"/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/../../ESAPICEncoder.c325227688#38#0#38#0#0"0(4@34"Invalid type argument of 'unary *'325229433#745#241#0(6@194"/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/../../ESAPICEncoder.c325227688#46#0#46#0#0"0(4@34"Invalid type argument of 'unary *'325229433#986#241#0(6@194"/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/../../ESAPICEncoder.c325227688#48#0#48#0#0"0(22@40"Control reaches end of non-void function325229433#1227#249#0(6@194"/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/../../ESAPICEncoder.c325227688#52#0#52#0#40"control reaches end of non-void function0(0#0#194"/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/../../ESAPICEncoder.c4300885448#3006"    cd "/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/build/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/ESAPIEncoderExample-generated-files.hmap" "-I/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/build/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/ESAPIEncoderExample-own-target-headers.hmap" "-I/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/build/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/ESAPIEncoderExample-all-target-headers.hmap" -iquote "/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/build/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/ESAPIEncoderExample-project-headers.hmap" "-F/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/build/Debug" "-I/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/build/Debug/include" "-I/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/build/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/DerivedSources/x86_64" "-I/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/build/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/DerivedSources" -c "/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/../../ESAPICEncoder.c" -o "/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/build/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/Objects-normal/x86_64/ESAPICEncoder.o"1#
+
+CCompileC build/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/Objects-normal/x86_64/ESAPICUrlEncoder.o "/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/../../ESAPICUrlEncoder.c" normal x86_64 c com.apple.compilers.gcc.4_2
+s325229432.985915
+e325229433.041748
+r1
+xCompileC
+xbuild/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/Objects-normal/x86_64/ESAPICUrlEncoder.o
+x/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/../../ESAPICUrlEncoder.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@205"Compile /Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/../../ESAPICUrlEncoder.c325229432#325229433#0(0"0(0#0#197"/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/../../ESAPICUrlEncoder.c4300885448#3012"    cd "/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/build/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/ESAPIEncoderExample-generated-files.hmap" "-I/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/build/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/ESAPIEncoderExample-own-target-headers.hmap" "-I/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/build/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/ESAPIEncoderExample-all-target-headers.hmap" -iquote "/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/build/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/ESAPIEncoderExample-project-headers.hmap" "-F/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/build/Debug" "-I/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/build/Debug/include" "-I/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/build/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/DerivedSources/x86_64" "-I/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/build/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/DerivedSources" -c "/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/../../ESAPICUrlEncoder.c" -o "/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/build/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/Objects-normal/x86_64/ESAPICUrlEncoder.o"0#
+
+CCompileC build/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/Objects-normal/x86_64/main.o "/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/main.c" normal x86_64 c com.apple.compilers.gcc.4_2
+s325229432.935168
+e325229432.985810
+r0
+xCompileC
+xbuild/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/Objects-normal/x86_64/main.o
+x/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/main.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.gcc.4_2
+o/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/main.c:10:33: error: ESAPIEncoderExample.h: No such file or directory
+lSLF07#2@187"Compile /Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/main.c325229432#325229432#0(243"/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/main.c:10:33: error: ESAPIEncoderExample.h: No such file or directory1(4@48"ESAPIEncoderExample.h: No such file or directory325229432#0#243#0(6@179"/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/main.c325229345#10#0#10#0#28"*: No such file or directory0(0#0#179"/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/main.c8029754735538151424#2982"    cd "/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/build/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/ESAPIEncoderExample-generated-files.hmap" "-I/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/build/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/ESAPIEncoderExample-own-target-headers.hmap" "-I/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/build/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/ESAPIEncoderExample-all-target-headers.hmap" -iquote "/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/build/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/ESAPIEncoderExample-project-headers.hmap" "-F/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/build/Debug" "-I/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/build/Debug/include" "-I/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/build/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/DerivedSources/x86_64" "-I/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/build/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/DerivedSources" -c "/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/main.c" -o "/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/build/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/Objects-normal/x86_64/main.o"1#
+
+CCompileC build/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/Objects-normal/x86_64/urlEncoder.o "/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/../../urlEncoder.c" normal x86_64 c com.apple.compilers.gcc.4_2
+s325229433.040536
+e325229433.099639
+r1
+xCompileC
+xbuild/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/Objects-normal/x86_64/urlEncoder.o
+x/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/../../urlEncoder.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@199"Compile /Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/../../urlEncoder.c325229433#325229433#0(0"0(0#0#191"/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/../../urlEncoder.c4300885448#3000"    cd "/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/build/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/ESAPIEncoderExample-generated-files.hmap" "-I/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/build/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/ESAPIEncoderExample-own-target-headers.hmap" "-I/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/build/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/ESAPIEncoderExample-all-target-headers.hmap" -iquote "/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/build/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/ESAPIEncoderExample-project-headers.hmap" "-F/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/build/Debug" "-I/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/build/Debug/include" "-I/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/build/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/DerivedSources/x86_64" "-I/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/build/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/DerivedSources" -c "/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/../../urlEncoder.c" -o "/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/build/ESAPIEncoderExample.build/Debug/ESAPIEncoderExample.build/Objects-normal/x86_64/urlEncoder.o"0#
+
+CLd "/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample_XCodeProj/build/Debug/ESAPIEncoderExample" normal x86_64
+r0
+

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="dir_cf5ce1a37e3e29cf2606e2385d6ac4e5" kind="dir">
+    <compoundname>/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/ESAPIEncoder/</compoundname>
+    <innerfile refid="d7/dd4/a00013">ESAPIEncoder.h</innerfile>
+    <innerfile refid="d1/d2b/a00018">ESAPIEncoder.m</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/ESAPIEncoder/"/>
+  </compounddef>
+</doxygen>

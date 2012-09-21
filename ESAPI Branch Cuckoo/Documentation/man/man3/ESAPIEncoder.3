@@ -1,0 +1,100 @@
+.TH "ESAPIEncoder" 3 "Sat Jul 9 2011" "Version v0.0.1 (Alpha)" "ESAPI" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ESAPIEncoder \- 
+.PP
+This is the interface.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#import <ESAPIEncoder.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "(\fBNSString\fP *) - \fBencodeString:withEncoding:\fP"
+.br
+.RI "\fIThis function is used to encode the given string with the given encoding and return the encoded string. \fP"
+.ti -1c
+.RI "(\fBNSString\fP *) - \fBdecodeString:withEncoding:\fP"
+.br
+.RI "\fIThis function is used to decode the given string with the given encoding and return the decoded string. \fP"
+.ti -1c
+.RI "(\fBNSString\fP *) - \fBcanonicalizeString:forSpecificEncoding:strict:\fP"
+.br
+.RI "\fIThis function is used to canonicalize the given string with the given encoding and return the encoded string. \fP"
+.ti -1c
+.RI "(\fBNSString\fP *) - \fBcanonicalizeStringForAllAvailableEncodings:strict:\fP"
+.br
+.ti -1c
+.RI "(\fBNSString\fP *) - \fBencodeString:withEncoding:\fP"
+.br
+.ti -1c
+.RI "(\fBNSString\fP *) - \fBdecodeString:withEncoding:\fP"
+.br
+.ti -1c
+.RI "(\fBNSString\fP *) - \fBcanonicalizeString:forSpecificEncoding:strict:\fP"
+.br
+.ti -1c
+.RI "(\fBNSString\fP *) - \fBcanonicalizeStringForAllAvailableEncodings:strict:\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+This is the interface. 
+.PP
+Definition at line 24 of file ESAPIEncoder.h.
+.SH "Member Function Documentation"
+.PP 
+.SS "- (\fBNSString\fP *) canonicalizeString: (\fBNSString\fP *)givenString(\fBESAPIEncodingType\fP)encodingType(BOOL)strict"
+.PP
+This function is used to canonicalize the given string with the given encoding and return the encoded string. \fBParameters:\fP
+.RS 4
+\fIgivenString\fP - The given string to be encoded. 
+.br
+\fIencodingType\fP - The type of encoding to be encoded with. 
+.br
+\fIstrict\fP - The boolean value which is used 
+.RE
+.PP
+
+.PP
+Definition at line 72 of file ESAPIEncoder.m.
+.SS "- (\fBNSString\fP *) canonicalizeString: (\fBNSString\fP *)givenString(\fBESAPIEncodingType\fP)encodingType(BOOL)strict"
+.SS "- (\fBNSString\fP *) canonicalizeStringForAllAvailableEncodings: (\fBNSString\fP *)givenString(BOOL)strict"
+.PP
+Definition at line 91 of file ESAPIEncoder.m.
+.SS "- (\fBNSString\fP *) canonicalizeStringForAllAvailableEncodings: (\fBNSString\fP *)givenString(BOOL)strict"
+.SS "- (\fBNSString\fP *) decodeString: (\fBNSString\fP *)givenString(\fBESAPIEncodingType\fP)encodingType"
+.PP
+This function is used to decode the given string with the given encoding and return the decoded string. \fBParameters:\fP
+.RS 4
+\fIgivenString\fP - The given string to be decoded. 
+.br
+\fIencodingType\fP - The type of encoding to be decoded with. 
+.RE
+.PP
+
+.PP
+Definition at line 46 of file ESAPIEncoder.m.
+.SS "- (\fBNSString\fP *) decodeString: (\fBNSString\fP *)givenString(\fBESAPIEncodingType\fP)encodingType"
+.SS "- (\fBNSString\fP *) encodeString: (\fBNSString\fP *)givenString(\fBESAPIEncodingType\fP)encodingType"
+.PP
+This function is used to encode the given string with the given encoding and return the encoded string. \fBParameters:\fP
+.RS 4
+\fIgivenString\fP - The given string to be encoded. 
+.br
+\fIencodingType\fP - The type of encoding to be encoded with. 
+.RE
+.PP
+
+.PP
+Definition at line 20 of file ESAPIEncoder.m.
+.SS "- (\fBNSString\fP *) encodeString: (\fBNSString\fP *)givenString(\fBESAPIEncodingType\fP)encodingType"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for ESAPI from the source code.

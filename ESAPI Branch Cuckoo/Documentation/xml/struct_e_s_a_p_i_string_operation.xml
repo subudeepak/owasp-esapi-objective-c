@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="struct_e_s_a_p_i_string_operation" kind="struct" prot="public">
+    <compoundname>ESAPIStringOperation</compoundname>
+    <includes refid="_e_s_a_p_i_c_encoder_8h" local="no">ESAPICEncoder.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_e_s_a_p_i_string_operation_1a99cbce009aa937a6eb09f40510a95b73" prot="public" static="no" mutable="no">
+        <type><ref refid="_e_s_a_p_i_c_encoder_8h_1aec7e62084419d7857ae740a4c68241cf" kindref="member">BOOLEAN</ref></type>
+        <definition>BOOLEAN operationSuccessful</definition>
+        <argsstring></argsstring>
+        <name>operationSuccessful</name>
+        <briefdescription>
+<para>Indicates if the given operation was successful. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICEncoder.h" line="59" bodyfile="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICEncoder.h" bodystart="59" bodyend="-1"/>
+        <referencedby refid="_e_s_a_p_i_c_encoder_8h_1a6c2931ce40e18b2a2244c441bc9bbd9b" compoundref="_e_s_a_p_i_c_encoder_8c" startline="63" endline="105">ESAPIDecode</referencedby>
+        <referencedby refid="_e_s_a_p_i_c_encoder_8h_1a452d1773180a64b14c95a47686847737" compoundref="_e_s_a_p_i_c_encoder_8c" startline="18" endline="60">ESAPIEncode</referencedby>
+        <referencedby refid="_e_s_a_p_i_encoder_example_8c_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="_e_s_a_p_i_encoder_example_8c" startline="13" endline="30">main</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_e_s_a_p_i_string_operation_1a020a35264b82bab27173507c25c46c6b" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* returnString</definition>
+        <argsstring></argsstring>
+        <name>returnString</name>
+        <briefdescription>
+<para>The string to be returned after a successful operation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICEncoder.h" line="60" bodyfile="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICEncoder.h" bodystart="60" bodyend="-1"/>
+        <referencedby refid="_e_s_a_p_i_c_encoder_8h_1a6c2931ce40e18b2a2244c441bc9bbd9b" compoundref="_e_s_a_p_i_c_encoder_8c" startline="63" endline="105">ESAPIDecode</referencedby>
+        <referencedby refid="_e_s_a_p_i_c_encoder_8h_1a452d1773180a64b14c95a47686847737" compoundref="_e_s_a_p_i_c_encoder_8c" startline="18" endline="60">ESAPIEncode</referencedby>
+        <referencedby refid="_e_s_a_p_i_encoder_example_8c_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="_e_s_a_p_i_encoder_example_8c" startline="13" endline="30">main</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_e_s_a_p_i_string_operation_1a7104ebbe41498ebd092ce412fe884b10" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* errorDescription</definition>
+        <argsstring></argsstring>
+        <name>errorDescription</name>
+        <briefdescription>
+<para>The error description should the operation fail. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICEncoder.h" line="61" bodyfile="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICEncoder.h" bodystart="61" bodyend="-1"/>
+        <referencedby refid="_e_s_a_p_i_c_encoder_8h_1a6c2931ce40e18b2a2244c441bc9bbd9b" compoundref="_e_s_a_p_i_c_encoder_8c" startline="63" endline="105">ESAPIDecode</referencedby>
+        <referencedby refid="_e_s_a_p_i_c_encoder_8h_1a452d1773180a64b14c95a47686847737" compoundref="_e_s_a_p_i_c_encoder_8c" startline="18" endline="60">ESAPIEncode</referencedby>
+        <referencedby refid="_e_s_a_p_i_encoder_example_8c_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="_e_s_a_p_i_encoder_example_8c" startline="13" endline="30">main</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Sends the results and sets the required flags. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICEncoder.h" line="58" bodyfile="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/ESAPICEncoder.h" bodystart="57" bodyend="62"/>
+    <listofallmembers>
+      <member refid="struct_e_s_a_p_i_string_operation_1a7104ebbe41498ebd092ce412fe884b10" prot="public" virt="non-virtual"><scope>ESAPIStringOperation</scope><name>errorDescription</name></member>
+      <member refid="struct_e_s_a_p_i_string_operation_1a99cbce009aa937a6eb09f40510a95b73" prot="public" virt="non-virtual"><scope>ESAPIStringOperation</scope><name>operationSuccessful</name></member>
+      <member refid="struct_e_s_a_p_i_string_operation_1a020a35264b82bab27173507c25c46c6b" prot="public" virt="non-virtual"><scope>ESAPIStringOperation</scope><name>returnString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="d7/dd4/a00013" kind="file">
+    <compoundname>ESAPIEncoder.h</compoundname>
+    <includes local="no">Foundation/Foundation.h</includes>
+    <includes local="yes">ESAPICEncoder.h</includes>
+    <includedby refid="d1/d2b/a00018" local="yes">/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/ESAPIEncoder/ESAPIEncoder.m</includedby>
+    <incdepgraph>
+      <node id="59">
+        <label>/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/ESAPIEncoder/ESAPIEncoder.h</label>
+        <link refid="ESAPIEncoder/ESAPIEncoder.h"/>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>ESAPICEncoder.h</label>
+      </node>
+      <node id="60">
+        <label>Foundation/Foundation.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="62">
+        <label>/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/ESAPIEncoder/ESAPIEncoder.h</label>
+        <link refid="ESAPIEncoder/ESAPIEncoder.h"/>
+        <childnode refid="63" relation="include">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/ESAPIEncoder/ESAPIEncoder.m</label>
+        <link refid="d1/d2b/a00018"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d5/d16/a00029" prot="public">NSString(ESAPIEncoderMethods)</innerclass>
+    <innerclass refid="d8/d84/a00001" prot="public">ESAPIEncoder</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>ESAPIEncoder.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>ESAPI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Created<sp/>by<sp/>DEEPAK<sp/>SUBRAMANIAN<sp/>on<sp/>6/11/11.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Copyright<sp/>2011<sp/>OWASP<sp/>Foundation.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&lt;Foundation/Foundation.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&quot;ESAPICEncoder.h&quot;</highlight></codeline>
+<codeline lineno="14"><highlight class="keyword">@interface<sp/></highlight><highlight class="normal"><ref refid="d1/d7c/a00003" kindref="compound">NSString</ref><sp/>(<sp/>ESAPIEncoderMethods<sp/>)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">-<sp/>(<ref refid="d1/d7c/a00003" kindref="compound">NSString</ref><sp/>*)<sp/>encodeWithEncoding:(<ref refid="d4/dee/a00008_1af4b9f1c8f83fc1f697a6c6fb2ba5749c" kindref="member" tooltip="This is the header of the ESAPI C Encoder Functions.">ESAPIEncodingType</ref>)<sp/>encodingType;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">-<sp/>(<ref refid="d1/d7c/a00003" kindref="compound">NSString</ref><sp/>*)<sp/>decodeWithEncoding:(<ref refid="d4/dee/a00008_1af4b9f1c8f83fc1f697a6c6fb2ba5749c" kindref="member" tooltip="This is the header of the ESAPI C Encoder Functions.">ESAPIEncodingType</ref>)<sp/>encodingType;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">-<sp/>(<ref refid="d1/d7c/a00003" kindref="compound">NSString</ref><sp/>*)<sp/>canonicalStringForAllAvailableEncodingsStrict:(BOOL)<sp/>strict;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">-<sp/>(<ref refid="d1/d7c/a00003" kindref="compound">NSString</ref><sp/>*)<sp/>canonicalStringForSpecificEncoding:(<ref refid="d4/dee/a00008_1af4b9f1c8f83fc1f697a6c6fb2ba5749c" kindref="member" tooltip="This is the header of the ESAPI C Encoder Functions.">ESAPIEncodingType</ref>)<sp/>encodingType<sp/>isStrict:(BOOL)<sp/>strict;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">@end</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="keyword">@interface<sp/></highlight><highlight class="normal"><ref refid="d8/d84/a00001" kindref="compound" tooltip="This is the interface.">ESAPIEncoder</ref><sp/>:<sp/>NSObject</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">-<sp/>(<ref refid="d1/d7c/a00003" kindref="compound">NSString</ref><sp/>*)<sp/>encodeString:(<ref refid="d1/d7c/a00003" kindref="compound">NSString</ref><sp/>*)<sp/>givenString<sp/>withEncoding:(<ref refid="d4/dee/a00008_1af4b9f1c8f83fc1f697a6c6fb2ba5749c" kindref="member" tooltip="This is the header of the ESAPI C Encoder Functions.">ESAPIEncodingType</ref>)<sp/>encodingType;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">-<sp/>(<ref refid="d1/d7c/a00003" kindref="compound">NSString</ref><sp/>*)<sp/>decodeString:(<ref refid="d1/d7c/a00003" kindref="compound">NSString</ref><sp/>*)<sp/>givenString<sp/>withEncoding:(<ref refid="d4/dee/a00008_1af4b9f1c8f83fc1f697a6c6fb2ba5749c" kindref="member" tooltip="This is the header of the ESAPI C Encoder Functions.">ESAPIEncodingType</ref>)<sp/>encodingType;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">-<sp/>(<ref refid="d1/d7c/a00003" kindref="compound">NSString</ref><sp/>*)<sp/>canonicalizeString:(<ref refid="d1/d7c/a00003" kindref="compound">NSString</ref><sp/>*)<sp/>givenString<sp/>forSpecificEncoding:(<ref refid="d4/dee/a00008_1af4b9f1c8f83fc1f697a6c6fb2ba5749c" kindref="member" tooltip="This is the header of the ESAPI C Encoder Functions.">ESAPIEncodingType</ref>)<sp/>encodingType<sp/>strict:(BOOL)<sp/>strict;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">-<sp/>(<ref refid="d1/d7c/a00003" kindref="compound">NSString</ref><sp/>*)<sp/>canonicalizeStringForAllAvailableEncodings:(<ref refid="d1/d7c/a00003" kindref="compound">NSString</ref><sp/>*)<sp/>givenString<sp/>strict:(BOOL)<sp/>strict;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">@end</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/ESAPIEncoder/ESAPIEncoder.h"/>
+  </compounddef>
+</doxygen>

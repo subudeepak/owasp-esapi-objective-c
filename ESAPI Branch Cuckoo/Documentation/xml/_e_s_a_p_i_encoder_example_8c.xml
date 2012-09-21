@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="_e_s_a_p_i_encoder_example_8c" kind="file">
+    <compoundname>ESAPIEncoderExample.c</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes refid="_e_s_a_p_i_encoder_example_8h" local="yes">ESAPIEncoderExample.h</includes>
+    <includes refid="_e_s_a_p_i_c_encoder_8h" local="yes">ESAPICEncoder.h</includes>
+    <incdepgraph>
+      <node id="104">
+        <label>stdlib.h</label>
+      </node>
+      <node id="103">
+        <label>ESAPICEncoder.h</label>
+        <link refid="_e_s_a_p_i_c_encoder_8h"/>
+        <childnode refid="104" relation="include">
+        </childnode>
+      </node>
+      <node id="101">
+        <label>stdio.h</label>
+      </node>
+      <node id="100">
+        <label>/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample.c</label>
+        <link refid="ESAPIEncoderExample.c"/>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+      </node>
+      <node id="102">
+        <label>ESAPIEncoderExample.h</label>
+        <link refid="_e_s_a_p_i_encoder_example_8h"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_e_s_a_p_i_encoder_example_8c_1a840291bc02cba5474a4cb46a9b9566fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(void)</argsstring>
+        <name>main</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample.c" line="14" bodyfile="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample.c" bodystart="13" bodyend="30"/>
+        <references refid="struct_e_s_a_p_i_string_operation_1a7104ebbe41498ebd092ce412fe884b10" compoundref="_e_s_a_p_i_c_encoder_8h" startline="61">ESAPIStringOperation::errorDescription</references>
+        <references refid="_e_s_a_p_i_c_encoder_8c_1a452d1773180a64b14c95a47686847737" compoundref="_e_s_a_p_i_c_encoder_8c" startline="18" endline="60">ESAPIEncode</references>
+        <references refid="_e_s_a_p_i_c_encoder_8h_1af4b9f1c8f83fc1f697a6c6fb2ba5749ca061d2b58fed020025c2b059ed1d90759" compoundref="_e_s_a_p_i_c_encoder_8h" startline="45">ESAPIEncodingTypeURLEncoding</references>
+        <references refid="struct_e_s_a_p_i_string_operation_1a99cbce009aa937a6eb09f40510a95b73" compoundref="_e_s_a_p_i_c_encoder_8h" startline="59">ESAPIStringOperation::operationSuccessful</references>
+        <references refid="struct_e_s_a_p_i_string_operation_1a020a35264b82bab27173507c25c46c6b" compoundref="_e_s_a_p_i_c_encoder_8h" startline="60">ESAPIStringOperation::returnString</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/><sp/>ESAPIEncoderExample.c</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/><sp/>ESAPI</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/>Created<sp/>by<sp/>DEEPAK<sp/>SUBRAMANIAN<sp/>on<sp/>4/22/11.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/>Copyright<sp/>2011<sp/>OWASP<sp/>Foundation.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_e_s_a_p_i_encoder_example_8h" kindref="compound">ESAPIEncoderExample.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_e_s_a_p_i_c_encoder_8h" kindref="compound">ESAPICEncoder.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="_e_s_a_p_i_encoder_example_8c_1a840291bc02cba5474a4cb46a9b9566fe" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_e_s_a_p_i_encoder_example_8c_1a840291bc02cba5474a4cb46a9b9566fe" kindref="member">main</ref>(<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>givenString[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;https://www.owasp.org/index.php/Category:OWASP_Enterprise_Security_API#tab=Objective_C&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pointerToString<sp/>=<sp/>givenString;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(<sp/></highlight><highlight class="stringliteral">&quot;%s&quot;</highlight><highlight class="normal">,givenString<sp/>);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_e_s_a_p_i_string_operation" kindref="compound" tooltip="Sends the results and sets the required flags.">ESAPIStringOperation</ref><sp/>*<sp/>encodingOperation<sp/>=<sp/><ref refid="_e_s_a_p_i_c_encoder_8c_1a452d1773180a64b14c95a47686847737" kindref="member" tooltip="This function is used to encode the given string and return the resultant encoded string...">ESAPIEncode</ref>(<sp/>pointerToString,<sp/><ref refid="_e_s_a_p_i_c_encoder_8h_1af4b9f1c8f83fc1f697a6c6fb2ba5749ca061d2b58fed020025c2b059ed1d90759" kindref="member" tooltip="Same as percent encoding. Catering for redundancy of names.">ESAPIEncodingTypeURLEncoding</ref><sp/>);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>encodingOperation-&gt;<ref refid="struct_e_s_a_p_i_string_operation_1a99cbce009aa937a6eb09f40510a95b73" kindref="member" tooltip="Indicates if the given operation was successful.">operationSuccessful</ref><sp/>)<sp/></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Operation<sp/>Successful&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;The<sp/>string<sp/>obtained<sp/>is<sp/>%s&quot;</highlight><highlight class="normal">,(encodingOperation-&gt;<ref refid="struct_e_s_a_p_i_string_operation_1a020a35264b82bab27173507c25c46c6b" kindref="member" tooltip="The string to be returned after a successful operation.">returnString</ref>));</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Operation<sp/>Failed&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;The<sp/>reason<sp/>for<sp/>failure:<sp/>%s&quot;</highlight><highlight class="normal">,(encodingOperation-&gt;<ref refid="struct_e_s_a_p_i_string_operation_1a7104ebbe41498ebd092ce412fe884b10" kindref="member" tooltip="The error description should the operation fail.">errorDescription</ref>));</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI_COMPLETE/branches/ESAPI Branch Cuckoo/Pure C functions/ESAPIEncoder/Example/ESAPIEncoderExample.c"/>
+  </compounddef>
+</doxygen>

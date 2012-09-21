@@ -1,0 +1,182 @@
+\hypertarget{a00001}{
+\section{ESAPIEncoder Class Reference}
+\label{d8/d84/a00001}\index{ESAPIEncoder@{ESAPIEncoder}}
+}
+
+
+This is the interface.  
+
+
+
+
+{\ttfamily \#import $<$ESAPIEncoder.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{a00003}{NSString} $\ast$) -\/ \hyperlink{a00001_ab5c2f76d076134d64c4e547bf0cf282a}{encodeString:withEncoding:}
+\begin{DoxyCompactList}\small\item\em This function is used to encode the given string with the given encoding and return the encoded string. \end{DoxyCompactList}\item 
+(\hyperlink{a00003}{NSString} $\ast$) -\/ \hyperlink{a00001_a6926a8a8a6813154b7550ac018c73dde}{decodeString:withEncoding:}
+\begin{DoxyCompactList}\small\item\em This function is used to decode the given string with the given encoding and return the decoded string. \end{DoxyCompactList}\item 
+(\hyperlink{a00003}{NSString} $\ast$) -\/ \hyperlink{a00001_a4857fc98d2991953378a93a7b4dee5ca}{canonicalizeString:forSpecificEncoding:strict:}
+\begin{DoxyCompactList}\small\item\em This function is used to canonicalize the given string with the given encoding and return the encoded string. \end{DoxyCompactList}\item 
+(\hyperlink{a00003}{NSString} $\ast$) -\/ \hyperlink{a00001_a0235404f388683e1e078796722398060}{canonicalizeStringForAllAvailableEncodings:strict:}
+\item 
+(\hyperlink{a00003}{NSString} $\ast$) -\/ \hyperlink{a00001_ab5c2f76d076134d64c4e547bf0cf282a}{encodeString:withEncoding:}
+\item 
+(\hyperlink{a00003}{NSString} $\ast$) -\/ \hyperlink{a00001_a6926a8a8a6813154b7550ac018c73dde}{decodeString:withEncoding:}
+\item 
+(\hyperlink{a00003}{NSString} $\ast$) -\/ \hyperlink{a00001_a4857fc98d2991953378a93a7b4dee5ca}{canonicalizeString:forSpecificEncoding:strict:}
+\item 
+(\hyperlink{a00003}{NSString} $\ast$) -\/ \hyperlink{a00001_a0235404f388683e1e078796722398060}{canonicalizeStringForAllAvailableEncodings:strict:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is the interface. 
+
+Definition at line 24 of file ESAPIEncoder.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{a00001_a4857fc98d2991953378a93a7b4dee5ca}{
+\index{ESAPIEncoder@{ESAPIEncoder}!canonicalizeString:forSpecificEncoding:strict:@{canonicalizeString:forSpecificEncoding:strict:}}
+\index{canonicalizeString:forSpecificEncoding:strict:@{canonicalizeString:forSpecificEncoding:strict:}!ESAPIEncoder@{ESAPIEncoder}}
+\subsubsection[{canonicalizeString:forSpecificEncoding:strict:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf NSString} $\ast$) canonicalizeString: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf NSString} $\ast$)}]{givenString}
+\item[{forSpecificEncoding:({\bf ESAPIEncodingType})}]{encodingType}
+\item[{strict:(BOOL)}]{strict}
+\end{DoxyParamCaption}
+}}
+\label{d8/d84/a00001_a4857fc98d2991953378a93a7b4dee5ca}
+
+
+This function is used to canonicalize the given string with the given encoding and return the encoded string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em givenString} & -\/ The given string to be encoded. \\
+\hline
+{\em encodingType} & -\/ The type of encoding to be encoded with. \\
+\hline
+{\em strict} & -\/ The boolean value which is used \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 72 of file ESAPIEncoder.m.
+
+\hypertarget{a00001_a4857fc98d2991953378a93a7b4dee5ca}{
+\index{ESAPIEncoder@{ESAPIEncoder}!canonicalizeString:forSpecificEncoding:strict:@{canonicalizeString:forSpecificEncoding:strict:}}
+\index{canonicalizeString:forSpecificEncoding:strict:@{canonicalizeString:forSpecificEncoding:strict:}!ESAPIEncoder@{ESAPIEncoder}}
+\subsubsection[{canonicalizeString:forSpecificEncoding:strict:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf NSString} $\ast$) canonicalizeString: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf NSString} $\ast$)}]{givenString}
+\item[{forSpecificEncoding:({\bf ESAPIEncodingType})}]{encodingType}
+\item[{strict:(BOOL)}]{strict}
+\end{DoxyParamCaption}
+}}
+\label{d8/d84/a00001_a4857fc98d2991953378a93a7b4dee5ca}
+\hypertarget{a00001_a0235404f388683e1e078796722398060}{
+\index{ESAPIEncoder@{ESAPIEncoder}!canonicalizeStringForAllAvailableEncodings:strict:@{canonicalizeStringForAllAvailableEncodings:strict:}}
+\index{canonicalizeStringForAllAvailableEncodings:strict:@{canonicalizeStringForAllAvailableEncodings:strict:}!ESAPIEncoder@{ESAPIEncoder}}
+\subsubsection[{canonicalizeStringForAllAvailableEncodings:strict:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf NSString} $\ast$) canonicalizeStringForAllAvailableEncodings: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf NSString} $\ast$)}]{givenString}
+\item[{strict:(BOOL)}]{strict}
+\end{DoxyParamCaption}
+}}
+\label{d8/d84/a00001_a0235404f388683e1e078796722398060}
+
+
+Definition at line 91 of file ESAPIEncoder.m.
+
+\hypertarget{a00001_a0235404f388683e1e078796722398060}{
+\index{ESAPIEncoder@{ESAPIEncoder}!canonicalizeStringForAllAvailableEncodings:strict:@{canonicalizeStringForAllAvailableEncodings:strict:}}
+\index{canonicalizeStringForAllAvailableEncodings:strict:@{canonicalizeStringForAllAvailableEncodings:strict:}!ESAPIEncoder@{ESAPIEncoder}}
+\subsubsection[{canonicalizeStringForAllAvailableEncodings:strict:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf NSString} $\ast$) canonicalizeStringForAllAvailableEncodings: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf NSString} $\ast$)}]{givenString}
+\item[{strict:(BOOL)}]{strict}
+\end{DoxyParamCaption}
+}}
+\label{d8/d84/a00001_a0235404f388683e1e078796722398060}
+\hypertarget{a00001_a6926a8a8a6813154b7550ac018c73dde}{
+\index{ESAPIEncoder@{ESAPIEncoder}!decodeString:withEncoding:@{decodeString:withEncoding:}}
+\index{decodeString:withEncoding:@{decodeString:withEncoding:}!ESAPIEncoder@{ESAPIEncoder}}
+\subsubsection[{decodeString:withEncoding:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf NSString} $\ast$) decodeString: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf NSString} $\ast$)}]{givenString}
+\item[{withEncoding:({\bf ESAPIEncodingType})}]{encodingType}
+\end{DoxyParamCaption}
+}}
+\label{d8/d84/a00001_a6926a8a8a6813154b7550ac018c73dde}
+
+
+This function is used to decode the given string with the given encoding and return the decoded string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em givenString} & -\/ The given string to be decoded. \\
+\hline
+{\em encodingType} & -\/ The type of encoding to be decoded with. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 46 of file ESAPIEncoder.m.
+
+\hypertarget{a00001_a6926a8a8a6813154b7550ac018c73dde}{
+\index{ESAPIEncoder@{ESAPIEncoder}!decodeString:withEncoding:@{decodeString:withEncoding:}}
+\index{decodeString:withEncoding:@{decodeString:withEncoding:}!ESAPIEncoder@{ESAPIEncoder}}
+\subsubsection[{decodeString:withEncoding:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf NSString} $\ast$) decodeString: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf NSString} $\ast$)}]{givenString}
+\item[{withEncoding:({\bf ESAPIEncodingType})}]{encodingType}
+\end{DoxyParamCaption}
+}}
+\label{d8/d84/a00001_a6926a8a8a6813154b7550ac018c73dde}
+\hypertarget{a00001_ab5c2f76d076134d64c4e547bf0cf282a}{
+\index{ESAPIEncoder@{ESAPIEncoder}!encodeString:withEncoding:@{encodeString:withEncoding:}}
+\index{encodeString:withEncoding:@{encodeString:withEncoding:}!ESAPIEncoder@{ESAPIEncoder}}
+\subsubsection[{encodeString:withEncoding:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf NSString} $\ast$) encodeString: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf NSString} $\ast$)}]{givenString}
+\item[{withEncoding:({\bf ESAPIEncodingType})}]{encodingType}
+\end{DoxyParamCaption}
+}}
+\label{d8/d84/a00001_ab5c2f76d076134d64c4e547bf0cf282a}
+
+
+This function is used to encode the given string with the given encoding and return the encoded string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em givenString} & -\/ The given string to be encoded. \\
+\hline
+{\em encodingType} & -\/ The type of encoding to be encoded with. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 20 of file ESAPIEncoder.m.
+
+\hypertarget{a00001_ab5c2f76d076134d64c4e547bf0cf282a}{
+\index{ESAPIEncoder@{ESAPIEncoder}!encodeString:withEncoding:@{encodeString:withEncoding:}}
+\index{encodeString:withEncoding:@{encodeString:withEncoding:}!ESAPIEncoder@{ESAPIEncoder}}
+\subsubsection[{encodeString:withEncoding:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf NSString} $\ast$) encodeString: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf NSString} $\ast$)}]{givenString}
+\item[{withEncoding:({\bf ESAPIEncodingType})}]{encodingType}
+\end{DoxyParamCaption}
+}}
+\label{d8/d84/a00001_ab5c2f76d076134d64c4e547bf0cf282a}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI\_\-COMPLETE/branches/ESAPI Branch Cuckoo/build/Release/ESAPI.framework/Versions/A/Headers/\hyperlink{a00012}{ESAPIEncoder.h}\item 
+/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI\_\-COMPLETE/branches/ESAPI Branch Cuckoo/ESAPIEncoder/\hyperlink{a00013}{ESAPIEncoder.h}\item 
+/Users/deepaksubramanian/Documents/Folder of Documents/XCode/ESAPI\_\-COMPLETE/branches/ESAPI Branch Cuckoo/ESAPIEncoder/\hyperlink{a00018}{ESAPIEncoder.m}\end{DoxyCompactItemize}
